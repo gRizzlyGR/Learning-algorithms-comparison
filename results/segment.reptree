@@ -1,0 +1,117 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     segment
+Instances:    2310
+Attributes:   20
+              region-centroid-col
+              region-centroid-row
+              region-pixel-count
+              short-line-density-5
+              short-line-density-2
+              vedge-mean
+              vegde-sd
+              hedge-mean
+              hedge-sd
+              intensity-mean
+              rawred-mean
+              rawblue-mean
+              rawgreen-mean
+              exred-mean
+              exblue-mean
+              exgreen-mean
+              value-mean
+              saturation-mean
+              hue-mean
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+rawred-mean < 24.78
+|   hue-mean < 0.64
+|   |   hue-mean < -1.89
+|   |   |   hue-mean < -2.22 : foliage (128/8) [59/1]
+|   |   |   hue-mean >= -2.22
+|   |   |   |   rawred-mean < 2.39
+|   |   |   |   |   hue-mean < -2.08
+|   |   |   |   |   |   region-centroid-row < 130.5 : foliage (52/0) [27/1]
+|   |   |   |   |   |   region-centroid-row >= 130.5
+|   |   |   |   |   |   |   region-centroid-col < 128
+|   |   |   |   |   |   |   |   rawblue-mean < 3.94 : foliage (30/5) [13/5]
+|   |   |   |   |   |   |   |   rawblue-mean >= 3.94 : window (4/0) [3/1]
+|   |   |   |   |   |   |   region-centroid-col >= 128 : window (17/1) [7/1]
+|   |   |   |   |   hue-mean >= -2.08 : window (33/1) [18/1]
+|   |   |   |   rawred-mean >= 2.39
+|   |   |   |   |   region-centroid-row < 121 : window (100/3) [48/2]
+|   |   |   |   |   region-centroid-row >= 121
+|   |   |   |   |   |   saturation-mean < 0.56
+|   |   |   |   |   |   |   hedge-sd < 41 : cement (36/7) [13/0]
+|   |   |   |   |   |   |   hedge-sd >= 41
+|   |   |   |   |   |   |   |   region-centroid-col < 45 : path (2/0) [1/0]
+|   |   |   |   |   |   |   |   region-centroid-col >= 45 : window (3/0) [2/0]
+|   |   |   |   |   |   saturation-mean >= 0.56 : window (15/5) [9/2]
+|   |   hue-mean >= -1.89
+|   |   |   exgreen-mean < -4.94
+|   |   |   |   exred-mean < -6.17 : brickface (14/4) [6/0]
+|   |   |   |   exred-mean >= -6.17
+|   |   |   |   |   hue-mean < -1.75
+|   |   |   |   |   |   region-centroid-col < 158 : brickface (11/0) [8/3]
+|   |   |   |   |   |   region-centroid-col >= 158 : window (2/0) [1/0]
+|   |   |   |   |   hue-mean >= -1.75 : brickface (194/0) [98/2]
+|   |   |   exgreen-mean >= -4.94
+|   |   |   |   region-centroid-col < 33 : foliage (3/1) [3/0]
+|   |   |   |   region-centroid-col >= 33 : window (42/0) [19/2]
+|   hue-mean >= 0.64 : grass (218/0) [109/0]
+rawred-mean >= 24.78
+|   intensity-mean < 79.59
+|   |   region-centroid-row < 158.5
+|   |   |   hue-mean < -2.24 : foliage (11/0) [7/0]
+|   |   |   hue-mean >= -2.24 : cement (185/2) [100/6]
+|   |   region-centroid-row >= 158.5 : path (220/2) [108/0]
+|   intensity-mean >= 79.59 : sky (220/0) [111/1]
+
+Size of the tree : 43
+
+Time taken to build model: 0.07 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2196               95.0649 %
+Incorrectly Classified Instances       114                4.9351 %
+Kappa statistic                          0.9424
+Mean absolute error                      0.0186
+Root mean squared error                  0.1108
+Relative absolute error                  7.5874 %
+Root relative squared error             31.665  %
+Total Number of Instances             2310     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,973    0,007    0,961      0,973    0,967      0,961    0,996     0,978     brickface
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     sky
+                 0,921    0,013    0,924      0,921    0,923      0,910    0,979     0,922     foliage
+                 0,909    0,014    0,917      0,909    0,913      0,899    0,983     0,952     cement
+                 0,894    0,023    0,865      0,894    0,879      0,859    0,970     0,870     window
+                 0,979    0,002    0,991      0,979    0,985      0,982    0,998     0,992     path
+                 0,979    0,000    1,000      0,979    0,989      0,988    0,994     0,989     grass
+Weighted Avg.    0,951    0,008    0,951      0,951    0,951      0,943    0,988     0,957     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   <-- classified as
+ 321   0   0   3   6   0   0 |   a = brickface
+   0 330   0   0   0   0   0 |   b = sky
+   2   0 304   4  20   0   0 |   c = foliage
+   5   0   4 300  18   3   0 |   d = cement
+   5   0  18  12 295   0   0 |   e = window
+   0   0   0   7   0 323   0 |   f = path
+   1   0   3   1   2   0 323 |   g = grass
+
+

@@ -1,0 +1,101 @@
+\documentclass[a4paper,12pt,oneside,onecolumn]{book}
+\usepackage{frontespizio}
+\usepackage[italian]{babel}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup{compatibility=false}
+%\usepackage[caption=false]{subfig}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{color,soul}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{listings}
+\usepackage{rotating}
+\usepackage[round,numbers]{natbib}
+\setcitestyle{square}
+\usepackage{moreverb}
+\usepackage{mdframed}
+\mdfsetup{frametitlealignment=\center, frametitlerule=true, leftmargin=-1.2cm, rightmargin=-2cm}
+\usepackage{nameref}
+\usepackage{array}
+\newcolumntype{H}{>{\setbox0=\hbox\bgroup}c<{\egroup}@{}}
+\usepackage{tabularx}
+\usepackage{tabu}
+\usepackage{ltxtable}
+\usepackage{tikz}
+\usetikzlibrary{decorations,arrows,shapes}
+%\usepackage{booktabs}
+%\usepackage[active,float]{preview}
+%\PreviewEnvironment{tikzpicture}
+%\usepackage{pslatex}
+
+\titleformat{\chapter}[hang]
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter:}{0.3em}{}
+
+\title{AI Sperimentation}
+
+\begin{document}
+	\begin{frontespizio}	
+	
+	\Preambolo{\renewcommand{\fronttitlefont}{%
+	\fontsize{20}{24}\scshape}}
+	
+%	\Preambolo{\renewcommand{\frontpretitlefont}{%
+%	\fontsize{14}{16}\scshape}}
+	
+	\Universita{Bari}
+	\Logo[1.5cm]{./images/logo}
+	%\Facolta{Scienze Matematiche, Fisiche e Naturali}
+	\Dipartimento{Informatica}
+	%\Divisione{\mbox{}}
+	\Corso[Laurea Magistrale]{Informatica}
+%	\Titoletto{Progetto di Data Mining}
+	\Titolo{Confronto tra due algoritmi di apprendimento}
+	\NCandidato{Esaminando}
+	\Candidato[591275]{Giuseppe Rizzi}
+	\NRelatore{Docente}{Docenti}
+	\Relatore{Prof.~Donato Malerba}
+%	\Annoaccademico{2013-2014}
+	\Piede{}
+	\end{frontespizio}
+	
+	%Attributo target
+	\newcommand{\tb}{\texttt{TARGET\_B}}
+    
+    %Ridefinizione di "for all" in "for each"
+    \renewcommand{\algorithmicforall}{\textbf{for each}}
+    
+    %Cambio l'intestazione "Algorithm" in "Algoritmo"
+	\floatname{algorithm}{Algoritmo}
+
+	
+	%Numerazione delle pagine corretta
+	\pagestyle{plain}
+	
+	%Le tabelle larghe quanto la pagina
+%	\setlength\LTleft{0pt}
+%	\setlength\LTright{0pt}
+%Da usare anche \begin{longtable}{@{\extracolsep{\fill}}| c | l |}
+	
+	\tableofcontents
+
+	\newpage
+	\input{introduction}
+	\clearpage
+    \input{ripper}
+    \clearpage
+    \input{reptree}
+    \clearpage
+    \bibliographystyle{abbrvnat}
+    	\bibliography{mybib}
+    
+\end{document}

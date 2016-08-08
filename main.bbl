@@ -1,0 +1,99 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Brunk and Pazzani(1991)]{Brunk91aninvestigation}
+C.~Brunk and M.~J. Pazzani.
+\newblock An investigation of noise-tolerant relational concept learning
+  algorithms, 1991.
+
+\bibitem[Cohen(1993)]{Cohen93efficientpruning}
+W.~W. Cohen.
+\newblock Efficient pruning methods for separate-and-conquer rule learning
+  systems.
+\newblock In \emph{In Proceedings of the 13th International Joint Conference on
+  Artificial Intelligence}, pages 988--994. Morgan Kaufmann, 1993.
+
+\bibitem[Cohen(1995)]{Cohen95fasteffective}
+W.~W. Cohen.
+\newblock Fast effective rule induction.
+\newblock In \emph{In Proceedings of the Twelfth International Conference on
+  Machine Learning}, pages 115--123. Morgan Kaufmann, 1995.
+
+\bibitem[Fürnkranz and Widmer(1994)]{Furnkranz94incrementalreduced}
+J.~Fürnkranz and G.~Widmer.
+\newblock Incremental reduced error pruning, 1994.
+
+\bibitem[Pagallo et~al.(1990)Pagallo, Haussler, and Rosenbloom]{Pagallo1990}
+G.~Pagallo, D.~Haussler, and P.~Rosenbloom.
+\newblock © 1990 kluwer academic publishers. manufactured in the netherlands.
+  boolean feature discovery in empirical learning, 1990.
+
+\bibitem[Quinlan(1990)]{Quinlan1990}
+J.~Quinlan.
+\newblock Learning logical definitions from relations.
+\newblock \emph{Machine Learning}, 5\penalty0 (3):\penalty0 239--266, 1990.
+\newblock ISSN 1573-0565.
+
+\bibitem[Quinlan(1993)]{Quinlan:1993:CPM:152181}
+J.~R. Quinlan.
+\newblock \emph{C4.5: Programs for Machine Learning}.
+\newblock Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1993.
+\newblock ISBN 1-55860-238-0.
+
+\bibitem[Quinlan(1995)]{Quinlan95mdland}
+J.~R. Quinlan.
+\newblock {MDL} and categorical theories (continued).
+\newblock In \emph{In Machine Learning: Proceedings of the Twelfth
+  International Conference, Lake Taho}, pages 464--470. Morgan Kaufmann, 1995.
+
+\bibitem[Quinlan and Rivest(1989)]{Quinlan:1989:IDT:70758.70761}
+J.~R. Quinlan and R.~L. Rivest.
+\newblock Inferring decision trees using the minimum description length
+  principle.
+\newblock \emph{Inf. Comput.}, 80\penalty0 (3):\penalty0 227--248, Mar. 1989.
+\newblock ISSN 0890-5401.
+
+\bibitem[Russell and Norvig(2003)]{Russell:2003:AIM:773294}
+S.~J. Russell and P.~Norvig.
+\newblock \emph{Artificial Intelligence: A Modern Approach}.
+\newblock Pearson Education, 2 edition, 2003.
+\newblock ISBN 0137903952.
+
+\bibitem[Weiss and Indurkhya(1991)]{Weiss91reducedcomplexity}
+S.~M. Weiss and N.~Indurkhya.
+\newblock Reduced complexity rule induction.
+\newblock In \emph{In Proceedings of the 12th International Joint Conference on
+  Artificial Intelligence (IJCAI-91}, pages 678--684. Morgan Kaufmann, 1991.
+
+\bibitem[Witten et~al.(2011{\natexlab{a}})Witten, Frank, and
+  Hall]{2Witten:2011:DMP:1972514}
+I.~H. Witten, E.~Frank, and M.~A. Hall.
+\newblock Decision trees.
+\newblock In \emph{Data Mining: Practical Machine Learning Tools and
+  Techniques}, chapter 6.2, page 206. Morgan Kaufmann Publishers Inc., San
+  Francisco, CA, USA, 3rd edition, 2011{\natexlab{a}}.
+\newblock ISBN 0123748569, 9780123748560.
+
+\bibitem[Witten et~al.(2011{\natexlab{b}})Witten, Frank, and
+  Hall]{2Witten:2011:DMP:REPTree}
+I.~H. Witten, E.~Frank, and M.~A. Hall.
+\newblock Decision trees.
+\newblock In \emph{Data Mining: Practical Machine Learning Tools and
+  Techniques}, chapter 11.4, page 456. Morgan Kaufmann Publishers Inc., San
+  Francisco, CA, USA, 3rd edition, 2011{\natexlab{b}}.
+\newblock ISBN 0123748569, 9780123748560.
+
+\bibitem[Witten et~al.(2011{\natexlab{c}})Witten, Frank, and
+  Hall]{Witten:2011:DMP:1972514}
+I.~H. Witten, E.~Frank, and M.~A. Hall.
+\newblock Decision trees.
+\newblock In \emph{Data Mining: Practical Machine Learning Tools and
+  Techniques}, chapter 6.11, page 303. Morgan Kaufmann Publishers Inc., San
+  Francisco, CA, USA, 3rd edition, 2011{\natexlab{c}}.
+\newblock ISBN 0123748569, 9780123748560.
+
+\end{thebibliography}

@@ -1,0 +1,161 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1
+Relation:     german_credit
+Instances:    1000
+Attributes:   21
+              checking_status
+              duration
+              credit_history
+              purpose
+              credit_amount
+              savings_status
+              employment
+              installment_commitment
+              personal_status
+              other_parties
+              residence_since
+              property_magnitude
+              age
+              other_payment_plans
+              housing
+              existing_credits
+              job
+              num_dependents
+              own_telephone
+              foreign_worker
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+checking_status = <0
+|   credit_history = no credits/all paid : bad (5/0) [8/3]
+|   credit_history = all paid : bad (17/5) [5/1]
+|   credit_history = existing paid
+|   |   purpose = new car
+|   |   |   savings_status = <100
+|   |   |   |   employment = unemployed : good (1/0) [1/0]
+|   |   |   |   employment = <1 : bad (7/3) [4/0]
+|   |   |   |   employment = 1<=X<4 : bad (1/0) [6/3]
+|   |   |   |   employment = 4<=X<7 : bad (4/0) [3/1]
+|   |   |   |   employment = >=7 : bad (3/0) [1/0]
+|   |   |   savings_status = 100<=X<500 : good (3/0) [0/0]
+|   |   |   savings_status = 500<=X<1000 : bad (0/0) [0/0]
+|   |   |   savings_status = >=1000 : good (1/0) [0/0]
+|   |   |   savings_status = no known savings : bad (5/1) [2/1]
+|   |   purpose = used car : good (6/1) [8/4]
+|   |   purpose = furniture/equipment
+|   |   |   age < 20.5 : bad (3/0) [0/0]
+|   |   |   age >= 20.5
+|   |   |   |   credit_amount < 2309 : good (8/0) [6/1]
+|   |   |   |   credit_amount >= 2309
+|   |   |   |   |   installment_commitment < 1.5 : good (4/0) [1/1]
+|   |   |   |   |   installment_commitment >= 1.5
+|   |   |   |   |   |   age < 43.5
+|   |   |   |   |   |   |   employment = unemployed : good (2/1) [0/0]
+|   |   |   |   |   |   |   employment = <1 : bad (2/0) [1/1]
+|   |   |   |   |   |   |   employment = 1<=X<4 : good (4/1) [4/1]
+|   |   |   |   |   |   |   employment = 4<=X<7 : bad (2/0) [0/0]
+|   |   |   |   |   |   |   employment = >=7 : bad (1/0) [3/0]
+|   |   |   |   |   |   age >= 43.5 : good (3/0) [1/1]
+|   |   purpose = radio/tv
+|   |   |   savings_status = <100
+|   |   |   |   existing_credits < 1.5 : good (19/9) [8/3]
+|   |   |   |   existing_credits >= 1.5 : bad (4/0) [0/0]
+|   |   |   savings_status = 100<=X<500 : bad (3/0) [0/0]
+|   |   |   savings_status = 500<=X<1000 : good (0/0) [2/0]
+|   |   |   savings_status = >=1000 : good (1/0) [0/0]
+|   |   |   savings_status = no known savings : good (2/1) [0/0]
+|   |   purpose = domestic appliance : bad (3/1) [2/0]
+|   |   purpose = repairs : bad (1/0) [0/0]
+|   |   purpose = education : bad (7/2) [0/0]
+|   |   purpose = vacation : bad (0/0) [0/0]
+|   |   purpose = retraining : bad (1/0) [0/0]
+|   |   purpose = business : good (2/1) [2/1]
+|   |   purpose = other : good (2/0) [0/0]
+|   credit_history = delayed previously : bad (11/3) [1/0]
+|   credit_history = critical/other existing credit : good (43/11) [24/7]
+checking_status = 0<=X<200
+|   credit_amount < 7834
+|   |   savings_status = <100
+|   |   |   purpose = new car : bad (15/7) [12/4]
+|   |   |   purpose = used car : good (3/0) [3/1]
+|   |   |   purpose = furniture/equipment : good (15/7) [8/4]
+|   |   |   purpose = radio/tv : good (26/6) [22/5]
+|   |   |   purpose = domestic appliance : good (1/0) [0/0]
+|   |   |   purpose = repairs : good (3/1) [3/1]
+|   |   |   purpose = education : bad (4/1) [3/2]
+|   |   |   purpose = vacation : good (0/0) [0/0]
+|   |   |   purpose = retraining : good (0/0) [1/0]
+|   |   |   purpose = business : good (11/5) [4/2]
+|   |   |   purpose = other : good (0/0) [1/0]
+|   |   savings_status = 100<=X<500
+|   |   |   purpose = new car : bad (10/4) [4/1]
+|   |   |   purpose = used car : good (1/0) [2/0]
+|   |   |   purpose = furniture/equipment : bad (3/1) [0/0]
+|   |   |   purpose = radio/tv : bad (6/1) [2/1]
+|   |   |   purpose = domestic appliance : good (0/0) [0/0]
+|   |   |   purpose = repairs : good (2/0) [0/0]
+|   |   |   purpose = education : good (0/0) [0/0]
+|   |   |   purpose = vacation : good (0/0) [0/0]
+|   |   |   purpose = retraining : good (0/0) [0/0]
+|   |   |   purpose = business : good (7/2) [3/1]
+|   |   |   purpose = other : good (1/0) [0/0]
+|   |   savings_status = 500<=X<1000 : good (6/0) [4/3]
+|   |   savings_status = >=1000
+|   |   |   purpose = new car : good (2/0) [1/0]
+|   |   |   purpose = used car : good (0/0) [1/0]
+|   |   |   purpose = furniture/equipment : good (2/0) [2/0]
+|   |   |   purpose = radio/tv : good (0/0) [0/0]
+|   |   |   purpose = domestic appliance : good (0/0) [0/0]
+|   |   |   purpose = repairs : bad (1/0) [0/0]
+|   |   |   purpose = education : bad (1/0) [1/0]
+|   |   |   purpose = vacation : good (0/0) [0/0]
+|   |   |   purpose = retraining : good (0/0) [0/0]
+|   |   |   purpose = business : good (1/0) [1/0]
+|   |   |   purpose = other : good (0/0) [0/0]
+|   |   savings_status = no known savings : good (30/3) [9/2]
+|   credit_amount >= 7834
+|   |   savings_status = <100 : bad (14/0) [3/2]
+|   |   savings_status = 100<=X<500 : bad (5/2) [1/0]
+|   |   savings_status = 500<=X<1000 : good (0/0) [1/0]
+|   |   savings_status = >=1000 : bad (1/0) [0/0]
+|   |   savings_status = no known savings : good (4/2) [2/0]
+checking_status = >=200 : good (44/12) [19/2]
+checking_status = no checking : good (266/28) [128/18]
+
+Size of the tree : 96
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         718               71.8    %
+Incorrectly Classified Instances       282               28.2    %
+Kappa statistic                          0.2702
+Mean absolute error                      0.3417
+Root mean squared error                  0.4424
+Relative absolute error                 81.3157 %
+Root relative squared error             96.532  %
+Total Number of Instances             1000     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.859     0.61       0.767     0.859     0.81       0.72     good
+                 0.39      0.141      0.542     0.39      0.453      0.72     bad
+Weighted Avg.    0.718     0.469      0.699     0.718     0.703      0.72 
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 601  99 |   a = good
+ 183 117 |   b = bad
+
+

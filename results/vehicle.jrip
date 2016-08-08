@@ -1,0 +1,85 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     vehicle
+Instances:    846
+Attributes:   19
+              COMPACTNESS
+              CIRCULARITY
+              DISTANCE CIRCULARITY
+              RADIUS RATIO
+              PR.AXIS ASPECT RATIO
+              MAX.LENGTH ASPECT RATIO
+              SCATTER RATIO
+              ELONGATEDNESS
+              PR.AXIS RECTANGULARITY
+              MAX.LENGTH RECTANGULARITY
+              SCALED VARIANCE_MAJOR
+              SCALED VARIANCE_MINOR
+              SCALED RADIUS OF GYRATION
+              SKEWNESS ABOUT_MAJOR
+              SKEWNESS ABOUT_MINOR
+              KURTOSIS ABOUT_MAJOR
+              KURTOSIS ABOUT_MINOR
+              HOLLOWS RATIO
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(ELONGATEDNESS >= 43) and (MAX.LENGTH ASPECT RATIO >= 9) and (DISTANCE CIRCULARITY >= 73) => Class=van (86.0/0.0)
+(SCALED VARIANCE_MINOR <= 309) and (MAX.LENGTH RECTANGULARITY >= 132) and (DISTANCE CIRCULARITY <= 64) and (SCALED RADIUS OF GYRATION <= 157) => Class=van (23.0/0.0)
+(PR.AXIS RECTANGULARITY <= 18) and (MAX.LENGTH RECTANGULARITY >= 128) and (SCALED RADIUS OF GYRATION <= 140) => Class=van (42.0/6.0)
+(SCALED VARIANCE_MINOR <= 309) and (MAX.LENGTH RECTANGULARITY >= 142) => Class=van (33.0/5.0)
+(ELONGATEDNESS >= 53) and (SCALED RADIUS OF GYRATION >= 137) => Class=van (15.0/5.0)
+(SCALED VARIANCE_MAJOR <= 177) and (MAX.LENGTH ASPECT RATIO >= 10) => Class=van (8.0/1.0)
+(MAX.LENGTH ASPECT RATIO >= 8) and (MAX.LENGTH RECTANGULARITY >= 173) => Class=opel (45.0/8.0)
+(MAX.LENGTH ASPECT RATIO >= 8) and (COMPACTNESS <= 103) and (ELONGATEDNESS <= 37) and (HOLLOWS RATIO <= 195) => Class=opel (14.0/0.0)
+(MAX.LENGTH ASPECT RATIO >= 8) and (HOLLOWS RATIO <= 198) and (KURTOSIS ABOUT_MINOR >= 189) => Class=opel (42.0/17.0)
+(SKEWNESS ABOUT_MAJOR <= 67) and (HOLLOWS RATIO <= 203) => Class=opel (66.0/30.0)
+(SCALED RADIUS OF GYRATION <= 142) and (HOLLOWS RATIO <= 194) and (DISTANCE CIRCULARITY >= 57) => Class=opel (17.0/2.0)
+(MAX.LENGTH ASPECT RATIO >= 9) and (DISTANCE CIRCULARITY >= 100) and (SCALED VARIANCE_MAJOR <= 231) => Class=saab (71.0/9.0)
+(MAX.LENGTH ASPECT RATIO >= 9) and (PR.AXIS ASPECT RATIO <= 61) => Class=saab (23.0/7.0)
+(SCALED VARIANCE_MAJOR <= 165) and (DISTANCE CIRCULARITY <= 66) => Class=saab (36.0/11.0)
+(SKEWNESS ABOUT_MAJOR <= 72) and (PR.AXIS ASPECT RATIO <= 65) and (DISTANCE CIRCULARITY >= 81) and (SKEWNESS ABOUT_MAJOR >= 66) => Class=saab (27.0/7.0)
+(CIRCULARITY <= 40) and (RADIUS RATIO <= 144) => Class=saab (16.0/6.0)
+ => Class=bus (282.0/69.0)
+
+Number of Rules : 17
+
+
+Time taken to build model: 0.25 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         584               69.0307 %
+Incorrectly Classified Instances       262               30.9693 %
+Kappa statistic                          0.5868
+Mean absolute error                      0.1914
+Root mean squared error                  0.3323
+Relative absolute error                 51.0598 %
+Root relative squared error             76.7524 %
+Total Number of Instances              846     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,481    0,126    0,560      0,481    0,518      0,374    0,785     0,545     opel
+                 0,484    0,146    0,533      0,484    0,507      0,349    0,793     0,501     saab
+                 0,940    0,099    0,768      0,940    0,845      0,792    0,940     0,812     bus
+                 0,864    0,043    0,860      0,864    0,862      0,820    0,927     0,861     van
+Weighted Avg.    0,690    0,105    0,677      0,690    0,680      0,580    0,860     0,677     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+ 102  71  27  12 |   a = opel
+  74 105  27  11 |   b = saab
+   2   6 205   5 |   c = bus
+   4  15   8 172 |   d = van
+
+

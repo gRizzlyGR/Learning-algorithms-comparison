@@ -1,0 +1,116 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     vehicle
+Instances:    846
+Attributes:   19
+              COMPACTNESS
+              CIRCULARITY
+              DISTANCE CIRCULARITY
+              RADIUS RATIO
+              PR.AXIS ASPECT RATIO
+              MAX.LENGTH ASPECT RATIO
+              SCATTER RATIO
+              ELONGATEDNESS
+              PR.AXIS RECTANGULARITY
+              MAX.LENGTH RECTANGULARITY
+              SCALED VARIANCE_MAJOR
+              SCALED VARIANCE_MINOR
+              SCALED RADIUS OF GYRATION
+              SKEWNESS ABOUT_MAJOR
+              SKEWNESS ABOUT_MINOR
+              KURTOSIS ABOUT_MAJOR
+              KURTOSIS ABOUT_MINOR
+              HOLLOWS RATIO
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+ELONGATEDNESS < 41.5
+|   MAX.LENGTH ASPECT RATIO < 7.5
+|   |   COMPACTNESS < 95.5
+|   |   |   PR.AXIS ASPECT RATIO < 67.5
+|   |   |   |   SCATTER RATIO < 161.5 : saab (4/0) [1/0]
+|   |   |   |   SCATTER RATIO >= 161.5 : opel (13/6) [3/1]
+|   |   |   PR.AXIS ASPECT RATIO >= 67.5 : bus (13/0) [3/0]
+|   |   COMPACTNESS >= 95.5 : bus (52/0) [18/1]
+|   MAX.LENGTH ASPECT RATIO >= 7.5
+|   |   SCALED VARIANCE_MINOR < 721
+|   |   |   HOLLOWS RATIO < 195.5 : opel (27/4) [12/3]
+|   |   |   HOLLOWS RATIO >= 195.5
+|   |   |   |   COMPACTNESS < 109.5
+|   |   |   |   |   DISTANCE CIRCULARITY < 99 : opel (56/26) [26/12]
+|   |   |   |   |   DISTANCE CIRCULARITY >= 99
+|   |   |   |   |   |   KURTOSIS ABOUT_MINOR < 187.5 : saab (14/0) [5/2]
+|   |   |   |   |   |   KURTOSIS ABOUT_MINOR >= 187.5
+|   |   |   |   |   |   |   HOLLOWS RATIO < 204.5
+|   |   |   |   |   |   |   |   SKEWNESS ABOUT_MAJOR < 66.5 : opel (13/2) [2/0]
+|   |   |   |   |   |   |   |   SKEWNESS ABOUT_MAJOR >= 66.5 : saab (36/11) [29/10]
+|   |   |   |   |   |   |   HOLLOWS RATIO >= 204.5 : saab (8/0) [7/4]
+|   |   |   |   COMPACTNESS >= 109.5 : saab (13/0) [3/0]
+|   |   SCALED VARIANCE_MINOR >= 721 : opel (16/1) [8/1]
+ELONGATEDNESS >= 41.5
+|   MAX.LENGTH ASPECT RATIO < 8.5
+|   |   SCALED VARIANCE_MINOR < 298.5
+|   |   |   MAX.LENGTH RECTANGULARITY < 131.5
+|   |   |   |   PR.AXIS RECTANGULARITY < 17.5 : van (20/8) [10/4]
+|   |   |   |   PR.AXIS RECTANGULARITY >= 17.5
+|   |   |   |   |   SCALED RADIUS OF GYRATION < 127.5
+|   |   |   |   |   |   COMPACTNESS < 88.5
+|   |   |   |   |   |   |   DISTANCE CIRCULARITY < 68.5 : van (2/0) [1/0]
+|   |   |   |   |   |   |   DISTANCE CIRCULARITY >= 68.5 : opel (2/0) [1/0]
+|   |   |   |   |   |   COMPACTNESS >= 88.5 : saab (4/1) [2/2]
+|   |   |   |   |   SCALED RADIUS OF GYRATION >= 127.5
+|   |   |   |   |   |   SCALED RADIUS OF GYRATION < 136 : opel (4/0) [4/2]
+|   |   |   |   |   |   SCALED RADIUS OF GYRATION >= 136
+|   |   |   |   |   |   |   CIRCULARITY < 37.5 : saab (12/2) [2/0]
+|   |   |   |   |   |   |   CIRCULARITY >= 37.5 : opel (8/2) [1/0]
+|   |   |   MAX.LENGTH RECTANGULARITY >= 131.5 : van (54/8) [24/8]
+|   |   SCALED VARIANCE_MINOR >= 298.5
+|   |   |   DISTANCE CIRCULARITY < 76.5
+|   |   |   |   SKEWNESS ABOUT_MINOR < 10.5 : bus (85/11) [58/9]
+|   |   |   |   SKEWNESS ABOUT_MINOR >= 10.5
+|   |   |   |   |   PR.AXIS ASPECT RATIO < 62.5 : opel (12/4) [5/2]
+|   |   |   |   |   PR.AXIS ASPECT RATIO >= 62.5 : bus (2/0) [1/0]
+|   |   |   DISTANCE CIRCULARITY >= 76.5 : opel (21/9) [13/8]
+|   MAX.LENGTH ASPECT RATIO >= 8.5 : van (73/4) [43/6]
+
+Size of the tree : 49
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         612               72.3404 %
+Incorrectly Classified Instances       234               27.6596 %
+Kappa statistic                          0.6313
+Mean absolute error                      0.1617
+Root mean squared error                  0.3109
+Relative absolute error                 43.1254 %
+Root relative squared error             71.8227 %
+Total Number of Instances              846     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,575    0,137    0,584      0,575    0,580      0,440    0,842     0,586     opel
+                 0,475    0,129    0,560      0,475    0,514      0,366    0,795     0,561     saab
+                 0,945    0,040    0,892      0,945    0,918      0,889    0,968     0,895     bus
+                 0,910    0,063    0,815      0,910    0,860      0,816    0,972     0,879     van
+Weighted Avg.    0,723    0,093    0,711      0,723    0,716      0,625    0,893     0,728     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+ 122  68   8  14 |   a = opel
+  81 103  13  20 |   b = saab
+   1   4 206   7 |   c = bus
+   5   9   4 181 |   d = van
+
+

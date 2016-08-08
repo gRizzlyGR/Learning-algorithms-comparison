@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1
+Relation:     wisconsin-breast-cancer
+Instances:    699
+Attributes:   10
+              Clump_Thickness
+              Cell_Size_Uniformity
+              Cell_Shape_Uniformity
+              Marginal_Adhesion
+              Single_Epi_Cell_Size
+              Bare_Nuclei
+              Bland_Chromatin
+              Normal_Nucleoli
+              Mitoses
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+Cell_Size_Uniformity < 2.5
+|   Bare_Nuclei < 2.5 : benign (261.44/1) [132.79/0]
+|   Bare_Nuclei >= 2.5
+|   |   Clump_Thickness < 3.5 : benign (11.49/0) [8.21/0]
+|   |   Clump_Thickness >= 3.5
+|   |   |   Bare_Nuclei < 3.5 : benign (2.02/1) [1/0]
+|   |   |   Bare_Nuclei >= 3.5 : malignant (6.05/0.05) [6/2]
+Cell_Size_Uniformity >= 2.5
+|   Cell_Size_Uniformity < 4.5
+|   |   Bare_Nuclei < 3.5
+|   |   |   Clump_Thickness < 4.5 : benign (13/0) [5/1]
+|   |   |   Clump_Thickness >= 4.5
+|   |   |   |   Normal_Nucleoli < 1.5 : benign (6/0) [3/0]
+|   |   |   |   Normal_Nucleoli >= 1.5 : malignant (10.45/3.45) [2.45/0]
+|   |   Bare_Nuclei >= 3.5 : malignant (35.55/4.55) [16.55/2]
+|   Cell_Size_Uniformity >= 4.5 : malignant (120/5) [58/0]
+
+Size of the tree : 17
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         656               93.8484 %
+Incorrectly Classified Instances        43                6.1516 %
+Kappa statistic                          0.8653
+Mean absolute error                      0.083 
+Root mean squared error                  0.2234
+Relative absolute error                 18.3662 %
+Root relative squared error             47.0064 %
+Total Number of Instances              699     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.941     0.066      0.964     0.941     0.952      0.964    benign
+                 0.934     0.059      0.893     0.934     0.913      0.964    malignant
+Weighted Avg.    0.938     0.064      0.94      0.938     0.939      0.964
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 431  27 |   a = benign
+  16 225 |   b = malignant
+
+

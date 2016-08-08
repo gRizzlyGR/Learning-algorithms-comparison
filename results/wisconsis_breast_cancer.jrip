@@ -1,0 +1,60 @@
+=== Run information ===
+
+Scheme:weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     wisconsin-breast-cancer
+Instances:    699
+Attributes:   10
+              Clump_Thickness
+              Cell_Size_Uniformity
+              Cell_Shape_Uniformity
+              Marginal_Adhesion
+              Single_Epi_Cell_Size
+              Bare_Nuclei
+              Bland_Chromatin
+              Normal_Nucleoli
+              Mitoses
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(Cell_Size_Uniformity >= 3) and (Cell_Size_Uniformity >= 5) => Class=malignant (178.0/5.0)
+(Bare_Nuclei >= 4) and (Bare_Nuclei >= 7) => Class=malignant (48.0/4.0)
+(Normal_Nucleoli >= 3) and (Clump_Thickness >= 6) => Class=malignant (13.0/1.0)
+(Bare_Nuclei >= 3) and (Clump_Thickness >= 5) => Class=malignant (11.0/3.0)
+(Marginal_Adhesion >= 8) => Class=malignant (2.0/0.0)
+ => Class=benign (447.0/2.0)
+
+Number of Rules : 6
+
+
+Time taken to build model: 0.23 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         667               95.422  %
+Incorrectly Classified Instances        32                4.578  %
+Kappa statistic                          0.8999
+Mean absolute error                      0.0618
+Root mean squared error                  0.2022
+Relative absolute error                 13.676  %
+Root relative squared error             42.5462 %
+Total Number of Instances              699     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.952     0.041      0.978     0.952     0.965      0.973    benign
+                 0.959     0.048      0.913     0.959     0.935      0.973    malignant
+Weighted Avg.    0.954     0.044      0.955     0.954     0.954      0.973
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 436  22 |   a = benign
+  10 231 |   b = malignant
+

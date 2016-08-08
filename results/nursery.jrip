@@ -1,0 +1,191 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     nursery
+Instances:    12960
+Attributes:   9
+              parents
+              has_nurs
+              form
+              children
+              housing
+              finance
+              social
+              health
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(has_nurs = proper) and (children = 1) and (form = complete) and (housing = convenient) and (parents = usual) and (health = recommended) and (finance = convenient) => class=recommend (3.0/1.0)
+(health = recommended) and (housing = convenient) and (parents = usual) and (finance = convenient) and (social = nonprob) and (has_nurs = improper) => class=very_recom (16.0/0.0)
+(health = recommended) and (parents = usual) and (housing = convenient) and (social = slightly_prob) and (finance = convenient) and (has_nurs = improper) => class=very_recom (16.0/0.0)
+(health = recommended) and (housing = convenient) and (has_nurs = less_proper) and (finance = convenient) and (social = slightly_prob) and (parents = usual) => class=very_recom (16.0/0.0)
+(health = recommended) and (has_nurs = proper) and (housing = convenient) and (finance = convenient) and (parents = usual) and (social = slightly_prob) => class=very_recom (15.0/0.0)
+(health = recommended) and (has_nurs = proper) and (children = 1) and (social = nonprob) and (form = complete) and (parents = pretentious) => class=very_recom (6.0/0.0)
+(health = recommended) and (has_nurs = less_proper) and (housing = convenient) and (social = nonprob) and (parents = usual) and (finance = convenient) => class=very_recom (16.0/0.0)
+(health = recommended) and (has_nurs = less_proper) and (parents = pretentious) and (housing = convenient) and (finance = convenient) and (social = nonprob) => class=very_recom (16.0/0.0)
+(health = recommended) and (has_nurs = proper) and (housing = convenient) and (social = nonprob) and (finance = convenient) and (parents = usual) => class=very_recom (15.0/0.0)
+(health = recommended) and (has_nurs = proper) and (parents = pretentious) and (housing = convenient) and (finance = convenient) and (social = slightly_prob) => class=very_recom (16.0/0.0)
+(health = recommended) and (children = 1) and (parents = usual) and (social = slightly_prob) and (form = complete) => class=very_recom (27.0/12.0)
+(health = recommended) and (children = 1) and (has_nurs = less_proper) and (parents = pretentious) and (social = slightly_prob) and (form = complete) => class=very_recom (6.0/0.0)
+(health = recommended) and (children = 1) and (social = nonprob) and (parents = usual) and (form = complete) and (has_nurs = improper) => class=very_recom (5.0/0.0)
+(health = recommended) and (has_nurs = proper) and (social = nonprob) and (parents = pretentious) and (housing = convenient) and (finance = convenient) => class=very_recom (15.0/0.0)
+(health = recommended) and (children = 1) and (has_nurs = less_proper) and (housing = less_conv) and (form = completed) and (parents = pretentious) => class=very_recom (6.0/2.0)
+(health = recommended) and (has_nurs = less_proper) and (social = slightly_prob) and (parents = pretentious) and (housing = convenient) and (finance = convenient) => class=very_recom (15.0/0.0)
+(health = recommended) and (children = 1) and (housing = less_conv) and (parents = usual) and (social = nonprob) and (has_nurs = proper) => class=very_recom (8.0/2.0)
+(health = recommended) and (children = 1) and (has_nurs = proper) and (parents = pretentious) and (social = slightly_prob) => class=very_recom (20.0/9.0)
+(health = recommended) and (parents = usual) and (children = 1) and (has_nurs = less_proper) and (social = nonprob) and (form = complete) => class=very_recom (5.0/0.0)
+(health = recommended) and (children = 1) and (has_nurs = less_proper) and (parents = pretentious) and (social = nonprob) and (form = complete) => class=very_recom (5.0/0.0)
+(health = recommended) and (children = 1) and (has_nurs = proper) and (social = nonprob) and (parents = usual) and (form = complete) => class=very_recom (3.0/0.0)
+(health = recommended) and (children = 2) and (parents = usual) and (housing = less_conv) and (form = completed) and (has_nurs = improper) => class=very_recom (6.0/2.0)
+(health = recommended) and (children = 1) and (form = incomplete) and (housing = less_conv) and (parents = usual) and (social = slightly_prob) => class=very_recom (10.0/4.0)
+(health = priority) and (parents = great_pret) and (housing = critical) and (form = completed) => class=spec_prior (120.0/0.0)
+(health = priority) and (has_nurs = very_crit) => class=spec_prior (840.0/9.0)
+(health = priority) and (parents = great_pret) and (housing = critical) and (form = foster) => class=spec_prior (96.0/0.0)
+(health = priority) and (parents = great_pret) and (has_nurs = critical) => class=spec_prior (240.0/3.0)
+(health = priority) and (parents = great_pret) and (has_nurs = improper) => class=spec_prior (240.0/3.0)
+(has_nurs = very_crit) and (health = recommended) and (social = problematic) => class=spec_prior (288.0/3.0)
+(health = priority) and (has_nurs = critical) and (parents = pretentious) => class=spec_prior (288.0/3.0)
+(health = recommended) and (parents = great_pret) and (social = problematic) and (housing = critical) => class=spec_prior (128.0/4.0)
+(health = recommended) and (has_nurs = critical) and (social = problematic) and (parents = pretentious) => class=spec_prior (96.0/1.0)
+(health = recommended) and (has_nurs = very_crit) and (housing = critical) => class=spec_prior (190.0/10.0)
+(health = priority) and (parents = great_pret) and (children = 3) and (finance = inconv) => class=spec_prior (60.0/0.0)
+(health = recommended) and (parents = great_pret) and (social = problematic) and (has_nurs = critical) => class=spec_prior (64.0/1.0)
+(health = priority) and (parents = great_pret) and (children = more) and (finance = inconv) => class=spec_prior (60.0/0.0)
+(health = recommended) and (parents = great_pret) and (has_nurs = improper) and (social = problematic) => class=spec_prior (64.0/1.0)
+(health = recommended) and (has_nurs = critical) and (housing = critical) and (parents = great_pret) => class=spec_prior (64.0/4.0)
+(health = recommended) and (has_nurs = very_crit) and (finance = inconv) and (form = foster) => class=spec_prior (48.0/0.0)
+(health = recommended) and (has_nurs = critical) and (parents = pretentious) and (housing = critical) => class=spec_prior (64.0/4.0)
+(health = priority) and (has_nurs = critical) and (housing = critical) => class=spec_prior (96.0/6.0)
+(health = recommended) and (has_nurs = very_crit) and (housing = less_conv) and (children = 3) => class=spec_prior (42.0/0.0)
+(health = recommended) and (parents = great_pret) and (has_nurs = improper) and (housing = critical) => class=spec_prior (64.0/4.0)
+(health = priority) and (parents = great_pret) and (housing = critical) and (form = incomplete) => class=spec_prior (36.0/0.0)
+(health = priority) and (parents = great_pret) and (housing = less_conv) and (form = foster) => class=spec_prior (36.0/0.0)
+(health = recommended) and (has_nurs = critical) and (housing = less_conv) and (parents = pretentious) and (form = foster) => class=spec_prior (16.0/0.0)
+(health = recommended) and (has_nurs = critical) and (social = problematic) and (children = 3) and (finance = inconv) => class=spec_prior (12.0/0.0)
+(health = recommended) and (parents = great_pret) and (housing = less_conv) and (form = foster) and (has_nurs = improper) => class=spec_prior (16.0/0.0)
+(health = priority) and (has_nurs = improper) and (parents = pretentious) and (housing = critical) => class=spec_prior (96.0/6.0)
+(health = recommended) and (has_nurs = very_crit) and (children = more) and (housing = less_conv) => class=spec_prior (42.0/0.0)
+(health = recommended) and (has_nurs = critical) and (social = problematic) and (housing = critical) => class=spec_prior (28.0/2.0)
+(health = recommended) and (parents = great_pret) and (housing = less_conv) and (social = problematic) and (children = 3) => class=spec_prior (16.0/0.0)
+(health = priority) and (has_nurs = critical) and (housing = less_conv) and (children = more) => class=spec_prior (24.0/0.0)
+(health = recommended) and (parents = great_pret) and (finance = inconv) and (children = more) and (social = problematic) => class=spec_prior (16.0/0.0)
+(health = recommended) and (has_nurs = critical) and (housing = less_conv) and (children = more) and (parents = great_pret) => class=spec_prior (16.0/0.0)
+(health = recommended) and (has_nurs = critical) and (housing = less_conv) and (children = 3) and (parents = great_pret) => class=spec_prior (16.0/0.0)
+(health = priority) and (parents = great_pret) and (housing = less_conv) and (children = more) => class=spec_prior (18.0/0.0)
+(health = recommended) and (has_nurs = critical) and (parents = pretentious) and (finance = inconv) and (children = 3) => class=spec_prior (14.0/0.0)
+(health = priority) and (has_nurs = critical) and (children = 3) and (housing = less_conv) => class=spec_prior (24.0/0.0)
+(health = recommended) and (has_nurs = critical) and (finance = inconv) and (children = more) and (parents = pretentious) => class=spec_prior (14.0/0.0)
+(health = recommended) and (parents = great_pret) and (has_nurs = improper) and (finance = inconv) and (children = 3) => class=spec_prior (14.0/0.0)
+(health = recommended) and (has_nurs = very_crit) and (finance = inconv) and (children = 3) => class=spec_prior (18.0/0.0)
+(health = priority) and (parents = great_pret) and (housing = critical) and (children = 2) => class=spec_prior (12.0/0.0)
+(health = priority) and (has_nurs = improper) and (parents = pretentious) and (finance = inconv) and (children = more) => class=spec_prior (24.0/0.0)
+(health = recommended) and (has_nurs = critical) and (social = problematic) and (children = more) and (housing = less_conv) => class=spec_prior (8.0/0.0)
+(health = recommended) and (parents = great_pret) and (has_nurs = improper) and (children = more) and (finance = inconv) => class=spec_prior (14.0/0.0)
+(health = priority) and (has_nurs = critical) and (finance = inconv) and (form = foster) => class=spec_prior (18.0/0.0)
+(health = recommended) and (social = problematic) and (has_nurs = improper) and (parents = pretentious) and (housing = critical) => class=spec_prior (32.0/2.0)
+(health = recommended) and (parents = great_pret) and (has_nurs = critical) and (finance = inconv) and (form = foster) => class=spec_prior (12.0/0.0)
+(health = priority) and (parents = great_pret) and (children = 3) and (housing = less_conv) => class=spec_prior (18.0/0.0)
+(health = recommended) and (has_nurs = very_crit) and (finance = inconv) and (children = more) => class=spec_prior (18.0/0.0)
+(health = priority) and (has_nurs = improper) and (parents = pretentious) and (housing = less_conv) and (form = foster) => class=spec_prior (21.0/0.0)
+(health = recommended) and (housing = less_conv) and (finance = convenient) and (parents = great_pret) and (has_nurs = improper) and (children = more) => class=spec_prior (6.0/0.0)
+(health = recommended) and (social = problematic) and (parents = great_pret) and (finance = inconv) and (form = foster) => class=spec_prior (10.0/0.0)
+(health = recommended) and (has_nurs = critical) and (parents = great_pret) and (finance = inconv) and (children = 3) => class=spec_prior (6.0/0.0)
+(health = recommended) and (housing = less_conv) and (finance = convenient) and (has_nurs = very_crit) and (form = foster) => class=spec_prior (12.0/0.0)
+(health = priority) and (has_nurs = critical) and (finance = inconv) and (children = 3) => class=spec_prior (9.0/0.0)
+(health = recommended) and (social = problematic) and (has_nurs = improper) and (parents = pretentious) and (finance = inconv) and (form = foster) => class=spec_prior (8.0/0.0)
+(health = priority) and (parents = great_pret) and (housing = critical) and (children = 3) => class=spec_prior (6.0/0.0)
+(health = priority) and (parents = great_pret) and (children = 2) and (form = incomplete) and (housing = less_conv) => class=spec_prior (12.0/0.0)
+(health = priority) and (has_nurs = improper) and (parents = pretentious) and (children = 3) and (finance = inconv) => class=spec_prior (21.0/0.0)
+(health = recommended) and (housing = less_conv) and (form = incomplete) and (children = 2) and (has_nurs = very_crit) => class=spec_prior (12.0/0.0)
+(health = recommended) and (has_nurs = critical) and (social = problematic) and (finance = inconv) and (form = foster) => class=spec_prior (5.0/0.0)
+(health = recommended) and (social = problematic) and (parents = great_pret) and (children = 3) and (finance = inconv) => class=spec_prior (6.0/0.0)
+(health = recommended) and (has_nurs = critical) and (parents = pretentious) and (housing = less_conv) and (children = more) => class=spec_prior (6.0/0.0)
+(health = priority) and (has_nurs = critical) and (form = incomplete) and (children = 2) and (housing = less_conv) => class=spec_prior (6.0/0.0)
+(health = recommended) and (has_nurs = critical) and (parents = great_pret) and (finance = inconv) and (children = more) => class=spec_prior (6.0/0.0)
+(health = recommended) and (social = problematic) and (housing = less_conv) and (has_nurs = improper) and (parents = pretentious) and (children = more) => class=spec_prior (7.0/0.0)
+(health = priority) and (parents = great_pret) and (form = foster) and (finance = inconv) => class=spec_prior (12.0/0.0)
+(health = recommended) and (social = problematic) and (parents = great_pret) and (housing = less_conv) and (children = more) => class=spec_prior (8.0/0.0)
+(health = recommended) and (form = incomplete) and (children = 2) and (parents = great_pret) and (housing = less_conv) and (has_nurs = improper) => class=spec_prior (4.0/0.0)
+(health = priority) and (has_nurs = improper) and (parents = pretentious) and (housing = less_conv) and (children = 3) => class=spec_prior (9.0/0.0)
+(health = recommended) and (has_nurs = critical) and (social = problematic) and (housing = less_conv) and (children = 3) => class=spec_prior (4.0/0.0)
+(health = recommended) and (has_nurs = critical) and (form = incomplete) and (children = 2) and (parents = great_pret) => class=spec_prior (8.0/2.0)
+(health = recommended) and (social = problematic) and (has_nurs = improper) and (parents = pretentious) and (children = 3) and (housing = less_conv) => class=spec_prior (7.0/0.0)
+(has_nurs = critical) and (health = recommended) and (social = problematic) and (form = incomplete) and (children = 2) => class=spec_prior (4.0/1.0)
+(health = recommended) and (has_nurs = critical) and (parents = pretentious) and (finance = inconv) and (form = foster) => class=spec_prior (4.0/0.0)
+(health = priority) and (has_nurs = critical) and (finance = inconv) and (children = more) => class=spec_prior (9.0/0.0)
+(has_nurs = improper) and (parents = pretentious) and (health = priority) and (children = more) and (housing = less_conv) => class=spec_prior (9.0/0.0)
+(health = recommended) and (has_nurs = improper) and (parents = great_pret) and (children = 3) and (housing = less_conv) => class=spec_prior (6.0/0.0)
+(children = 2) and (form = incomplete) and (health = priority) and (has_nurs = improper) and (parents = pretentious) => class=spec_prior (12.0/3.0)
+(health = recommended) and (has_nurs = critical) and (housing = less_conv) and (form = foster) and (parents = great_pret) => class=spec_prior (4.0/0.0)
+(health = recommended) and (children = 2) and (form = incomplete) and (has_nurs = very_crit) and (finance = inconv) => class=spec_prior (6.0/0.0)
+(health = priority) and (has_nurs = critical) and (form = foster) and (housing = less_conv) => class=spec_prior (6.0/0.0)
+(health = recommended) and (social = problematic) and (parents = great_pret) and (housing = less_conv) and (form = foster) => class=spec_prior (4.0/0.0)
+(children = 2) and (form = incomplete) and (finance = inconv) and (housing = convenient) and (parents = great_pret) and (health = priority) => class=spec_prior (6.0/0.0)
+(health = recommended) and (social = problematic) and (form = incomplete) and (children = 2) and (housing = less_conv) and (parents = great_pret) => class=spec_prior (4.0/0.0)
+(health = recommended) and (has_nurs = critical) and (parents = pretentious) and (housing = less_conv) and (children = 3) => class=spec_prior (6.0/0.0)
+(housing = convenient) and (finance = inconv) and (has_nurs = improper) and (parents = pretentious) and (social = problematic) and (health = recommended) => class=spec_prior (12.0/5.0)
+(health = recommended) and (has_nurs = critical) and (social = problematic) and (children = more) and (finance = inconv) => class=spec_prior (3.0/0.0)
+(children = 2) and (form = incomplete) and (health = recommended) and (has_nurs = critical) and (parents = pretentious) => class=spec_prior (8.0/2.0)
+(parents = great_pret) and (health = priority) and (housing = critical) and (children = more) => class=spec_prior (6.0/0.0)
+(health = recommended) and (has_nurs = improper) and (parents = great_pret) and (finance = inconv) and (form = foster) => class=spec_prior (4.0/0.0)
+(form = foster) and (has_nurs = improper) and (parents = pretentious) and (health = priority) and (finance = inconv) => class=spec_prior (6.0/0.0)
+(children = 2) and (health = recommended) and (social = problematic) and (form = incomplete) and (parents = great_pret) and (finance = inconv) => class=spec_prior (2.0/0.0)
+(children = 2) and (form = incomplete) and (has_nurs = critical) and (health = priority) and (finance = inconv) => class=spec_prior (3.0/0.0)
+(health = recommended) and (has_nurs = improper) and (form = foster) and (social = problematic) and (parents = pretentious) and (housing = less_conv) => class=spec_prior (2.0/0.0)
+(health = recommended) and (has_nurs = critical) and (social = problematic) and (form = foster) and (housing = less_conv) => class=spec_prior (2.0/0.0)
+(has_nurs = improper) and (parents = great_pret) and (health = recommended) and (form = incomplete) and (children = 2) and (finance = inconv) => class=spec_prior (2.0/0.0)
+(health = recommended) and (housing = critical) => class=priority (708.0/0.0)
+(health = priority) => class=priority (1821.0/0.0)
+(health = recommended) and (parents = great_pret) => class=priority (502.0/0.0)
+(health = recommended) and (social = problematic) => class=priority (373.0/2.0)
+(health = recommended) and (children = more) => class=priority (208.0/0.0)
+(health = recommended) and (children = 3) => class=priority (208.0/0.0)
+(health = recommended) and (has_nurs = very_crit) => class=priority (86.0/0.0)
+(health = recommended) and (form = foster) => class=priority (91.0/0.0)
+(health = recommended) and (has_nurs = critical) => class=priority (82.0/0.0)
+(health = recommended) and (has_nurs = improper) and (parents = pretentious) => class=priority (48.0/0.0)
+(health = recommended) and (form = incomplete) and (children = 2) => class=priority (30.0/0.0)
+ => class=not_recom (4416.0/96.0)
+
+Number of Rules : 131
+
+
+Time taken to build model: 100.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12550               96.8364 %
+Incorrectly Classified Instances       410                3.1636 %
+Kappa statistic                          0.9536
+Mean absolute error                      0.0174
+Root mean squared error                  0.1033
+Relative absolute error                  6.3901 %
+Root relative squared error             27.9594 %
+Total Number of Instances            12960     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,013    0,975      1,000    0,988      0,981    0,994     0,977     not_recom
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,000     recommend
+                 0,637    0,008    0,679      0,637    0,657      0,649    0,928     0,597     very_recom
+                 0,941    0,005    0,988      0,941    0,964      0,948    0,994     0,990     priority
+                 0,991    0,017    0,963      0,991    0,977      0,966    0,996     0,986     spec_prior
+Weighted Avg.    0,968    0,012    0,968      0,968    0,968      0,957    0,993     0,974     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 4320    0    0    0    0 |    a = not_recom
+    0    0    2    0    0 |    b = recommend
+  109    0  209   10    0 |    c = very_recom
+    0    0   97 4014  155 |    d = priority
+    0    0    0   37 4007 |    e = spec_prior
+
+

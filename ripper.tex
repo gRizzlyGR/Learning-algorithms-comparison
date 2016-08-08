@@ -1,0 +1,115 @@
+\chapter{RIPPER}
+\label{ch:jrip}
+
+Come secondo algoritmo si è scelto di usare \textbf{RIPPER}\cite{Cohen95fasteffective}, in particolare nella versione implementata da Weka, \textbf{JRip}\cite{Witten:2011:DMP:1972514}.
+
+RIPPER (\textbf{R}epeated \textbf{I}ncremental \textbf{P}runing to \textbf{P}roduce \textbf{E}rror \textbf{R}eduction) è un algoritmo di induzione di regole proposto da \verb|William W. Cohen| nel 1995. Esso si è dimostrato competitivo con C4.5Rules rispetto ai tassi di errore, scala in maniera lineare con il numero di esempi di training e può elaborare in maniera efficiente dataset rumorosi che contengono centinaia di migliaia di esempi. RIPPER si basa su IREP (\textbf{I}ncremental \textbf{R}educed \textbf{E}rror \textbf{P}runing))\cite{Furnkranz94incrementalreduced}, di cui si discuterà nei prossimi paragrafi.
+
+Molte delle tecniche usate nei moderni sistemi di apprendimento di regole  sono stati adattate dall'apprendimento degli alberi di decisione. La maggior parte dei sistemi di apprendimento di alberi di decisione usa una strategia di appredimento \textit{overfit-and-simplify} (sovradatta-e-semplifica) per gestire dati rumorosi: viene generata un'ipotesi prima facendo crescere un albero complesso che "overfitta" i dati, e poi si semplifica o pota tale albero (un'operazione di \textit{pruning}). Una tecnica di pruning efficace è \textit{reduced error pruning} (\textit{REP}). Essa può essere facilmente adattata ai sistemi di apprendimento di regole\cite{Pagallo1990}\cite{Brunk91aninvestigation}.
+
+In REP per le regole, il training set viene diviso in \textit{growing set} e \textit{pruning set}. All'inizio, viene creato un \textit{rule set} di partenza che overfitta il growing set, usando qualche metodo euristico. Questo rule set spropositato viene poi semplificato ripetutamente applicando qualche operatore di pruning. Ad ogni fase di semplificatione, l'operatore di pruning scelto è quello che produce la più grande riduzione di errore sul pruning set. La semplificazione finisce quando il tasso di errore non si riduce ulteriormente applicando gli operatori di pruning.
+
+REP per le regole di solito migliora davvero la perfomance di generalizzazione sui dati rumorosi\cite{Pagallo1990}\cite{Brunk91aninvestigation}\cite{Weiss91reducedcomplexity}\cite{Furnkranz94incrementalreduced}; tuttavia è computazionalmente costoso per grandi dataset\cite{Cohen93efficientpruning}.
+
+In risposta all'inefficienza di REP, Fürnkranz e Widmer [1994] proposero un algoritmo di apprendimento chiamato \textit{incremental reduced error pruning} (\textit{IREP})\cite{Furnkranz94incrementalreduced}.
+
+\subsection*{Incremental Reduced Error Pruning}
+L'idea di usare un pruning set separato per la potatura è REP. La variante che pota una regola subito dopo averla "fatta crescere" si chiama \textit{incremental reduced error pruning} (IREP)\cite{2Witten:2011:DMP:1972514}. Quest'ultima integra saldamente REP con un algoritmo di apprendimento di regole \textit{separate-and-conquer}. L'algoritmo \ref{alg:irep} ne presenta una versione a due classi. Come ogni algoritmo separate-and-conquer standard, IREP costruisce un ruleset in maniera \textit{greedy}, una regola alla volta. Dopo averne trovata una, tutti gli esempi coperti da quella regola (sia positivi che negativi) sono cancellati. Questo processo si ripete finché non ci sono più esempi positivi, o finché la regola trovata da IREP non presenta un grande tasso di errore, cosa inaccettabile.
+
+Per costruire una regola, IREP usa la seguente strategia. Prima, gli esempi non coperti sono partizionati a caso in due sottoinsiemi, un growing e un pruning set. Nell'implementazione di Cohen, il growing set contiene 2/3 degli esempi.
+
+Poi, una regola viene "fatta crescere". L'implementazione di Cohen di $GrowRule$ è una versione proposizionale di FOIL (First Order Inductive Learner), dove i letterali non si servono di predicati ma di uguaglianze (per valori discreti) e confronti numerici (per valori continui)\cite{Russell:2003:AIM:773294}. Esso inizia con una congiunzione vuota di condizioni (la regola vuota) e considera di aggiungere a questa qualsiasi condizione nella forma $A_d=v$, $A_c \leq \theta$ oppure $A_c \geq \theta$ dove $A_d$ è un attributo discreto e $v$ è un valore che può assumere, mentre $A_c$ è un attributo continuo e $\theta$ è un valore soglia. $GrowRule$ aggiunge ripetutamente la condizione che massimizza un'euristica di \emph{information gain}, nello specifico quella di FOIL, finché la regola non copre più esempi negativi nel growing set.
+
+Siano $R_0$ e $R_1$ due regole, la seconda ottenuta dall'aggiunta di una condizione nel corpo della prima. L'information gain viene così calcolato:
+
+$$
+Gain_JRip(R_0,R_1) = t \times \left(\log{\dfrac{p_1}{p_1 + n_1}} - \log{\dfrac{p_0}{p_0 + n_0}}\right)
+$$
+
+dove $t$ riguarda gli esempi positivi coperti da $R_0$ che soddisfano anche $R_1$ dopo aver aggiunto una condizione, $p_0$ (rispettivamente $p_1$) sono gli esempi positivi coperti da $R_0$ (rispettivamente $R_1$) e  $n_0$ (rispettivamente $n_1$) sono gli esempi negativi coperti da $R_0$ (rispettivamente $R_1$).
+
+L'idea alla base è che l'informazione totale che si guadagna è dato dal numero di tuple che soddisfano la nuova condizione moltiplicato l'informazione guadagnata in merito a ciascuna\cite{Quinlan1990}.
+
+Dopo aver espanso una regola, essa viene immediatamente potata. Per prunarla, l'implementazione di Cohen cancella qualsiasi sequenza finale di condizioni dalla regola e sceglie l'eliminazione che massimizza la funzione
+\begin{equation}
+	\label{eq:rulval}
+	v(Rule, PrunePos, PruneNeg) \equiv \frac{p + (N - n)}{P + N}
+\end{equation}
+
+dove $P$ (rispettivamente $N$) è il numero totale di esempi in $PrunePos$ \linebreak ($PruneNeg$) e $p$ ($n$) è il numero di esempi in $PrunePos$ ($PruneNeg$) coperti da $Rule$. Questo processo è ripetuto finché nessun altra cancellazione migliora il valore di $v$.
+
+L'algoritmo IREP descritto sopra è per i problemi di apprendimento a due classi. L'implementazione di Cohen gestisce classi multiple, come spiegato di seguito:
+\begin{enumerate}
+	\item Le classi vengono ordinate secondo la prevalenza, cioè l'ordine è $C_1,...,C_k$ dove $C_1$ è la classe di minoranza e $C_k$ è la classe di maggioranza.
+	\item Viene trovata una regola che separi $C_1$ dal resto delle classi; questo viene fatto con una singola chiamata ad IREP dove $PosData$ contiene gli esempi di classe $C_1$ e $NegData$ contiene gli esempi di classi $C_2,C_3,...,C_k$.
+	\item Tutte le istanze coperte dal ruleset appena addestrato sono rimosse dal dataset e IREP si appresta a separare $C_2$ dalle classi $C_3,...,C_k$.
+	\item Si ripete finché rimane la sola classe $C_k$. Quest'ultima verrà usata come classe di default.
+\end{enumerate}
+
+L'implementazione di Cohen differisce da quella di Fürnkranz e Widmer sotto molti aspetti. Quando le regole vengono potate, la nuova implementazione permette di cancellare qualsiasi sequenza finale di condizioni, mentre l'implementazione di Fürnkranz e Widmer permette solo la cancellazione di una singola condizione finale. L'algoritmo rivisitato permette anche di fermare l'aggiunta di regole al ruleset quando la regola appresa ha un tasso di errore superiore al 50\%, mentre quello di Fürnkranz e Widmer la ferma quando l'accuratezza della regola è minore dell'accuratezza della regola vuota.
+
+\begin{algorithm}[!htbp]
+	\caption{IREP($Pos, Neg$)}
+	\label{alg:irep}
+	\begin{algorithmic}[1]
+		\State $Ruleset \gets \emptyset$
+		
+		\While{Pos $\neq \emptyset$}
+		\State dividi $(Pos, Neg)$ in $(GrowPos, GrowNeg)$ e $(PrunePos, PrunNeg)$
+		\State $Rule \gets GrowRule(GrowPos, GrowNeg)$
+		\State $Rule \gets PruneRule(Rule, PrunePos, PruneNeg)$
+		
+		\If{il tasso di errore su $(PrunePos, PrunNeg) > 50\%$}
+		\State \Return $Ruleset$
+		\Else
+		%\State $Ruleset \gets Ruleset \cup \{Rule\}$
+		\State aggiungi $Rule$ a $Ruleset$
+		\State rimuovi gli esempi coperti da $Rule$ da $(Pos, Neg)$
+		\EndIf
+		\EndWhile
+		
+		\State \Return $Ruleset$
+	\end{algorithmic}
+\end{algorithm}
+
+\pagebreak
+
+\subsection*{Miglioramenti ad IREP}
+Sono state implementate tre modifiche ad IREP: una metrica alternativa per determinare il valore delle regole nella fase di potatura; una nuova euristica per dedidere quando fermare l'aggiunta di regole al ruleset; un successivo passaggio di "ottimizzazione" del ruleset per tentare di avvicinarsi di più al REP convenzionale (cioè, non incrementale).
+
+\subsubsection*{Metrica per il valore delle regole}
+Il fallimento occasionale di IREP a convergere al crescere del numero degli esempi può essere facilmente fatto risalire alla metrica usata per guidare la potatura (ossia la \eqref{eq:rulval}). Le scelte intraprese nella definizione di tale metrica non sono intuitive; per esempio (assumendo che $P$ e $N$ siano fissati) la metrica preferisce una regola $R_1$ che copre $p_1 = 2000$ esempi positivi e $n_1 = 1000$ esempi negativi rispetto ad una regola $R_2$ che copre $p_2 = 1000$ esempi positivi e $n_2 = 1$ esempio negativo; si noti comunque che $R_2$ è altamente predittiva, al contrario di $R_1$. Quindi si è deciso di sostituire la metrica di IREP con $$v^*(Rule, PrunePos, PruneNeg) \equiv \frac{p - n}{p + n}$$ che sembra avere un comportamento più intuitivo e soddisfacente.
+
+\subsubsection*{Condizione di stop}
+L'implementazione di IREP di Cohen si ferma in maniera greedy aggiungendo regole al ruleset quando l'ultima regola costruita ha un tasso d'errore maggiore del 50\% sui dati di pruning. Questa euristica, spesso, si ferma troppo presto con campioni di dimensioni moderate; questo è vero soprattutto quando si apprende un concetto con regole a bassa copertura (pochi esempi coperti).
+
+La soluzione a questo problema è la seguente. Dopo l'aggiunta di ogni regola, viene calcolata la \textit{description-length} totale del ruleset e degli esempi. La nuova versione di IREP ferma l'aggiunta di regole quando questa description-length è maggiore di $d$ bit rispetto alla più piccola description-length ottenuta sinora, o quando non ci sono più esempi positivi. Nell'implementazione si è usato $d = 64$. Il ruleset viene poi semplificato esaminando ogni regola a turno (cominciando dall'ultima) e cancellando regole così da ridurre la description-length totale.
+
+Il principio \emph{MDL} (Minimum Description Length) può essere meglio espresso immaginando un modello di comunicazione in cui un mittente trasmette ad un ricevente una descrizione che consiste in una teoria $T$ e i dati $D$ da cui essa è derivata\cite{Quinlan:1989:IDT:70758.70761}.
+
+Il metodo usato per la codifica è lo stesso usato in \emph{C4.5rules}\cite{Quinlan95mdland}. Esso parte da un \emph{bias} in cui il numero di falsi positivi e falsi negativi sia lo stesso e si procede come segue: i messaggi da inviare si presentano con probabilità $p_j$, e servono $-\log(p_j)$ bit (in base 2) per costrurli: più un messaggio è frequente, meno bit saranno necessari per rappresentarlo. Si inviano i dati codificati, poi anziché inviare i messaggi di errore per tutti i dati, il mittente prima trasmette gli errori $e$ nei $C$ casi coperti dalla teoria e poi negli $U$ casi non coperti. Sotto l'assunzione che i falsi positivi $fp$ e i falsi negativi $fn$ siano bilanciati, la probabilità di errore nei casi coperti è $e/2C$ e questa probabilità è usata per codificare i messaggi di errore per i casi coperti. Una volta che i falsi positivi sono stati identificati, il destinatario può calcolare il vero numero dei falsi negativi come $e-fp$, quindi la probabilità di errore oer i casi non coperti è $fn/U$. Il costo totale quindi diventa:
+
+\begin{align*}
+	&\log(|D| + 1) \\
+	&+ fp \times (-\log(\dfrac{e}{2C})) \\
+	&+ (C - fp) \times (-\log(1 - \-\dfrac{e}{2C})) \\
+	&+ fn \times (-\log(\dfrac{fn}{U})) \\
+	&+ (U - fn) \times (-\log(1 - \dfrac{fn}{U})) \\	
+\end{align*}
+
+
+\subsubsection*{Ottimizzazione delle regole}
+L'approccio ripetuto \textit{grow-and-simplify} usato in IREP può produrre risultati abbastanzi differenti dal REP convenzionale (non incrementale). Un modo per migliorarlo è elaborare a posteriori le regole prodotte da IREP così da avvicinarsi di più all'effetto del REP convenzionale. Per esempio, si potrebbe ri-potare ogni regola al fine di minimizzare l'errore del ruleset completo.
+
+Il metodo sviluppato per ottimizzare un ruleset $R_1,R_2,...,R_k$ consiste del costruire due regole alternative per ogni $R_i$. La \textit{sostituta} di $R_i$ viene generata espandendo e poi potando $R_i$. La \textit{revisione} di $R_i$ viene generata in maniera analoga, tranne per il fatto che la revisione è espansa in modo greedy aggiungendo condizioni a $R_i$, piuttosto che alla regola vuota. Infine si sceglie tra le tre regole quale includere nella teoria. Questa decisione viene presa in base all'euristica MDL. L'implementazione di questo metodo in IREP avviene in questo modo:
+\begin{enumerate}
+	\item Viene usato IREP per ottenere un ruleset iniziale.
+	\item Esso viene ottimizzato, come descritto sopra.
+	\item Vengono aggiunte le regole in modo tale da coprire gli esempi positivi rimanenti.
+\end{enumerate}
+
+L'ottimizzazione può essere ripetuta più volte elaborando il ruleset ottenuto dalla passata precedente dell'algoritmo.
+
+IREP, con l'aggiunta del passo di post-ottimizzazione, forma un nuovo algoritmo che è stato chiamato \textbf{RIPPER} (\textbf{R}epeated \textbf{I}ncremental \textbf{P}runing to \textbf{P}roduce \textbf{E}rror \textbf{R}eduction).
+
+L'implementazione in Weka di RIPPER si chiama JRip.
