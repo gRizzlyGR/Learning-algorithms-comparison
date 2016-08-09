@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -38,6 +38,15 @@ J.~Quinlan.
 \newblock \emph{Machine Learning}, 5\penalty0 (3):\penalty0 239--266, 1990.
 \newblock ISSN 1573-0565.
 
+\bibitem[Quinlan(1987)]{Quinlan:1987:SDT:50007.50008}
+J.~R. Quinlan.
+\newblock Simplifying decision trees.
+\newblock \emph{Int. J. Man-Mach. Stud.}, 27\penalty0 (3):\penalty0 221--234,
+  Sept. 1987.
+\newblock ISSN 0020-7373.
+\newblock \doi{10.1016/S0020-7373(87)80053-6}.
+\newblock URL \url{http://dx.doi.org/10.1016/S0020-7373(87)80053-6}.
+
 \bibitem[Quinlan(1993)]{Quinlan:1993:CPM:152181}
 J.~R. Quinlan.
 \newblock \emph{C4.5: Programs for Machine Learning}.
@@ -62,6 +71,12 @@ S.~J. Russell and P.~Norvig.
 \newblock \emph{Artificial Intelligence: A Modern Approach}.
 \newblock Pearson Education, 2 edition, 2003.
 \newblock ISBN 0137903952.
+
+\bibitem[Shannon(1948)]{Shannon:1948}
+C.~E. Shannon.
+\newblock {A} {M}athematical {T}heory of {C}ommunication.
+\newblock \emph{The Bell System Technical Journal}, 27\penalty0 (3):\penalty0
+  379--423, 1948.
 
 \bibitem[Weiss and Indurkhya(1991)]{Weiss91reducedcomplexity}
 S.~M. Weiss and N.~Indurkhya.

@@ -5,7 +5,7 @@ Come secondo algoritmo si è scelto di usare \textbf{RIPPER}\cite{Cohen95fasteff
 
 RIPPER (\textbf{R}epeated \textbf{I}ncremental \textbf{P}runing to \textbf{P}roduce \textbf{E}rror \textbf{R}eduction) è un algoritmo di induzione di regole proposto da \verb|William W. Cohen| nel 1995. Esso si è dimostrato competitivo con C4.5Rules rispetto ai tassi di errore, scala in maniera lineare con il numero di esempi di training e può elaborare in maniera efficiente dataset rumorosi che contengono centinaia di migliaia di esempi. RIPPER si basa su IREP (\textbf{I}ncremental \textbf{R}educed \textbf{E}rror \textbf{P}runing))\cite{Furnkranz94incrementalreduced}, di cui si discuterà nei prossimi paragrafi.
 
-Molte delle tecniche usate nei moderni sistemi di apprendimento di regole  sono stati adattate dall'apprendimento degli alberi di decisione. La maggior parte dei sistemi di apprendimento di alberi di decisione usa una strategia di appredimento \textit{overfit-and-simplify} (sovradatta-e-semplifica) per gestire dati rumorosi: viene generata un'ipotesi prima facendo crescere un albero complesso che "overfitta" i dati, e poi si semplifica o pota tale albero (un'operazione di \textit{pruning}). Una tecnica di pruning efficace è \textit{reduced error pruning} (\textit{REP}). Essa può essere facilmente adattata ai sistemi di apprendimento di regole\cite{Pagallo1990}\cite{Brunk91aninvestigation}.
+Molte delle tecniche usate nei moderni sistemi di apprendimento di regole  sono stati adattate dall'apprendimento degli alberi di decisione. La maggior parte dei sistemi di apprendimento di alberi di decisione usa una strategia di appredimento \textit{overfit-and-simplify} (sovradatta-e-semplifica) per gestire dati rumorosi: viene generata un'ipotesi prima facendo crescere un albero complesso che "overfitta" i dati, e poi si semplifica o pota tale albero (un'operazione di \textit{pruning}). Una tecnica di pruning efficace è \textit{reduced error pruning} (\textit{REP}), discussa in \ref{ss:rep}. Essa può essere facilmente adattata ai sistemi di apprendimento di regole\cite{Pagallo1990}\cite{Brunk91aninvestigation}.
 
 In REP per le regole, il training set viene diviso in \textit{growing set} e \textit{pruning set}. All'inizio, viene creato un \textit{rule set} di partenza che overfitta il growing set, usando qualche metodo euristico. Questo rule set spropositato viene poi semplificato ripetutamente applicando qualche operatore di pruning. Ad ogni fase di semplificatione, l'operatore di pruning scelto è quello che produce la più grande riduzione di errore sul pruning set. La semplificazione finisce quando il tasso di errore non si riduce ulteriormente applicando gli operatori di pruning.
 
@@ -13,7 +13,7 @@ REP per le regole di solito migliora davvero la perfomance di generalizzazione s
 
 In risposta all'inefficienza di REP, Fürnkranz e Widmer [1994] proposero un algoritmo di apprendimento chiamato \textit{incremental reduced error pruning} (\textit{IREP})\cite{Furnkranz94incrementalreduced}.
 
-\subsection*{Incremental Reduced Error Pruning}
+\subsection{Incremental Reduced Error Pruning}
 L'idea di usare un pruning set separato per la potatura è REP. La variante che pota una regola subito dopo averla "fatta crescere" si chiama \textit{incremental reduced error pruning} (IREP)\cite{2Witten:2011:DMP:1972514}. Quest'ultima integra saldamente REP con un algoritmo di apprendimento di regole \textit{separate-and-conquer}. L'algoritmo \ref{alg:irep} ne presenta una versione a due classi. Come ogni algoritmo separate-and-conquer standard, IREP costruisce un ruleset in maniera \textit{greedy}, una regola alla volta. Dopo averne trovata una, tutti gli esempi coperti da quella regola (sia positivi che negativi) sono cancellati. Questo processo si ripete finché non ci sono più esempi positivi, o finché la regola trovata da IREP non presenta un grande tasso di errore, cosa inaccettabile.
 
 Per costruire una regola, IREP usa la seguente strategia. Prima, gli esempi non coperti sono partizionati a caso in due sottoinsiemi, un growing e un pruning set. Nell'implementazione di Cohen, il growing set contiene 2/3 degli esempi.
@@ -74,7 +74,7 @@ L'implementazione di Cohen differisce da quella di Fürnkranz e Widmer sotto mol
 
 \pagebreak
 
-\subsection*{Miglioramenti ad IREP}
+\subsection{Miglioramenti ad IREP}
 Sono state implementate tre modifiche ad IREP: una metrica alternativa per determinare il valore delle regole nella fase di potatura; una nuova euristica per dedidere quando fermare l'aggiunta di regole al ruleset; un successivo passaggio di "ottimizzazione" del ruleset per tentare di avvicinarsi di più al REP convenzionale (cioè, non incrementale).
 
 \subsubsection*{Metrica per il valore delle regole}

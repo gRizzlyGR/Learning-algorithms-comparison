@@ -1,6 +1,9 @@
 \select@language {italian}
 \select@language {italian}
 \contentsline {chapter}{\numberline {1}Introduzione}{2}{chapter.1}
-\contentsline {chapter}{\numberline {2}RIPPER}{3}{chapter.2}
-\contentsline {chapter}{\numberline {3}REPTree}{9}{chapter.3}
-\contentsline {subsection}{\numberline {3.0.1}Information Gain}{9}{subsection.3.0.1}
+\contentsline {chapter}{\numberline {2}REPTree}{3}{chapter.2}
+\contentsline {subsection}{\numberline {2.0.1}Information Gain}{3}{subsection.2.0.1}
+\contentsline {subsection}{\numberline {2.0.2}Reduced Error Pruning}{4}{subsection.2.0.2}
+\contentsline {chapter}{\numberline {3}RIPPER}{6}{chapter.3}
+\contentsline {subsection}{\numberline {3.0.1}Incremental Reduced Error Pruning}{7}{subsection.3.0.1}
+\contentsline {subsection}{\numberline {3.0.2}Miglioramenti ad IREP}{9}{subsection.3.0.2}
