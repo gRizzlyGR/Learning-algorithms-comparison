@@ -31,8 +31,9 @@
 \usepackage{tabularx}
 \usepackage{tabu}
 \usepackage{ltxtable}
-\usepackage{tikz}
-\usetikzlibrary{decorations,arrows,shapes}
+\usepackage{pdfpages}
+%\usepackage{tikz}
+%\usetikzlibrary{decorations,arrows,shapes}
 %\usepackage{booktabs}
 %\usepackage[active,float]{preview}
 %\PreviewEnvironment{tikzpicture}
@@ -48,36 +49,27 @@
 	
 	\Preambolo{\renewcommand{\fronttitlefont}{%
 	\fontsize{20}{24}\scshape}}
-	
-%	\Preambolo{\renewcommand{\frontpretitlefont}{%
-%	\fontsize{14}{16}\scshape}}
-	
+		
 	\Universita{Bari}
 	\Logo[1.5cm]{./images/logo}
-	%\Facolta{Scienze Matematiche, Fisiche e Naturali}
 	\Dipartimento{Informatica}
-	%\Divisione{\mbox{}}
 	\Corso[Laurea Magistrale]{Informatica}
-%	\Titoletto{Progetto di Data Mining}
+	\Titoletto{Progetto di Intelligenza Artificiale}
 	\Titolo{Confronto tra due algoritmi di apprendimento}
 	\NCandidato{Esaminando}
 	\Candidato[591275]{Giuseppe Rizzi}
 	\NRelatore{Docente}{Docenti}
-	\Relatore{Prof.~Donato Malerba}
-%	\Annoaccademico{2013-2014}
+	\Relatore{Prof.~Floriana Esposito}
+	\Relatore{Prof.~Nicola Di Mauro}
 	\Piede{}
 	\end{frontespizio}
-	
-	%Attributo target
-	\newcommand{\tb}{\texttt{TARGET\_B}}
-    
+	    
     %Ridefinizione di "for all" in "for each"
     \renewcommand{\algorithmicforall}{\textbf{for each}}
     
     %Cambio l'intestazione "Algorithm" in "Algoritmo"
 	\floatname{algorithm}{Algoritmo}
 
-	
 	%Numerazione delle pagine corretta
 	\pagestyle{plain}
 	
@@ -91,10 +83,14 @@
 	\newpage
 	\input{introduction}
 	\clearpage
+	\input{data_description}
+	\clearpage
 	\input{reptree}
 	\clearpage
     \input{ripper}
     \clearpage
+    \input{results}
+    \clearpage    
     \bibliographystyle{abbrvnat}
     	\bibliography{mybib}
     

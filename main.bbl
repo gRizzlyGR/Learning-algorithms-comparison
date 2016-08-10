@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -23,6 +23,14 @@ W.~W. Cohen.
 \newblock In \emph{In Proceedings of the Twelfth International Conference on
   Machine Learning}, pages 115--123. Morgan Kaufmann, 1995.
 
+\bibitem[Esposito et~al.(1997)Esposito, Malerba, and
+  Semeraro]{Esposito:1997:CAM:252862.252878}
+F.~Esposito, D.~Malerba, and G.~Semeraro.
+\newblock A comparative analysis of methods for pruning decision trees.
+\newblock \emph{IEEE Trans. Pattern Anal. Mach. Intell.}, 19\penalty0
+  (5):\penalty0 476--491, May 1997.
+\newblock ISSN 0162-8828.
+
 \bibitem[Fürnkranz and Widmer(1994)]{Furnkranz94incrementalreduced}
 J.~Fürnkranz and G.~Widmer.
 \newblock Incremental reduced error pruning, 1994.
@@ -44,8 +52,6 @@ J.~R. Quinlan.
 \newblock \emph{Int. J. Man-Mach. Stud.}, 27\penalty0 (3):\penalty0 221--234,
   Sept. 1987.
 \newblock ISSN 0020-7373.
-\newblock \doi{10.1016/S0020-7373(87)80053-6}.
-\newblock URL \url{http://dx.doi.org/10.1016/S0020-7373(87)80053-6}.
 
 \bibitem[Quinlan(1993)]{Quinlan:1993:CPM:152181}
 J.~R. Quinlan.

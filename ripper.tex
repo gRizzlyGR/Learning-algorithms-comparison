@@ -13,7 +13,7 @@ REP per le regole di solito migliora davvero la perfomance di generalizzazione s
 
 In risposta all'inefficienza di REP, Fürnkranz e Widmer [1994] proposero un algoritmo di apprendimento chiamato \textit{incremental reduced error pruning} (\textit{IREP})\cite{Furnkranz94incrementalreduced}.
 
-\subsection{Incremental Reduced Error Pruning}
+\section{Incremental Reduced Error Pruning}
 L'idea di usare un pruning set separato per la potatura è REP. La variante che pota una regola subito dopo averla "fatta crescere" si chiama \textit{incremental reduced error pruning} (IREP)\cite{2Witten:2011:DMP:1972514}. Quest'ultima integra saldamente REP con un algoritmo di apprendimento di regole \textit{separate-and-conquer}. L'algoritmo \ref{alg:irep} ne presenta una versione a due classi. Come ogni algoritmo separate-and-conquer standard, IREP costruisce un ruleset in maniera \textit{greedy}, una regola alla volta. Dopo averne trovata una, tutti gli esempi coperti da quella regola (sia positivi che negativi) sono cancellati. Questo processo si ripete finché non ci sono più esempi positivi, o finché la regola trovata da IREP non presenta un grande tasso di errore, cosa inaccettabile.
 
 Per costruire una regola, IREP usa la seguente strategia. Prima, gli esempi non coperti sono partizionati a caso in due sottoinsiemi, un growing e un pruning set. Nell'implementazione di Cohen, il growing set contiene 2/3 degli esempi.
@@ -23,7 +23,7 @@ Poi, una regola viene "fatta crescere". L'implementazione di Cohen di $GrowRule$
 Siano $R_0$ e $R_1$ due regole, la seconda ottenuta dall'aggiunta di una condizione nel corpo della prima. L'information gain viene così calcolato:
 
 $$
-Gain_JRip(R_0,R_1) = t \times \left(\log{\dfrac{p_1}{p_1 + n_1}} - \log{\dfrac{p_0}{p_0 + n_0}}\right)
+Gain_{IREP}(R_0,R_1) = t \cdot \left(\log{\dfrac{p_1}{p_1 + n_1}} - \log{\dfrac{p_0}{p_0 + n_0}}\right)
 $$
 
 dove $t$ riguarda gli esempi positivi coperti da $R_0$ che soddisfano anche $R_1$ dopo aver aggiunto una condizione, $p_0$ (rispettivamente $p_1$) sono gli esempi positivi coperti da $R_0$ (rispettivamente $R_1$) e  $n_0$ (rispettivamente $n_1$) sono gli esempi negativi coperti da $R_0$ (rispettivamente $R_1$).
@@ -74,13 +74,13 @@ L'implementazione di Cohen differisce da quella di Fürnkranz e Widmer sotto mol
 
 \pagebreak
 
-\subsection{Miglioramenti ad IREP}
+\section{Miglioramenti ad IREP}
 Sono state implementate tre modifiche ad IREP: una metrica alternativa per determinare il valore delle regole nella fase di potatura; una nuova euristica per dedidere quando fermare l'aggiunta di regole al ruleset; un successivo passaggio di "ottimizzazione" del ruleset per tentare di avvicinarsi di più al REP convenzionale (cioè, non incrementale).
 
-\subsubsection*{Metrica per il valore delle regole}
+\subsection*{Metrica per il valore delle regole}
 Il fallimento occasionale di IREP a convergere al crescere del numero degli esempi può essere facilmente fatto risalire alla metrica usata per guidare la potatura (ossia la \eqref{eq:rulval}). Le scelte intraprese nella definizione di tale metrica non sono intuitive; per esempio (assumendo che $P$ e $N$ siano fissati) la metrica preferisce una regola $R_1$ che copre $p_1 = 2000$ esempi positivi e $n_1 = 1000$ esempi negativi rispetto ad una regola $R_2$ che copre $p_2 = 1000$ esempi positivi e $n_2 = 1$ esempio negativo; si noti comunque che $R_2$ è altamente predittiva, al contrario di $R_1$. Quindi si è deciso di sostituire la metrica di IREP con $$v^*(Rule, PrunePos, PruneNeg) \equiv \frac{p - n}{p + n}$$ che sembra avere un comportamento più intuitivo e soddisfacente.
 
-\subsubsection*{Condizione di stop}
+\subsection*{Condizione di stop}
 L'implementazione di IREP di Cohen si ferma in maniera greedy aggiungendo regole al ruleset quando l'ultima regola costruita ha un tasso d'errore maggiore del 50\% sui dati di pruning. Questa euristica, spesso, si ferma troppo presto con campioni di dimensioni moderate; questo è vero soprattutto quando si apprende un concetto con regole a bassa copertura (pochi esempi coperti).
 
 La soluzione a questo problema è la seguente. Dopo l'aggiunta di ogni regola, viene calcolata la \textit{description-length} totale del ruleset e degli esempi. La nuova versione di IREP ferma l'aggiunta di regole quando questa description-length è maggiore di $d$ bit rispetto alla più piccola description-length ottenuta sinora, o quando non ci sono più esempi positivi. Nell'implementazione si è usato $d = 64$. Il ruleset viene poi semplificato esaminando ogni regola a turno (cominciando dall'ultima) e cancellando regole così da ridurre la description-length totale.
@@ -98,7 +98,7 @@ Il metodo usato per la codifica è lo stesso usato in \emph{C4.5rules}\cite{Quin
 \end{align*}
 
 
-\subsubsection*{Ottimizzazione delle regole}
+\subsection*{Ottimizzazione delle regole}
 L'approccio ripetuto \textit{grow-and-simplify} usato in IREP può produrre risultati abbastanzi differenti dal REP convenzionale (non incrementale). Un modo per migliorarlo è elaborare a posteriori le regole prodotte da IREP così da avvicinarsi di più all'effetto del REP convenzionale. Per esempio, si potrebbe ri-potare ogni regola al fine di minimizzare l'errore del ruleset completo.
 
 Il metodo sviluppato per ottimizzare un ruleset $R_1,R_2,...,R_k$ consiste del costruire due regole alternative per ogni $R_i$. La \textit{sostituta} di $R_i$ viene generata espandendo e poi potando $R_i$. La \textit{revisione} di $R_i$ viene generata in maniera analoga, tranne per il fatto che la revisione è espansa in modo greedy aggiungendo condizioni a $R_i$, piuttosto che alla regola vuota. Infine si sceglie tra le tre regole quale includere nella teoria. Questa decisione viene presa in base all'euristica MDL. L'implementazione di questo metodo in IREP avviene in questo modo:

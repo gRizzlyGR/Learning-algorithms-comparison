@@ -5,37 +5,37 @@ Come primo algoritmo si è scelto di usare \textbf{REPTree}, che costruisce albe
 
 Visto che sono stati presi in considerazione dataset con attributi di classe nominali per un task di classificazione e non di regressione, verrà discusso il criterio dell'information gain, analogo all'algoritmo \textit{C4.5}\cite{Quinlan:1993:CPM:152181}.
 
-\subsection{Information Gain}
+\section{Information Gain}
 Per selezionare l'attributo che meglio classifica i dati $D$ ed in particolare, su quale dei suoi valori occorre fare uno \textit{split}, può convenire usare l'\emph{entropia}\cite{Shannon:1948}, ossia l'incertezza contenuta nei dati, che è calcolata come:
 
 $$ E(D) = - \sum_{i} p_i \log_2 p_i $$
 
 cioè la media dei logaritmi delle probabilità di ciascun oggetto $i$ pesato per la probabilità stessa. Nel contesto di classificazione, gli oggetti sono gli esempi nel dataset di cui viene calcolata la probabilità che essi appartengano o meno ad una delle classi presenti nell'attributo target. Più è probabile che un esempio appartenga ad una certa classe, più la sua influenza nel calcolo della media sarà mitigata dal logaritmo della sua stessa probabilità.
 
-È possibile calcolare l'entropia anche per sottoinsiemi del dataset, in particolare quegli esempi $D_v$ che presentano lo stesso valore $v$ di un certo attributo $a$, poi sommare tutte le entropie relative a tutti valori $V$ dell'attributo per ottenere l'entropia dei dati dopo aver preso in considerazione l'attributo $a$:
+È possibile calcolare l'entropia anche per sottoinsiemi del dataset, in particolare quegli esempi $D_v$ che presentano lo stesso valore $v$ di un certo attributo $a$, poi sommare tutte le entropie relative a tutti valori $V$ dell'attributo per ottenere l'entropia dei dati dopo aver preso in considerazione l'attributo $a$.
 Ogni entropia viene pesata per il numero di esempi che presentano quel valore diviso per il totale di esempi esistenti nel dataset:
 
 $$ E(D|a) = \sum_{v \in V} \frac{|D_v|}{|D|} \cdot E(D_v) $$
 
-Viene così definito l'information gain, cioè la riduzione di incertezza totale prendendo in considerazione un attributo $a$:
+Da queste formule si ricava l'information gain, cioè la riduzione di incertezza totale prendendo in considerazione un attributo $a$:
 
 $$ IG = E(D) - E(D|a) $$
 
 Come radice verrà utilizzato l'attributo che massimizza l'information gain, come archi i valori dell'attributo e si ripete la procedura per i nodi figli fino a generare le foglie.
 
-\subsection{Reduced Error Pruning}
+\section{Reduced Error Pruning}
 \label{ss:rep}
 Per evitare l'\textit{overfitting}, ossia un sovra-adattamento del modello ai dati di training che compromette la bontà delle sue predizioni su nuovi esempi, può essere ragionevole semplificare il modello, rischiando di commettere qualche errore ma garantendoci una migliore copertura per dati non visti.
 
 Questa semplificazione viene chiamata \textit{pruning} (potatura), in cui, una volta costruito il modello utilizzando i dati del \textit{growing set}, esso viene testato su una parte dei dati, accantonati e non adoperati per la predizione, che fanno parte del \textit{pruning set}.
 
-Un metodo di potatura è REP (\textbf{R}educed \textbf{E}rror \textbf{P}runing)\cite{Quinlan:1987:SDT:50007.50008} che utilizza un pruning set per stimare l'accuratezza dei nodi intermedi e confrontarla con quella dei suoi sottoalberi.
+Una tecnica di potatura è REP (\textbf{R}educed \textbf{E}rror \textbf{P}runing)\cite{Quinlan:1987:SDT:50007.50008} che utilizza un pruning set per stimare l'accuratezza dei nodi intermedi e confrontarla con quella dei suoi sottoalberi.
 
 Viene calcolato il guadagno dall'eventuale potatura sottraendo il numero di errori (esempi classificati scorrettamente) al sottoalbero $T$ al numero di errori al nodo radice $v$ del sottoalbero:
 
 $$ Gain_{REP} = \varepsilon_T - \varepsilon_v $$
 
-L'albero è potato se il guadagno è positivo quando vengono commessi più errori nell'intero sottoalbero, e non al nodo. C'è un'altra condizione da rispettare per procedere alla potatura: può avvenire solo se il sottoalbero $T$ non ha un sottoalbero che ha un tasso d'errore minore di $T$ stesso (\textit{bottom-up restriction})
+L'albero è potato se il guadagno è positivo quando vengono commessi più errori nell'intero sottoalbero, e non al nodo. C'è un'altra condizione da rispettare per procedere alla potatura: può avvenire solo se il sottoalbero $T$ non ha un sottoalbero che ha un tasso d'errore minore di $T$ stesso (\textit{bottom-up restriction}).
 
 L'algoritmo di REP è il seguente:
 \begin{itemize}
@@ -47,3 +47,5 @@ L'algoritmo di REP è il seguente:
 	\end{itemize}
 	\item Se l'accuratezza aumenta, pota. In caso di uguaglianza pota per semplificare (rasoio di Occam).
 \end{itemize}
+
+Inoltre è dimostrato che, tra tutti i possibili sottoalberi potati che è possibile generare, REP trova il sottalbero più piccolo e più accurato rispetto al pruning set\cite{Esposito:1997:CAM:252862.252878}.
