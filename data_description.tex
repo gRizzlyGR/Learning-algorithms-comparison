@@ -4,9 +4,210 @@
 Di seguito vengono descritti i 4 dataset utilizzati nella sperimentazione
 
 \section{German credit dataset}
+Il dataset contiene informazioni in ambito finanziari su clienti ritenuti a rischio o meno.
+%\begin{table}[!htb]
+%	\centering
+%	\begin{tabular}{|r|l|}
+%		\hline
+%		Numero istanze & 1000 \\
+%		Numero attributi & 21 \\
+%		Attributo target & \textbf{class} \\
+%		Valori target & \texttt{\{good, bad\}} \\
+%		\hline
+%	\end{tabular}
+%\end{table}
+
+
+\begin{itemize}
+	\item Numero di istanze: 1000
+	\item Numero di attributi: 21
+	\item Attributo target: \textbf{class}
+	\item Valori target: \texttt{\{good, bad\}}
+\end{itemize}
+
+\begin{table}[!htb]
+	\centering
+	\begin{tabular}{|r|l|}
+		\hline
+		Attributo & Tipo \\ 
+		\hline
+		checking\_status & nominal \\ 
+		duration & numeric \\ 
+		credit\_history & nominal \\ 
+		purpose & nominal \\ 
+		credit\_amount & numeric \\ 
+		savings\_status & nominal \\ 
+		employment & nominal \\ 
+		installment\_commitment & numeric \\ 
+		personal\_status & nominal \\ 
+		other\_parties & nominal \\ 
+		residence\_since & numeric \\ 
+		property\_magnitude & nominal \\ 
+		age & numeric \\ 
+		other\_payment\_plans & nominal \\ 
+		housing & nominal \\ 
+		existing\_credits & numeric \\ 
+		job & nominal \\ 
+		num\_dependents & numeric \\ 
+		own\_telephone & nominal \\ 
+		foreign\_worker & nominal \\ 
+		\textbf{class} & nominal \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\pagebreak 
 
 \section{Image segmentation dataset}
 
+Il dataset contiente informazioni di sette immagini all'aperto che sono state segmentate a mano. Ogni istanza rappresenta una regione 3x3.
+
+%\begin{table}[!htb]
+%	\centering
+%	\begin{tabular}{|r|l|}
+%		\hline
+%		Numero istanze & 2310 \\
+%		Numero attributi & 20 \\
+%		Attributo target & \textbf{class}\\
+%		Valori target & \parbox{3.5cm}{\texttt{\{brickface, sky, foliage, cement, window, path, grass\}}}\\
+%		\hline
+%	\end{tabular}
+%\end{table}
+
+\begin{itemize}
+	\item Numero di istanze: 2310
+	\item Numero di attributi: 20
+	\item Attributo target: \textbf{class}
+	\item Valori target: \texttt{\{brickface, sky, foliage, cement, window, path, grass\}}
+\end{itemize}
+
+\begin{table}[!htb]
+	\centering
+	\begin{tabular}{|r|l|}
+		\hline
+		Attributo & Tipo \\
+		\hline
+		region-centroid-col & numeric \\ 
+		region-centroid-row & numeric \\ 
+		region-pixel-count & numeric \\ 
+		short-line-density-5 & numeric \\ 
+		short-line-density-2 & numeric \\ 
+		vedge-mean & numeric \\ 
+		vegde-sd & numeric \\ 
+		hedge-mean & numeric \\ 
+		hedge-sd & numeric \\ 
+		intensity-mean & numeric \\ 
+		rawred-mean & numeric \\ 
+		rawblue-mean & numeric \\ 
+		rawgreen-mean & numeric \\ 
+		exred-mean & numeric \\ 
+		exblue-mean & numeric \\ 
+		exgreen-mean & numeric \\ 
+		value-mean & numeric \\ 
+		saturation-mean & numeric \\ 
+		hue-mean & numeric \\ 
+		\textbf{class} & nominal \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\pagebreak
+
 \section{Vehicle silhouettes dataset}
 
+Il dataset contiene informazioni per discriminare le silhouette di diversi veicoli tra automobili, van e bus.
+
+%\begin{table}[!htb]
+%	\centering
+%	\begin{tabular}{|r|l|}
+%		\hline
+%		Numero istanze & 846 \\
+%		Numero attributi & 19 \\
+%		Attributo target &  \textbf{Class}\\
+%		Valori target & \texttt{\{opel, saab, bus, ban\}} \\
+%		\hline
+%	\end{tabular}
+%\end{table}
+
+\begin{itemize}
+	\item Numero di istanze: 846 
+	\item Numero di attributi: 19
+	\item Attributo target:  \textbf{Class}
+	\item Valori target: \texttt{\{opel, saab, bus, ban\}}
+\end{itemize}
+
+
+\begin{table}[!htb]
+	\centering
+	\begin{tabular}{|r|l|}
+		\hline
+		Attributo & Tipo. \\ 
+		\hline
+		COMPACTNESS & numeric \\ 
+		CIRCULARITY & numeric \\ 
+		DISTANCE CIRCULARITY & numeric \\ 
+		RADIUS RATIO & numeric \\ 
+		PR.AXIS ASPECT RATIO & numeric \\ 
+		MAX.LENGTH ASPECT RATIO & numeric \\ 
+		SCATTER RATIO & numeric \\ 
+		ELONGATEDNESS & numeric \\ 
+		PR.AXIS RECTANGULARITY & numeric \\ 
+		MAX.LENGTH RECTANGULARITY & numeric \\ 
+		SCALED VARIANCE\_MAJOR & numeric \\ 
+		SCALED VARIANCE\_MINOR & numeric \\ 
+		SCALED RADIUS OF GYRATION & numeric \\ 
+		SKEWNESS ABOUT\_MAJOR & numeric \\ 
+		SKEWNESS ABOUT\_MINOR & numeric \\ 
+		KURTOSIS ABOUT\_MAJOR & numeric \\ 
+		KURTOSIS ABOUT\_MINOR & numeric \\ 
+		HOLLOWS RATIO & numeric \\ 
+		\textbf{Class} & nominal \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\pagebreak
+
 \section{Wisconsin breast cancer dataset}
+
+Il dataset contiene informazioni riguardo a vari casi di tumore al seno, che permettono di stabilire se esso è benigno o maligno.
+
+%\begin{table}[!htb]
+%	\centering
+%	\begin{tabular}{|r|l|}
+%		\hline
+%		Numero istanze & 699 \\
+%		Numero attributi & 10 \\
+%		Attributo target &  \textbf{Class} \\
+%		Valori target & \texttt{\{benign, malignant\}} \\
+%		\hline
+%	\end{tabular}
+%\end{table}
+
+\begin{itemize}
+	\item Numero di istanze: 699
+	\item Numero di attributi: 10
+	\item Attributo target: \textbf{Class}
+	\item Valori target: \texttt{\{benign, malignant\}}
+\end{itemize}
+
+
+\begin{table}[!htb]
+	\centering
+	\begin{tabular}{|r|l|}
+		\hline
+		Attributo & Tipo \\ 
+		\hline
+		Clump\_Thickness & numeric \\ 
+		Cell\_Size\_Uniformity & numeric \\ 
+		Cell\_Shape\_Uniformity & numeric \\ 
+		Marginal\_Adhesion & numeric \\ 
+		Single\_Epi\_Cell\_Size & numeric \\ 
+		Bare\_Nuclei & numeric \\ 
+		Bland\_Chromatin & numeric \\ 
+		Normal\_Nucleoli & numeric \\ 
+		Mitoses & numeric \\ 
+		\textbf{Class} & nominal \\ 
+		\hline
+	\end{tabular}
+\end{table}

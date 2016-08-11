@@ -1,10 +1,13 @@
 \BOOKMARK [0][-]{chapter.1}{Introduzione}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Descrizione dei dati}{}% 2
 \BOOKMARK [1][-]{section.2.1}{German credit dataset}{chapter.2}% 3
-\BOOKMARK [0][-]{chapter.3}{REPTree}{}% 4
-\BOOKMARK [1][-]{section.3.1}{Information Gain}{chapter.3}% 5
-\BOOKMARK [1][-]{section.3.2}{Reduced Error Pruning}{chapter.3}% 6
-\BOOKMARK [0][-]{chapter.4}{RIPPER}{}% 7
-\BOOKMARK [1][-]{section.4.1}{Incremental Reduced Error Pruning}{chapter.4}% 8
-\BOOKMARK [1][-]{section.4.2}{Miglioramenti ad IREP}{chapter.4}% 9
-\BOOKMARK [0][-]{chapter.5}{Risultati}{}% 10
+\BOOKMARK [1][-]{section.2.2}{Image segmentation dataset}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Vehicle silhouettes dataset}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Wisconsin breast cancer dataset}{chapter.2}% 6
+\BOOKMARK [0][-]{chapter.3}{REPTree}{}% 7
+\BOOKMARK [1][-]{section.3.1}{Information Gain}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.2}{Reduced Error Pruning}{chapter.3}% 9
+\BOOKMARK [0][-]{chapter.4}{RIPPER}{}% 10
+\BOOKMARK [1][-]{section.4.1}{Incremental Reduced Error Pruning}{chapter.4}% 11
+\BOOKMARK [1][-]{section.4.2}{Miglioramenti ad IREP}{chapter.4}% 12
+\BOOKMARK [0][-]{chapter.5}{Risultati}{}% 13
