@@ -1,4 +1,7 @@
 digraph Tree {
+ graph [fontname = "ubuntu"];
+ node [fontname = "ubuntu"];
+ edge [fontname = "ubuntu"];
 edge [style=bold]
 N7506e922 [label="1: Cell_Size_Uniformity"]
 N7506e922->N4ee285c6 [label=" < 2.5"]

@@ -1,0 +1,17 @@
+(Cell_Size_Uniformity >= 3) and (Cell_Size_Uniformity >= 5) =>
+	Class=malignant (178.0/5.0)
+
+(Bare_Nuclei >= 4) and (Bare_Nuclei >= 7) =>
+	Class=malignant (48.0/4.0)
+
+(Normal_Nucleoli >= 3) and (Clump_Thickness >= 6) =>
+	Class=malignant (13.0/1.0)
+
+(Bare_Nuclei >= 3) and (Clump_Thickness >= 5) =>
+	Class=malignant (11.0/3.0)
+
+(Marginal_Adhesion >= 8) =>
+	Class=malignant (2.0/0.0)
+
+[Empty Rule] =>
+	Class=benign (447.0/2.0)

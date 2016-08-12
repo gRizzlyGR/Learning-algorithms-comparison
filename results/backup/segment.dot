@@ -1,4 +1,7 @@
 digraph Tree {
+ graph [fontname = "ubuntu"];
+ node [fontname = "ubuntu"];
+ edge [fontname = "ubuntu"];
 edge [style=bold]
 N7506e922 [label="1: rawred-mean"]
 N7506e922->N4ee285c6 [label=" < 24.78"]

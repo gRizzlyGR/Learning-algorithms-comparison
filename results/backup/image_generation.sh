@@ -4,8 +4,6 @@
 
 #rm *.tikz
 
-rm *.svg
-
 # Dot files generation
 #java -cp /home/giuseppe/weka-3-8-0/weka.jar weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0 -t /home/giuseppe/data/uci/nominal/breast-w.arff -g > wisconsin_breast_cancer.dot
 
@@ -30,23 +28,13 @@ rm *.svg
 #dot -Tsvg -o segment.svg segment.dot
 #dot -Tsvg -o vehicle.svg vehicle.dot
 
+## Use unflatten to spread the leafs af a very large tree, piping to dot eventually, ie:
+## unflatten -l10 german_credit.dot | dot -Tpdf -o gc.pdf
+
 dot -Tpdf -o wisconsin_breast_cancer.pdf wisconsin_breast_cancer.dot 
 dot -Tpdf -o german_credit.pdf german_credit.dot
 dot -Tpdf -o nursery.pdf nursery.dot
 dot -Tpdf -o segment.pdf segment.dot
 dot -Tpdf -o vehicle.pdf vehicle.dot
-
-# Tikz files generation
-#dot2tex --preproc wisconsin_breast_cancer.dot | dot2tex --figonly -t math > wisconsin_breast_cancer.tikz
-#dot2tex --preproc german_credit.dot | dot2tex --figonly -t math > german_credit.tikz
-#dot2tex --preproc nursery.dot | dot2tex --figonly -t math > nursery.tikz
-#dot2tex --preproc segment.dot | dot2tex --figonly -t math > segment.tikz 
-#dot2tex --preproc vehicle.dot | dot2tex --figonly -t math > vehicle.tikz
-
-#dot2tex --preproc -o wisconsin_breast_cancer.tikz wisconsin_breast_cancer.dot 
-#dot2tex --preproc -o german_credit.tikz german_credit.dot
-#dot2tex --preproc -o nursery.tikz nursery.dot
-#dot2tex --preproc -o segment.tikz segment.dot
-#dot2tex --preproc -o vehicle.tikz vehicle.dot
 
 #rm *.dot

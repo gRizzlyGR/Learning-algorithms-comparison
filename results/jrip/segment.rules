@@ -1,0 +1,50 @@
+(intensity-mean >= 26.1111) and (hue-mean >= -2.17447) and (region-centroid-row <= 159) and (intensity-mean <= 72.8889) and (rawgreen-mean >= 22.3333) =>
+	class=cement (281.0/0.0)
+
+(vedge-mean >= 1.72222) and (region-centroid-row <= 160) and (region-centroid-row >= 146) and (hedge-sd <= 1.86667) and (saturation-mean <= 0.541667) =>
+	class=cement (20.0/1.0)
+
+(region-centroid-row >= 123) and (hue-mean <= -2.10408) and (hue-mean >= -2.17535) and (rawred-mean >= 8) and (region-centroid-row <= 156) =>
+	class=cement (19.0/1.0)
+
+(intensity-mean >= 86.2963) =>
+	class=sky (330.0/0.0)
+
+(hue-mean >= 1.28706) =>
+	class=grass (327.0/0.0)
+
+(hedge-mean <= 0.777777) and (region-centroid-col >= 128) and (saturation-mean <= 0.533928) and (exred-mean <= 0.111111) =>
+	class=window (91.0/0.0)
+
+(rawred-mean <= 18.2222) and (region-centroid-col >= 152) and (rawblue-mean >= 9.55556) and (hue-mean >= -2.20829) =>
+	class=window (82.0/0.0)
+
+(intensity-mean <= 3.7037) and (hue-mean >= -2.08783) and (region-centroid-col >= 34) =>
+	class=window (62.0/1.0)
+
+(hue-mean <= -2.0793) and (hue-mean >= -2.21646) and (rawred-mean >= 0.666667) and (rawred-mean <= 25.6667) and (exgreen-mean <= -6.22222) and (exblue-mean <= 33.6667) =>
+	class=window (51.0/2.0)
+
+(vedge-mean <= 0.277778) and (region-centroid-row >= 131) and (region-centroid-col >= 125) =>
+	class=window (8.0/1.0)
+
+(exgreen-mean >= -6.11111) and (region-centroid-row >= 133) and (hue-mean >= -2.1753) and (exgreen-mean <= -3.11111) and (region-centroid-col >= 38) =>
+	class=window (18.0/3.0)
+
+(intensity-mean <= 2.96296) and (region-centroid-row >= 133) and (rawred-mean >= 0.888889) =>
+	class=window (5.0/0.0)
+
+(exgreen-mean >= -6.33333) and (region-centroid-row <= 133) =>
+	class=foliage (233.0/5.0)
+
+(hue-mean <= -2.0944) and (region-centroid-row <= 145) =>
+	class=foliage (98.0/11.0)
+
+(rawred-mean <= 18.4444) and (exred-mean <= -6) =>
+	class=foliage (13.0/4.0)
+
+(region-centroid-row <= 149) =>
+	class=brickface (334.0/7.0)
+
+[Empty Rule] =>
+	class=path (338.0/10.0)

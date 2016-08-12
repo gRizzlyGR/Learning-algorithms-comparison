@@ -12,4 +12,8 @@
 \contentsline {chapter}{\numberline {4}RIPPER}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}Incremental Reduced Error Pruning}{12}{section.4.1}
 \contentsline {section}{\numberline {4.2}Miglioramenti ad IREP}{14}{section.4.2}
-\contentsline {chapter}{\numberline {5}Risultati}{17}{chapter.5}
+\contentsline {chapter}{\numberline {5}Valutazione}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}Risultati su \texttt {German credit}}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}Risultati su \texttt {Image segmentation}}{22}{section.5.2}
+\contentsline {section}{\numberline {5.3}Risultati su \texttt {Vehicle silhouettes}}{26}{section.5.3}
+\contentsline {section}{\numberline {5.4}Risultati su \texttt {Wisconsin breast cancer}}{30}{section.5.4}

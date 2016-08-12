@@ -1,9 +1,92 @@
-\chapter{Risultati}
+\chapter{Valutazione}
 \label{ch:results}
+Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sfruttato una \textit{10-fold cross validation}.
 
-\begin{figure}[!htb]
-\makebox[\textwidth]{\includegraphics[width=1.55\textwidth]{results/vehicle.pdf}}
-\caption{Albero}
+\section{Risultati su \texttt{German credit}}
+
+\begin{mdframed}[frametitle=Esecuzione REPTree]
+	\footnotesize\verbatiminput{results/reptree/german_credit.reptree}
+\end{mdframed}
+
+\begin{sidewaysfigure}
+	\thisfloatpagestyle{empty}
+	%	\includegraphics[width=\textwidth, height=\textheight]{results/reptree/gc.pdf}
+	\makebox[\textwidth]{\includegraphics[width=1.4\textwidth, height=.4\textheight]{results/reptree/gc.pdf}}
+	\caption{Modello di REPTree}
+\end{sidewaysfigure}
+
+\pagebreak
+
+\begin{mdframed}[frametitle=Esecuzione JRip]
+	\footnotesize\verbatiminput{results/jrip/german_credit.jrip}
+\end{mdframed}
+
+
+\verbatimtabinput{results/jrip/german_credit.rules}
+
+%\begin{adjustwidth}{-3em}{}
+%	\footnotesize\verbatimtabinput{results/jrip/german_credit.rules}
+%\end{adjustwidth}
+
+
+
+\pagebreak
+
+\section{Risultati su \texttt{Image segmentation}}
+
+\begin{mdframed}[frametitle=Esecuzione REPTree]
+	\scriptsize\verbatiminput{results/reptree/segment.reptree}
+\end{mdframed}
+
+\begin{figure}[htb]
+	\makebox[\textwidth]{\includegraphics[width=1.55\textwidth]{results/reptree/segment.pdf}}
+	\caption{Modello di REPTree}
 \end{figure}
 
-%\includepdf{results/vehicle.pdf}
+\begin{mdframed}[frametitle=Esecuzione JRip]
+	\scriptsize\verbatiminput{results/jrip/segment.jrip}
+\end{mdframed}
+
+\begin{adjustwidth}{-8em}{}
+	\scriptsize\verbatimtabinput{results/jrip/segment.rules}
+\end{adjustwidth}
+
+\pagebreak
+
+\section{Risultati su \texttt{Vehicle silhouettes}}
+
+\begin{mdframed}[frametitle=Esecuzione REPTree]
+	\scriptsize\verbatiminput{results/reptree/vehicle.reptree}
+\end{mdframed}
+
+\begin{figure}[htb]
+	\makebox[\textwidth]{\includegraphics[width=1.55\textwidth]{results/reptree/vehicle.pdf}}
+	\caption{Modello di REPTree}
+\end{figure}
+
+\begin{mdframed}[frametitle=Esecuzione JRip]
+	\scriptsize\verbatiminput{results/jrip/vehicle.jrip}
+\end{mdframed}
+
+\begin{adjustwidth}{-8em}{}
+	\scriptsize\verbatimtabinput{results/jrip/vehicle.rules}
+\end{adjustwidth}
+
+\pagebreak
+
+\section{Risultati su \texttt{Wisconsin breast cancer}}
+
+\begin{mdframed}[frametitle=Esecuzione REPTree]
+	\footnotesize\verbatiminput{results/reptree/wisconsin_breast_cancer.reptree}
+\end{mdframed}
+
+\begin{figure}[htb]
+	\makebox[\textwidth]{\includegraphics[width=1.55\textwidth]{results/reptree/wisconsin_breast_cancer.pdf}}
+	\caption{Modello di REPTree}
+\end{figure}
+
+\begin{mdframed}[frametitle=Esecuzione JRip]
+	\footnotesize\verbatiminput{results/jrip/wisconsin_breast_cancer.jrip}
+\end{mdframed}
+
+\footnotesize\verbatimtabinput{results/jrip/wisconsin_breast_cancer.rules}

@@ -10,4 +10,8 @@
 \BOOKMARK [0][-]{chapter.4}{RIPPER}{}% 10
 \BOOKMARK [1][-]{section.4.1}{Incremental Reduced Error Pruning}{chapter.4}% 11
 \BOOKMARK [1][-]{section.4.2}{Miglioramenti ad IREP}{chapter.4}% 12
-\BOOKMARK [0][-]{chapter.5}{Risultati}{}% 13
+\BOOKMARK [0][-]{chapter.5}{Valutazione}{}% 13
+\BOOKMARK [1][-]{section.5.1}{Risultati su German credit}{chapter.5}% 14
+\BOOKMARK [1][-]{section.5.2}{Risultati su Image segmentation}{chapter.5}% 15
+\BOOKMARK [1][-]{section.5.3}{Risultati su Vehicle silhouettes}{chapter.5}% 16
+\BOOKMARK [1][-]{section.5.4}{Risultati su Wisconsin breast cancer}{chapter.5}% 17

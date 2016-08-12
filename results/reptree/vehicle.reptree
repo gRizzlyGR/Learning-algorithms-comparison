@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     vehicle
+Instances:    846
+Attributes:   19
+              COMPACTNESS
+              CIRCULARITY
+              DISTANCE CIRCULARITY
+              RADIUS RATIO
+              PR.AXIS ASPECT RATIO
+              MAX.LENGTH ASPECT RATIO
+              SCATTER RATIO
+              ELONGATEDNESS
+              PR.AXIS RECTANGULARITY
+              MAX.LENGTH RECTANGULARITY
+              SCALED VARIANCE_MAJOR
+              SCALED VARIANCE_MINOR
+              SCALED RADIUS OF GYRATION
+              SKEWNESS ABOUT_MAJOR
+              SKEWNESS ABOUT_MINOR
+              KURTOSIS ABOUT_MAJOR
+              KURTOSIS ABOUT_MINOR
+              HOLLOWS RATIO
+              Class
+Test mode:    10-fold cross-validation
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         612               72.3404 %
+Incorrectly Classified Instances       234               27.6596 %
+Kappa statistic                          0.6313
+Mean absolute error                      0.1617
+Root mean squared error                  0.3109
+Relative absolute error                 43.1254 %
+Root relative squared error             71.8227 %
+Total Number of Instances              846     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,575    0,137    0,584      0,575    0,580      0,440    0,842     0,586     opel
+                 0,475    0,129    0,560      0,475    0,514      0,366    0,795     0,561     saab
+                 0,945    0,040    0,892      0,945    0,918      0,889    0,968     0,895     bus
+                 0,910    0,063    0,815      0,910    0,860      0,816    0,972     0,879     van
+Weighted Avg.    0,723    0,093    0,711      0,723    0,716      0,625    0,893     0,728     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+ 122  68   8  14 |   a = opel
+  81 103  13  20 |   b = saab
+   1   4 206   7 |   c = bus
+   5   9   4 181 |   d = van
+
+
