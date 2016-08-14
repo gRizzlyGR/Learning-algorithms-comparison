@@ -1,0 +1,64 @@
+\begin{enumerate}[align=left]
+
+\item (ELONGATEDNESS $>=$ 43) 			\textbf{AND}
+ (MAX.LENGTH ASPECT RATIO $>=$ 9) 		\textbf{AND}
+ (DISTANCE CIRCULARITY $>=$ 73) 		$\Rightarrow$	Class=van (86.0/0.0)
+
+\item (SCALED VARIANCE\_MINOR $<=$ 309) 		\textbf{AND}
+ (MAX.LENGTH RECTANGULARITY $>=$ 132) 	\textbf{AND}
+ (DISTANCE CIRCULARITY $<=$ 64) 		\textbf{AND}
+ (SCALED RADIUS OF GYRATION $<=$ 157) 	$\Rightarrow$	Class=van (23.0/0.0)
+
+\item (PR.AXIS RECTANGULARITY $<=$ 18) 		\textbf{AND}
+ (MAX.LENGTH RECTANGULARITY $>=$ 128) 	\textbf{AND}
+ (SCALED RADIUS OF GYRATION $<=$ 140) 	$\Rightarrow$	Class=van (42.0/6.0)
+
+\item (SCALED VARIANCE\_MINOR $<=$ 309) 		\textbf{AND}
+ (MAX.LENGTH RECTANGULARITY $>=$ 142) 	$\Rightarrow$	Class=van (33.0/5.0)
+
+\item (ELONGATEDNESS $>=$ 53) 			\textbf{AND}
+ (SCALED RADIUS OF GYRATION $>=$ 137) 	$\Rightarrow$	Class=van (15.0/5.0)
+
+\item (SCALED VARIANCE\_MAJOR $<=$ 177) 		\textbf{AND}
+ (MAX.LENGTH ASPECT RATIO $>=$ 10) 	$\Rightarrow$	Class=van (8.0/1.0)
+
+\item (MAX.LENGTH ASPECT RATIO $>=$ 8) 		\textbf{AND}
+ (MAX.LENGTH RECTANGULARITY $>=$ 173) 	$\Rightarrow$	Class=opel (45.0/8.0)
+
+\item (MAX.LENGTH ASPECT RATIO $>=$ 8) 		\textbf{AND}
+ (COMPACTNESS $<=$ 103) 			\textbf{AND}
+ (ELONGATEDNESS $<=$ 37) 			\textbf{AND}
+ (HOLLOWS RATIO $<=$ 195) 			$\Rightarrow$	Class=opel (14.0/0.0)
+
+\item (MAX.LENGTH ASPECT RATIO $>=$ 8) 		\textbf{AND}
+ (HOLLOWS RATIO $<=$ 198) 			\textbf{AND}
+ (KURTOSIS ABOUT\_MINOR $>=$ 189) 		$\Rightarrow$	Class=opel (42.0/17.0)
+
+\item (SKEWNESS ABOUT\_MAJOR $<=$ 67) 		\textbf{AND}
+ (HOLLOWS RATIO $<=$ 203) 			$\Rightarrow$	Class=opel (66.0/30.0)
+
+\item (SCALED RADIUS OF GYRATION $<=$ 142) 	\textbf{AND}
+ (HOLLOWS RATIO $<=$ 194) 			\textbf{AND}
+ (DISTANCE CIRCULARITY $>=$ 57) 		$\Rightarrow$	Class=opel (17.0/2.0)
+
+\item (MAX.LENGTH ASPECT RATIO $>=$ 9) 		\textbf{AND}
+ (DISTANCE CIRCULARITY $>=$ 100) 		\textbf{AND}
+ (SCALED VARIANCE\_MAJOR $<=$ 231) 		$\Rightarrow$	Class=saab (71.0/9.0)
+
+\item (MAX.LENGTH ASPECT RATIO $>=$ 9) 		\textbf{AND}
+ (PR.AXIS ASPECT RATIO $<=$ 61)		$\Rightarrow$	Class=saab (23.0/7.0)
+
+\item (SCALED VARIANCE\_MAJOR $<=$ 165) 		\textbf{AND}
+ (DISTANCE CIRCULARITY $<=$ 66) 		$\Rightarrow$	Class=saab (36.0/11.0)
+
+\item (SKEWNESS ABOUT\_MAJOR $<=$ 72) 		\textbf{AND}
+ (PR.AXIS ASPECT RATIO $<=$ 65) 		\textbf{AND}
+ (DISTANCE CIRCULARITY $>=$ 81) 		\textbf{AND}
+ (SKEWNESS ABOUT\_MAJOR $>=$ 66) 		$\Rightarrow$	Class=saab (27.0/7.0)
+
+\item (CIRCULARITY $<=$ 40) 			\textbf{AND}
+ (RADIUS RATIO $<=$ 144) 			$\Rightarrow$	Class=saab (16.0/6.0)
+
+\item $[$Empty Rule$]$ $\Rightarrow$	Class=bus (282.0/69.0)
+
+\end{enumerate}

@@ -10,7 +10,6 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 
 \begin{sidewaysfigure}
 	\thisfloatpagestyle{empty}
-	%	\includegraphics[width=\textwidth, height=\textheight]{results/reptree/gc.pdf}
 	\makebox[\textwidth]{\includegraphics[width=1.4\textwidth, height=.4\textheight]{results/reptree/gc.pdf}}
 	\caption{Modello di REPTree}
 \end{sidewaysfigure}
@@ -21,17 +20,9 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 	\footnotesize\verbatiminput{results/jrip/german_credit.jrip}
 \end{mdframed}
 
-\vspace{-2em}
-\begin{mdframed}[frametitle=Regole]
-	\begin{adjustwidth}{.25\linewidth}{}
-		\verbatimtabinput{results/jrip/german_credit.rules}
-	\end{adjustwidth}
-\end{mdframed}
-%\begin{adjustwidth}{-3em}{}
-%	\footnotesize\verbatimtabinput{results/jrip/german_credit.rules}
-%\end{adjustwidth}
-
-
+\noindent
+\normalsize Regole:
+\footnotesize\input{results/jrip/german_credit.list.rules}
 
 \pagebreak
 
@@ -50,24 +41,14 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 	\scriptsize\verbatiminput{results/jrip/segment.jrip}
 \end{mdframed}
 
-%\begin{adjustwidth}{-8em}{}
-%	\scriptsize\verbatimtabinput{results/jrip/segment.rules}
-%\end{adjustwidth}
-
-\vspace{-2em}
-\begin{mdframed}[frametitle=Regole]
-	\begin{adjustwidth}{.33\linewidth}{}
-		\scriptsize\verbatimtabinput{results/jrip/segment.rules}
-	\end{adjustwidth}
-\end{mdframed}
-
-
+\noindent
+\normalsize Regole:
+\scriptsize\input{results/jrip/segment.list.rules}
 
 \pagebreak
 
 \section{Risultati su \texttt{Vehicle Silhouettes}}
 
-\vspace{-1em}
 \begin{mdframed}[frametitle=Esecuzione REPTree]
 	\scriptsize\verbatiminput{results/reptree/vehicle.reptree}
 \end{mdframed}
@@ -81,16 +62,9 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 	\scriptsize\verbatiminput{results/jrip/vehicle.jrip}
 \end{mdframed}
 
-%\begin{adjustwidth}{-8em}{}
-%	\scriptsize\verbatimtabinput{results/jrip/vehicle.rules}
-%\end{adjustwidth}
-
-\vspace{-2em}
-\begin{mdframed}[frametitle=Regole]
-	\begin{adjustwidth}{.3\linewidth}{}
-		\scriptsize\verbatimtabinput{results/jrip/vehicle.rules}
-	\end{adjustwidth}
-\end{mdframed}
+\noindent
+\normalsize Regole:
+\scriptsize\input{results/jrip/vehicle.list.rules}
 
 \pagebreak
 
@@ -101,7 +75,6 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 \end{mdframed}
 
 \begin{figure}[htb]
-	\vspace{-2em}
 	\makebox[\textwidth]{\includegraphics[width=1.55\textwidth]{results/reptree/wisconsin_breast_cancer.pdf}}
 	\caption{Modello di REPTree}
 \end{figure}
@@ -110,11 +83,6 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 	\footnotesize\verbatiminput{results/jrip/wisconsin_breast_cancer.jrip}
 \end{mdframed}
 
-\vspace{-2em}
-\begin{mdframed}[frametitle=Regole]
-	\begin{adjustwidth}{.3\linewidth}{}
-		\footnotesize\verbatimtabinput{results/jrip/wisconsin_breast_cancer.rules}
-	\end{adjustwidth}
-\end{mdframed}
-
-%\footnotesize\verbatimtabinput{results/jrip/wisconsin_breast_cancer.rules}
+\noindent
+\normalsize Regole:
+\footnotesize\input{results/jrip/wisconsin_breast_cancer.list.rules}

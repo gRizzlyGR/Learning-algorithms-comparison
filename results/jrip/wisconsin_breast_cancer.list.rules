@@ -1,0 +1,23 @@
+\begin{enumerate}[align=left]
+	\item (Cell\_Size\_Uniformity $>=$ 3) 	\textbf{AND}
+	(Cell\_Size\_Uniformity $>=$ 5) 	$\Rightarrow$
+	Class=malignant (178.0/5.0)
+	
+	\item (Bare\_Nuclei $>=$ 4) 		\textbf{AND}
+	(Bare\_Nuclei $>=$ 7)		$\Rightarrow$
+	Class=malignant (48.0/4.0)
+	
+	\item (Normal\_Nucleoli $>=$ 3) 		\textbf{AND}
+	(Clump\_Thickness $>=$ 6) 		$\Rightarrow$
+	Class=malignant (13.0/1.0)
+	
+	\item (Bare\_Nuclei $>=$ 3) 		\textbf{AND}
+	(Clump\_Thickness $>=$ 5) 		$\Rightarrow$
+	Class=malignant (11.0/3.0)
+	
+	\item (Marginal\_Adhesion $>=$ 8) 	$\Rightarrow$
+	Class=malignant (2.0/0.0)
+	
+	\item $[$Empty Rule$]$ $\Rightarrow$
+	Class=benign (447.0/2.0)
+\end{enumerate}

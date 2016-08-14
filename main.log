@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.6)  13 AUG 2016 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.6)  14 AUG 2016 15:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -873,34 +873,36 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count272
 \cp@tempcnt=\count273
 )
-(./main.aux)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tabto-ltx/tabto.sty
+Package: tabto 2013/03/25  v 1.3  Another tabbing mechanism
+\CurrentLineWidth=\dimen265
+) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count274
-\scratchdimen=\dimen265
+\scratchdimen=\dimen266
 \scratchbox=\box95
 \nofMPsegments=\count275
 \nofMParguments=\count276
 \everyMPshowfont=\toks48
 \MPscratchCnt=\count277
-\MPscratchDim=\dimen266
+\MPscratchDim=\dimen267
 \MPnumerator=\count278
 \makeMPintoPDFobject=\count279
 \everyMPtoPDFconversion=\toks49
@@ -922,8 +924,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box96
-LaTeX Info: Redefining \it@ocap on input line 49.
-LaTeX Info: Redefining \it@ccap on input line 49.
+LaTeX Info: Redefining \it@ocap on input line 50.
+LaTeX Info: Redefining \it@ccap on input line 50.
 
 
 File italian.ldf warning: 
@@ -931,7 +933,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 49.
+italian.ldf    on input line 50.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -947,10 +949,10 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 49.
-LaTeX Info: Redefining \ref on input line 49.
-LaTeX Info: Redefining \pageref on input line 49.
-LaTeX Info: Redefining \nameref on input line 49.
+Package hyperref Info: Link coloring OFF on input line 50.
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -969,7 +971,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 <main-frn.pdf, id=72, 597.50829pt x 845.0471pt>
 File: main-frn.pdf Graphic file (type pdf)
  <use main-frn.pdf>
-Package pdftex.def Info: main-frn.pdf used on input line 50.
+Package pdftex.def Info: main-frn.pdf used on input line 51.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
  [1
 
@@ -984,7 +986,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 	\newpage
+l.86 	\newpage
                [1
 
 ] (./introduction.tex
@@ -1062,93 +1064,147 @@ File: results/reptree/german_credit.reptree  (verbatim)
 File: results/reptree/gc.pdf Graphic file (type pdf)
 
 <use results/reptree/gc.pdf>
-Package pdftex.def Info: results/reptree/gc.pdf used on input line 14.
+Package pdftex.def Info: results/reptree/gc.pdf used on input line 13.
 (pdftex.def)             Requested size: 828.79129pt x 236.78722pt.
  [18] [19 <./results/reptree/gc.pdf>]
 File: results/jrip/german_credit.jrip  (verbatim)
-Package mdframed Info: Not enough space on this page on input line 22.
- [20] [21]
+Package mdframed Info: Not enough space on this page on input line 21.
+ [20]
+(./results/jrip/german_credit.list.rules) [21]
 File: results/reptree/segment.reptree  (verbatim)
-
-[22] <results/reptree/segment.pdf, id=302, 1811.76875pt x 902.37125pt>
+ [22]
+<results/reptree/segment.pdf, id=307, 1811.76875pt x 902.37125pt>
 File: results/reptree/segment.pdf Graphic file (type pdf)
 
 <use results/reptree/segment.pdf>
-Package pdftex.def Info: results/reptree/segment.pdf used on input line 45.
+Package pdftex.def Info: results/reptree/segment.pdf used on input line 36.
 (pdftex.def)             Requested size: 604.50119pt x 301.07423pt.
 File: results/jrip/segment.jrip  (verbatim)
- [23 <./results/reptree/segment.pdf>] [24]
-[25] [26]
+ [23 <./results/reptree/segment.pdf>]
+(./results/jrip/segment.list.rules
+Overfull \hbox (8.78752pt too wide) in paragraph at lines 9--15
+\OT1/cmr/m/n/8 146) \OT1/cmr/bx/n/8 AND \OT1/cmr/m/n/8 (hedge-sd $\OML/cmm/m/it
+/8 <\OT1/cmr/m/n/8 =$ 1.86667) \OT1/cmr/bx/n/8 AND \OT1/cmr/m/n/8 (saturation-m
+ean $\OML/cmm/m/it/8 <\OT1/cmr/m/n/8 =$ 0.541667) $\OMS/cmsy/m/n/8 )$ \OT1/cmr/
+m/n/8 class=cement (20.0/1.0) 
+ []
+
+[24]
+Overfull \hbox (9.85419pt too wide) in paragraph at lines 56--60
+[]\OT1/cmr/m/n/8 (intensity-mean $\OML/cmm/m/it/8 <\OT1/cmr/m/n/8 =$ 2.96296) \
+OT1/cmr/bx/n/8 AND \OT1/cmr/m/n/8 (region-centroid-row $\OML/cmm/m/it/8 >\OT1/c
+mr/m/n/8 =$ 133) \OT1/cmr/bx/n/8 AND \OT1/cmr/m/n/8 (rawred-mean $\OML/cmm/m/it
+/8 >\OT1/cmr/m/n/8 =$ 0.888889)
+ []
+
+) [25]
 File: results/reptree/vehicle.reptree  (verbatim)
- <results/reptree/vehicle.pdf, id=329, 1886.04625pt x 902.37125pt>
+ [26] <results/reptree/vehicle.pdf, id=352, 1886.04625pt x 902.37125pt>
 File: results/reptree/vehicle.pdf Graphic file (type pdf)
 
 <use results/reptree/vehicle.pdf>
-Package pdftex.def Info: results/reptree/vehicle.pdf used on input line 76.
+Package pdftex.def Info: results/reptree/vehicle.pdf used on input line 57.
 (pdftex.def)             Requested size: 604.50119pt x 289.21907pt.
- [27]
 File: results/jrip/vehicle.jrip  (verbatim)
- [28 <./results/reptree/vehicle.pdf>]
-[29] [30]
+ [27 <./results/reptree/vehicle.pdf>]
+(./results/jrip/vehicle.list.rules [28]
+Overfull \hbox (7.83307pt too wide) in paragraph at lines 48--50
+[]\OT1/cmr/m/n/8 (MAX.LENGTH ASPECT RA-TIO $\OML/cmm/m/it/8 >\OT1/cmr/m/n/8 =$ 
+9) \OT1/cmr/bx/n/8 AND \OT1/cmr/m/n/8 (PR.AXIS ASPECT RA-TIO $\OML/cmm/m/it/8 <
+\OT1/cmr/m/n/8 =$ 61) $\OMS/cmsy/m/n/8 )$ \OT1/cmr/m/n/8 Class=saab
+ []
+
+
+Overfull \hbox (13.41028pt too wide) in paragraph at lines 51--53
+[]\OT1/cmr/m/n/8 (SCALED VA-RIAN-CE[]MAJOR $\OML/cmm/m/it/8 <\OT1/cmr/m/n/8 =$ 
+165) \OT1/cmr/bx/n/8 AND \OT1/cmr/m/n/8 (DI-STAN-CE CIR-CU-LA-RI-TY $\OML/cmm/m
+/it/8 <\OT1/cmr/m/n/8 =$ 66) $\OMS/cmsy/m/n/8 )$ \OT1/cmr/m/n/8 Class=saab
+ []
+
+) [29]
 File: results/reptree/wisconsin_breast_cancer.reptree  (verbatim)
 
-<results/reptree/wisconsin_breast_cancer.pdf, id=356, 1042.89626pt x 553.06625p
+<results/reptree/wisconsin_breast_cancer.pdf, id=391, 1042.89626pt x 553.06625p
 t>
 File: results/reptree/wisconsin_breast_cancer.pdf Graphic file (type pdf)
  <use results/reptree/wisconsin_breast_cancer.pdf>
 Package pdftex.def Info: results/reptree/wisconsin_breast_cancer.pdf used on in
-put line 105.
+put line 78.
 (pdftex.def)             Requested size: 604.50119pt x 320.57611pt.
 File: results/jrip/wisconsin_breast_cancer.jrip  (verbatim)
- [31]
-Package mdframed Info: Not enough space on this page on input line 111.
- [32 <./results/reptree/wisconsin_breast_cancer.pdf>]) [33] (./main.bbl [34
+ [30]
+Package mdframed Info: Not enough space on this page on input line 84.
+ [31 <./results/reptree/wisconsin_breast_cancer.pdf>]
+(./results/jrip/wisconsin_breast_cancer.list.rules
+Overfull \hbox (3.51025pt too wide) in paragraph at lines 2--5
+[]\OT1/cmr/m/n/10 (Cell[]Size[]Uniformity $\OML/cmm/m/it/10 >\OT1/cmr/m/n/10 =$
+ 3) \OT1/cmr/bx/n/10 AND \OT1/cmr/m/n/10 (Cell[]Size[]Uniformity $\OML/cmm/m/it
+/10 >\OT1/cmr/m/n/10 =$ 5) $\OMS/cmsy/m/n/10 )$ \OT1/cmr/m/n/10 Class=malignant
+
+ []
+
+
+Overfull \hbox (17.50473pt too wide) in paragraph at lines 10--13
+[]\OT1/cmr/m/n/10 (Normal[]Nucleoli $\OML/cmm/m/it/10 >\OT1/cmr/m/n/10 =$ 3) \O
+T1/cmr/bx/n/10 AND \OT1/cmr/m/n/10 (Clump[]Thickness $\OML/cmm/m/it/10 >\OT1/cm
+r/m/n/10 =$ 6) $\OMS/cmsy/m/n/10 )$ \OT1/cmr/m/n/10 Class=malignant (13.0/1.0) 
+
+ []
+
+)) [32] (./main.bbl
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
+ [33
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
- [35]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
+ [34]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B13E447DA97E3E3F8C09754118114EC3;1111.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 100.
  ) 
 Here is how much of TeX's memory you used:
- 21775 strings out of 493013
- 366457 string characters out of 6133329
- 499320 words of memory out of 5000000
- 24929 multiletter control sequences out of 15000+600000
- 11314 words of font info for 42 fonts, out of 8000000 for 9000
+ 21859 strings out of 493013
+ 367636 string characters out of 6133329
+ 494696 words of memory out of 5000000
+ 24952 multiletter control sequences out of 15000+600000
+ 12277 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,11n,42p,10489b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (36 pages, 750020 bytes).
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on main.pdf (35 pages, 817414 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 383 compressed objects within 4 object streams
- 91 named destinations out of 1000 (max. 500000)
+ 521 PDF objects out of 1000 (max. 8388607)
+ 443 compressed objects within 5 object streams
+ 133 named destinations out of 1000 (max. 500000)
  162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
