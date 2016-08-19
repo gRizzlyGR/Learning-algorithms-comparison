@@ -59,6 +59,6 @@
 \item (CIRCULARITY $<=$ 40) 			\textbf{AND}
  (RADIUS RATIO $<=$ 144) 			$\Rightarrow$	Class=saab (16.0/6.0)
 
-\item $[$Empty Rule$]$ $\Rightarrow$	Class=bus (282.0/69.0)
+\item $[$\emph{Empty Rule}$]$ $\Rightarrow$	Class=bus (282.0/69.0)
 
 \end{enumerate}

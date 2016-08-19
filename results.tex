@@ -4,9 +4,13 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 
 \section{Risultati su \texttt{German Credit}}
 
+\normalsize L'esecuzione ha coinvolto 900 istanze di training e 100 istanze di testing.
+
 \begin{mdframed}[frametitle=Esecuzione REPTree]
 	\footnotesize\verbatiminput{results/reptree/german_credit.reptree}
 \end{mdframed}
+
+\input{results/exp/gc_reptree_10fold_table}
 
 \begin{sidewaysfigure}
 	\thisfloatpagestyle{empty}
@@ -20,6 +24,8 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 	\footnotesize\verbatiminput{results/jrip/german_credit.jrip}
 \end{mdframed}
 
+\input{results/exp/gc_jrip_10fold_table}
+
 \noindent
 \normalsize Regole:
 \footnotesize\input{results/jrip/german_credit.list.rules}
@@ -28,9 +34,13 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 
 \section{Risultati su \texttt{Image Segmentation}}
 
+\normalsize L'esecuzione ha coinvolto 2079 istanze di training e 231 istanze di testing.
+
 \begin{mdframed}[frametitle=Esecuzione REPTree]
 	\scriptsize\verbatiminput{results/reptree/segment.reptree}
 \end{mdframed}
+
+\input{results/exp/seg_reptree_10fold_table}
 
 \begin{figure}[htb]
 	\makebox[\textwidth]{\includegraphics[width=1.55\textwidth]{results/reptree/segment.pdf}}
@@ -41,6 +51,8 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 	\scriptsize\verbatiminput{results/jrip/segment.jrip}
 \end{mdframed}
 
+\input{results/exp/seg_jrip_10fold_table}
+
 \noindent
 \normalsize Regole:
 \scriptsize\input{results/jrip/segment.list.rules}
@@ -49,9 +61,13 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 
 \section{Risultati su \texttt{Vehicle Silhouettes}}
 
+\normalsize L'esecuzione ha coinvolto 761 istanze di training e 85 istanze di testing.
+
 \begin{mdframed}[frametitle=Esecuzione REPTree]
 	\scriptsize\verbatiminput{results/reptree/vehicle.reptree}
 \end{mdframed}
+
+\input{results/exp/vcl_reptree_10fold_table}
 
 \begin{figure}[htb]
 	\makebox[\textwidth]{\includegraphics[width=1.55\textwidth]{results/reptree/vehicle.pdf}}
@@ -62,6 +78,8 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 	\scriptsize\verbatiminput{results/jrip/vehicle.jrip}
 \end{mdframed}
 
+\input{results/exp/vcl_jrip_10fold_table}
+
 \noindent
 \normalsize Regole:
 \scriptsize\input{results/jrip/vehicle.list.rules}
@@ -70,9 +88,13 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 
 \section{Risultati su \texttt{Wisconsin Breast Cancer}}
 
+\normalsize L'esecuzione ha coinvolto 629 istanze di training e 70 istanze di testing.
+
 \begin{mdframed}[frametitle=Esecuzione REPTree]
 	\footnotesize\verbatiminput{results/reptree/wisconsin_breast_cancer.reptree}
 \end{mdframed}
+
+\input{results/exp/wbc_reptree_10fold_table}
 
 \begin{figure}[htb]
 	\makebox[\textwidth]{\includegraphics[width=1.55\textwidth]{results/reptree/wisconsin_breast_cancer.pdf}}
@@ -82,6 +104,8 @@ Qui vengono confrontati i due algoritmi REPTree e RIPPER/JRip. Entrambi hanno sf
 \begin{mdframed}[frametitle=Esecuzione JRip]
 	\footnotesize\verbatiminput{results/jrip/wisconsin_breast_cancer.jrip}
 \end{mdframed}
+
+\input{results/exp/wbc_jrip_10fold_table}
 
 \noindent
 \normalsize Regole:

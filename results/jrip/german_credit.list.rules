@@ -9,6 +9,6 @@
 (savings\_status $=$ ``$<$100")	$\Rightarrow$
 	class=bad (61.0/19.0)
 
-\item $[$Empty Rule$]$ $\Rightarrow$ class=good (767.0/162.0)
+\item $[$\emph{Empty Rule}$]$ $\Rightarrow$ class=good (767.0/162.0)
 
 \end{enumerate}

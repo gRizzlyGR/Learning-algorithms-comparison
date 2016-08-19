@@ -18,6 +18,6 @@
 	\item (Marginal\_Adhesion $>=$ 8) 	$\Rightarrow$
 	Class=malignant (2.0/0.0)
 	
-	\item $[$Empty Rule$]$ $\Rightarrow$
+	\item $[$\emph{Empty Rule}$]$ $\Rightarrow$
 	Class=benign (447.0/2.0)
 \end{enumerate}
