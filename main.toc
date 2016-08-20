@@ -15,5 +15,9 @@
 \contentsline {chapter}{\numberline {5}Esecuzione}{17}{chapter.5}
 \contentsline {section}{\numberline {5.1}Risultati su \texttt {German Credit}}{17}{section.5.1}
 \contentsline {section}{\numberline {5.2}Risultati su \texttt {Image Segmentation}}{22}{section.5.2}
-\contentsline {section}{\numberline {5.3}Risultati su \texttt {Vehicle Silhouettes}}{27}{section.5.3}
-\contentsline {section}{\numberline {5.4}Risultati su \texttt {Wisconsin Breast Cancer}}{32}{section.5.4}
+\contentsline {section}{\numberline {5.3}Risultati su \texttt {Vehicle Silhouettes}}{26}{section.5.3}
+\contentsline {section}{\numberline {5.4}Risultati su \texttt {Wisconsin Breast Cancer}}{30}{section.5.4}
+\contentsline {chapter}{\numberline {6}Analisi}{33}{chapter.6}
+\contentsline {section}{\numberline {6.1}Test}{33}{section.6.1}
+\contentsline {section}{\numberline {6.2}Interpretazione dei risultati}{35}{section.6.2}
+\contentsline {chapter}{\numberline {7}Conclusioni}{36}{chapter.7}

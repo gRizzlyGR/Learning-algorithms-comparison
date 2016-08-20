@@ -36,6 +36,7 @@
 \usepackage{tabto}
 \usepackage{adjustbox}
 \usepackage{diagbox}
+\usepackage{caption}
 
 \titleformat{\chapter}[hang]
 {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter:}{0.3em}{}
@@ -70,6 +71,7 @@
 
 	%Numerazione delle pagine corretta
 	\pagestyle{plain}
+	\floatpagestyle{plain}
 	
 	%Le tabelle larghe quanto la pagina
 %	\setlength\LTleft{0pt}
@@ -85,11 +87,15 @@
 	\clearpage
 	\input{reptree}
 	\clearpage
-    \input{ripper}
-    \clearpage
-    \input{results}
-    \clearpage    
-    \bibliographystyle{abbrvnat}
-    	\bibliography{mybib}
-    
+	\input{ripper}
+	\clearpage
+	\input{execution}
+	\clearpage
+	\input{analysis}
+	\clearpage
+	\input{conclusion}
+	\clearpage
+	\bibliographystyle{abbrvnat}
+		\bibliography{mybib}
+
 \end{document}

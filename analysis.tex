@@ -1,0 +1,129 @@
+\chapter{Analisi}
+
+In questo capitolo verranno analizzati i risultati dell'esperimento, ottenuti utilizzando lo strumento \emph{Experimenter} di Weka. La configurazione ha riguardato un task di classificazione con una 10-fold cross validation su 4 dataset con 10 iterazioni. Gli algoritmi in gioco sono \nameref{ch:reptree} e \nameref{ch:jrip}. I risultati così ottenuti sono 800.
+
+\section{Test}
+
+Il confronto è stato fatto su tre misure, la percentuale di predizioni corrette, la \emph{F-Measure}, che è la media armonica di precisione e richiamo:
+
+$$ F_m = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
+
+\noindent
+e il tempo necessario per costruire il modello. Il test utilizzato è un \emph{Paired T-test}.
+
+Di seguito vengono mostrate le tabelle che raccolgono i risultati di esecuzione del test per le misure, più un'altra che presenta una classifica degli algoritmi.
+
+Come \textit{baseline} è stato scelto RIPPER. Accanto ai risultati di REPTree comparirà un pallino bianco ($\circ$) in caso di miglioramento o un pallino nero ($\bullet$) in caso di peggioramento. Se i risultati non dovessero differire in maniera statisticamente significativa, non comparirà nulla.
+
+\begin{table}[thb]
+	\footnotesize
+	{\centering \begin{tabular}{lrr@{\hspace{0.1cm}}c}
+			\\
+			\hline
+			Dataset & (1)& (2) & \\
+			\hline
+			wisconsin-breast-cancer & 95.61 & 94.77 &        \\
+			german-credit & 72.21 & 72.02 &        \\
+			segment & 95.24 & 95.26 &        \\
+			vehicle & 68.31 & 70.18 &        \\
+			\hline
+			\multicolumn{4}{c}{$\circ$, $\bullet$ miglioramento o peggioramento statisticamente significativo}\\
+		\end{tabular} \footnotesize \par}
+		\caption{\label{labelname}Confronto sulla percentuale di predizioni corrette}
+\end{table}
+
+\begin{table}[thb]
+	\footnotesize
+	{\centering \begin{tabular}{lrr@{\hspace{0.1cm}}c}
+			\\
+			\hline
+			Dataset & (1)& (2) & \\
+			\hline
+			wisconsin-breast-cancer & 0.97 & 0.96 &        \\
+			german-credit & 0.81 & 0.81 &        \\
+			segment & 0.97 & 0.97 &        \\
+			vehicle & 0.47 & 0.50 &        \\
+			\hline
+			\multicolumn{4}{c}{$\circ$, $\bullet$ miglioramento o peggioramento statisticamente significativo}\\
+		\end{tabular} \footnotesize \par}
+		\caption{\label{labelname}Confronto su F-measure}
+\end{table}
+
+\begin{table}[thb]
+	\footnotesize
+	{\centering \begin{tabular}{lrr@{\hspace{0.1cm}}c}
+			\\
+			\hline
+			Dataset & (1)& (2) & \\
+			\hline
+			wisconsin-breast-cancer & 0.02 & 0.00 & \hspace{-11.5em} $\bullet$\\
+			german-credit & 0.08 & 0.01 & \hspace{-11.5em} $\bullet$\\
+			segment & 0.66 & 0.05 & \hspace{-11.5em} $\bullet$\\
+			vehicle & 0.18 & 0.02 & \hspace{-11.5em} $\bullet$\\
+			\hline
+			\multicolumn{4}{c}{$\circ$, $\bullet$ miglioramento o peggioramento statisticamente significativo}\\
+		\end{tabular} \footnotesize \par}
+		\caption{\label{labelname}Confronto sul tempo di addestramento}
+\end{table}
+
+\begin{table}[thb]
+	\footnotesize
+	{\centering \begin{tabular}{rlll}\\
+			\hline
+			Resultset & Wins$-$ & Wins & Losses \\
+			& Losses & & \\
+			\hline
+			(2) &   0 &   0 &   0\\
+			(1) &   0 &   0 &   0\\
+			\hline
+		\end{tabular} \footnotesize \par}
+		\caption{\label{labelname}Ranking sulla percentuale di predizioni corrette}
+\end{table}
+
+\begin{table}[thb]
+	\footnotesize
+	{\centering \begin{tabular}{rlll}\\
+			\hline
+			Resultset & Wins$-$ & Wins & Losses \\
+			& Losses & & \\
+			\hline
+			(2) &   0 &   0 &   0\\
+			(1) &   0 &   0 &   0\\
+			\hline
+		\end{tabular} \footnotesize \par}
+		\caption{\label{labelname}Ranking su F-measure}
+\end{table}
+
+\begin{table}[thb]
+	\footnotesize
+	{\centering \begin{tabular}{rlll}\\
+			\hline
+			Resultset & Wins$-$ & Wins & Losses \\
+			& Losses & & \\
+			\hline
+			(1) &   4 &   4 &   0\\
+			(2) &  -4 &   0 &   4\\
+			\hline
+		\end{tabular} \footnotesize \par}
+		\caption{\label{labelname}Ranking sul tempo di addestramento}
+\end{table}
+
+\begin{table}[thb]
+	\scriptsize
+	{\centering
+		\begin{tabular}{cl}\\
+			\multicolumn{2}{l}{Legenda:} \\
+			(1) & RIPPER \\
+			(2) & REPTree \\
+		\end{tabular}
+	}
+\end{table}
+
+\clearpage
+
+\section{Interpretazione dei risultati}
+
+Come si evince dai risultati, i due algoritmi si eguagliano per quanto riguarda la percentuale di predizioni corrette e F-measure, in quanto nessuno si comporta statisticamente meglio o peggio rispetto all'altro, per la mancanza di pallini bianchi ($\circ$) e pallini neri ($\bullet)$ accanto ai risultati. Tutt'altra storia riguarda il tempo di costruzione del modello: REPTree si comporta peggio di RIPPER su tutti i dataset.
+
+Il \emph{ranking test} classifica gli algoritmi in base al totale di vittorie e sconfitte significative rispetto agli altri. La prima colonna è la differenza tra le vittorie e le sconfitte. Questa differenza è usata per generare il ranking. Con zero vittorie e zero sconfitte, gli algoritmi raggiungono un pareggio per percentuale di predizioni corrette e F-measure. Per quanto riguarda il tempo di addestramento, c'è una debacle evidente di REPTree rispetto a RIPPER su tutti i dataset.
+
