@@ -4,18 +4,21 @@
 \BOOKMARK [1][-]{section.2.2}{Image Segmentation dataset}{chapter.2}% 4
 \BOOKMARK [1][-]{section.2.3}{Vehicle Silhouettes dataset}{chapter.2}% 5
 \BOOKMARK [1][-]{section.2.4}{Wisconsin Breast Cancer dataset}{chapter.2}% 6
-\BOOKMARK [0][-]{chapter.3}{REPTree}{}% 7
-\BOOKMARK [1][-]{section.3.1}{Information Gain}{chapter.3}% 8
-\BOOKMARK [1][-]{section.3.2}{Reduced Error Pruning}{chapter.3}% 9
-\BOOKMARK [0][-]{chapter.4}{RIPPER}{}% 10
-\BOOKMARK [1][-]{section.4.1}{Incremental Reduced Error Pruning}{chapter.4}% 11
-\BOOKMARK [1][-]{section.4.2}{Miglioramenti ad IREP}{chapter.4}% 12
-\BOOKMARK [0][-]{chapter.5}{Esecuzione}{}% 13
-\BOOKMARK [1][-]{section.5.1}{Risultati su German Credit}{chapter.5}% 14
-\BOOKMARK [1][-]{section.5.2}{Risultati su Image Segmentation}{chapter.5}% 15
-\BOOKMARK [1][-]{section.5.3}{Risultati su Vehicle Silhouettes}{chapter.5}% 16
-\BOOKMARK [1][-]{section.5.4}{Risultati su Wisconsin Breast Cancer}{chapter.5}% 17
-\BOOKMARK [0][-]{chapter.6}{Analisi}{}% 18
-\BOOKMARK [1][-]{section.6.1}{Test}{chapter.6}% 19
-\BOOKMARK [1][-]{section.6.2}{Interpretazione dei risultati}{chapter.6}% 20
-\BOOKMARK [0][-]{chapter.7}{Conclusioni}{}% 21
+\BOOKMARK [0][-]{chapter.3}{Naive Bayes}{}% 7
+\BOOKMARK [1][-]{section.3.1}{Teorema di Bayes}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.2}{Naive Bayes Classifier}{chapter.3}% 9
+\BOOKMARK [0][-]{chapter.4}{REPTree}{}% 10
+\BOOKMARK [1][-]{section.4.1}{Information Gain}{chapter.4}% 11
+\BOOKMARK [1][-]{section.4.2}{Reduced Error Pruning}{chapter.4}% 12
+\BOOKMARK [0][-]{chapter.5}{RIPPER}{}% 13
+\BOOKMARK [1][-]{section.5.1}{Incremental Reduced Error Pruning}{chapter.5}% 14
+\BOOKMARK [1][-]{section.5.2}{Miglioramenti ad IREP}{chapter.5}% 15
+\BOOKMARK [0][-]{chapter.6}{Esecuzione}{}% 16
+\BOOKMARK [1][-]{section.6.1}{Risultati su German Credit}{chapter.6}% 17
+\BOOKMARK [1][-]{section.6.2}{Risultati su Image Segmentation}{chapter.6}% 18
+\BOOKMARK [1][-]{section.6.3}{Risultati su Vehicle Silhouettes}{chapter.6}% 19
+\BOOKMARK [1][-]{section.6.4}{Risultati su Wisconsin Breast Cancer}{chapter.6}% 20
+\BOOKMARK [0][-]{chapter.7}{Analisi}{}% 21
+\BOOKMARK [1][-]{section.7.1}{Test}{chapter.7}% 22
+\BOOKMARK [1][-]{section.7.2}{Interpretazione dei risultati}{chapter.7}% 23
+\BOOKMARK [0][-]{chapter.8}{Conclusioni}{}% 24
