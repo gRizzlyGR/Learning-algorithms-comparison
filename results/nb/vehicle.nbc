@@ -1,0 +1,229 @@
+Class opel: P(C) = 0.25058824
+
+Attribute COMPACTNESS
+Mean: 95.06132075	Standard Deviation: 8.23073734
+
+Attribute CIRCULARITY
+Mean: 46.58018868	Standard Deviation: 7.23526016
+
+Attribute DISTANCE CIRCULARITY
+Mean: 89.08962264	Standard Deviation: 15.58667817
+
+Attribute RADIUS RATIO
+Mean: 180.30188679	Standard Deviation: 31.35492276
+
+Attribute PR.AXIS ASPECT RATIO
+Mean: 60.87735849	Standard Deviation: 4.9561161 
+
+Attribute MAX.LENGTH ASPECT RATIO
+Mean: 8.85849057	Standard Deviation: 1.98065851
+
+Attribute SCATTER RATIO
+Mean: 182.16509434	Standard Deviation: 32.82188191
+
+Attribute ELONGATEDNESS
+Mean: 37.87735849	Standard Deviation: 7.72415775
+
+Attribute PR.AXIS RECTANGULARITY
+Mean: 21.58962264	Standard Deviation: 2.55303664
+
+Attribute MAX.LENGTH RECTANGULARITY
+Mean: 151.27358491	Standard Deviation: 18.15809092
+
+Attribute SCALED VARIANCE_MAJOR
+Mean: 198.61792453	Standard Deviation: 28.84096381
+
+Attribute SCALED VARIANCE_MINOR
+Mean: 508.53773585	Standard Deviation: 172.45924992
+
+Attribute SCALED RADIUS OF GYRATION
+Mean: 179.77358491	Standard Deviation: 34.72144618
+
+Attribute SKEWNESS ABOUT_MAJOR
+Mean: 70.14150943	Standard Deviation: 5.08028189
+
+Attribute SKEWNESS ABOUT_MINOR
+Mean: 6.60377358	Standard Deviation: 5.19328631
+
+Attribute KURTOSIS ABOUT_MAJOR
+Mean: 15.01415094	Standard Deviation: 10.16661145
+
+Attribute KURTOSIS ABOUT_MINOR
+Mean: 189.27830189	Standard Deviation: 5.59306451
+
+Attribute HOLLOWS RATIO
+Mean: 197.11320755	Standard Deviation: 5.84608388
+
+
+
+Class saab: P(C) = 0.25647059
+
+Attribute COMPACTNESS
+Mean: 97.28110599	Standard Deviation: 9.08138423
+
+Attribute CIRCULARITY
+Mean: 45.53456221	Standard Deviation: 6.81908772
+
+Attribute DISTANCE CIRCULARITY
+Mean: 88.67281106	Standard Deviation: 17.00514214
+
+Attribute RADIUS RATIO
+Mean: 180.80184332	Standard Deviation: 30.80482761
+
+Attribute PR.AXIS ASPECT RATIO
+Mean: 61.14285714	Standard Deviation: 4.32187129
+
+Attribute MAX.LENGTH ASPECT RATIO
+Mean: 8.79262673	Standard Deviation: 2.15130043
+
+Attribute SCATTER RATIO
+Mean: 179.66820276	Standard Deviation: 31.52380865
+
+Attribute ELONGATEDNESS
+Mean: 38.31797235	Standard Deviation: 7.48673515
+
+Attribute PR.AXIS RECTANGULARITY
+Mean: 21.44700461	Standard Deviation: 2.45292772
+
+Attribute MAX.LENGTH RECTANGULARITY
+Mean: 148.69124424	Standard Deviation: 16.13460644
+
+Attribute SCALED VARIANCE_MAJOR
+Mean: 197.15207373	Standard Deviation: 27.92002315
+
+Attribute SCALED VARIANCE_MINOR
+Mean: 493.79723502	Standard Deviation: 163.15624014
+
+Attribute SCALED RADIUS OF GYRATION
+Mean: 179.4562212	Standard Deviation: 33.77607594
+
+Attribute SKEWNESS ABOUT_MAJOR
+Mean: 69.75576037	Standard Deviation: 5.29152681
+
+Attribute SKEWNESS ABOUT_MINOR
+Mean: 7.65898618	Standard Deviation: 5.81694721
+
+Attribute KURTOSIS ABOUT_MAJOR
+Mean: 15.29953917	Standard Deviation: 10.06679773
+
+Attribute KURTOSIS ABOUT_MINOR
+Mean: 189.71428571	Standard Deviation: 4.99179221
+
+Attribute HOLLOWS RATIO
+Mean: 198.04147465	Standard Deviation: 6.61039681
+
+
+
+Class bus: P(C) = 0.25764706
+
+Attribute COMPACTNESS
+Mean: 91.59174312	Standard Deviation: 8.6180245 
+
+Attribute CIRCULARITY
+Mean: 45.06880734	Standard Deviation: 5.03076612
+
+Attribute DISTANCE CIRCULARITY
+Mean: 76.72018349	Standard Deviation: 12.09256373
+
+Attribute RADIUS RATIO
+Mean: 166.00458716	Standard Deviation: 30.57415217
+
+Attribute PR.AXIS ASPECT RATIO
+Mean: 63.43119266	Standard Deviation: 8.80287654
+
+Attribute MAX.LENGTH ASPECT RATIO
+Mean: 7.01376147	Standard Deviation: 4.75722042
+
+Attribute SCATTER RATIO
+Mean: 170.02293578	Standard Deviation: 33.35681176
+
+Attribute ELONGATEDNESS
+Mean: 40.1146789	Standard Deviation: 6.50137633
+
+Attribute PR.AXIS RECTANGULARITY
+Mean: 20.5733945	Standard Deviation: 2.72835063
+
+Attribute MAX.LENGTH RECTANGULARITY
+Mean: 146.70183486	Standard Deviation: 10.49239779
+
+Attribute SCALED VARIANCE_MAJOR
+Mean: 192.88990826	Standard Deviation: 33.99656785
+
+Attribute SCALED VARIANCE_MINOR
+Mean: 448.89449541	Standard Deviation: 193.13831358
+
+Attribute SCALED RADIUS OF GYRATION
+Mean: 180.94954128	Standard Deviation: 31.24737371
+
+Attribute SKEWNESS ABOUT_MAJOR
+Mean: 77.12385321	Standard Deviation: 7.68494128
+
+Attribute SKEWNESS ABOUT_MINOR
+Mean: 4.8440367 	Standard Deviation: 3.22053982
+
+Attribute KURTOSIS ABOUT_MAJOR
+Mean: 10.21100917	Standard Deviation: 6.87287247
+
+Attribute KURTOSIS ABOUT_MINOR
+Mean: 187.81192661	Standard Deviation: 7.32123009
+
+Attribute HOLLOWS RATIO
+Mean: 191.32568807	Standard Deviation: 7.91832622
+
+
+
+Class van: P(C) = 0.23529412
+
+Attribute COMPACTNESS
+Mean: 90.56281407	Standard Deviation: 3.87230833
+
+Attribute CIRCULARITY
+Mean: 42.07035176	Standard Deviation: 4.08311074
+
+Attribute DISTANCE CIRCULARITY
+Mean: 73.33165829	Standard Deviation: 10.86884867
+
+Attribute RADIUS RATIO
+Mean: 147.12060302	Standard Deviation: 29.89452042
+
+Attribute PR.AXIS ASPECT RATIO
+Mean: 61.26130653	Standard Deviation: 11.38056381
+
+Attribute MAX.LENGTH ASPECT RATIO
+Mean: 9.71356784	Standard Deviation: 7.22463287
+
+Attribute SCATTER RATIO
+Mean: 141.53768844	Standard Deviation: 13.99557422
+
+Attribute ELONGATEDNESS
+Mean: 47.93969849	Standard Deviation: 4.66843926
+
+Attribute PR.AXIS RECTANGULARITY
+Mean: 18.57788945	Standard Deviation: 1.0311872 
+
+Attribute MAX.LENGTH RECTANGULARITY
+Mean: 145.1758794	Standard Deviation: 11.01533463
+
+Attribute SCALED VARIANCE_MAJOR
+Mean: 164.01005025	Standard Deviation: 19.68001343
+
+Attribute SCALED VARIANCE_MINOR
+Mean: 298.20100503	Standard Deviation: 55.89465017
+
+Attribute SCALED RADIUS OF GYRATION
+Mean: 157.27638191	Standard Deviation: 22.82119773
+
+Attribute SKEWNESS ABOUT_MAJOR
+Mean: 72.77889447	Standard Deviation: 8.8672224 
+
+Attribute SKEWNESS ABOUT_MINOR
+Mean: 6.41708543	Standard Deviation: 4.66579099
+
+Attribute KURTOSIS ABOUT_MAJOR
+Mean: 9.69849246	Standard Deviation: 6.24334375
+
+Attribute KURTOSIS ABOUT_MINOR
+Mean: 188.93969849	Standard Deviation: 6.37992289
+
+Attribute HOLLOWS RATIO
+Mean: 196.14572864	Standard Deviation: 7.34529805

@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.NaiveBayesSimple 
+Relation:     german_credit
+Instances:    1000
+Attributes:   21
+              checking_status
+              duration
+              credit_history
+              purpose
+              credit_amount
+              savings_status
+              employment
+              installment_commitment
+              personal_status
+              other_parties
+              residence_since
+              property_magnitude
+              age
+              other_payment_plans
+              housing
+              existing_credits
+              job
+              num_dependents
+              own_telephone
+              foreign_worker
+              class
+Test mode:10-fold cross-validation
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         756               75.6    %
+Incorrectly Classified Instances       244               24.4    %
+Kappa statistic                          0.3876
+Mean absolute error                      0.294 
+Root mean squared error                  0.4209
+Relative absolute error                 69.9613 %
+Root relative squared error             91.8429 %
+Total Number of Instances             1000     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.864     0.497      0.802     0.864     0.832      0.785    good
+                 0.503     0.136      0.614     0.503     0.553      0.785    bad
+Weighted Avg.    0.756     0.388      0.746     0.756     0.748      0.785
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 605  95 |   a = good
+ 149 151 |   b = bad
+
+

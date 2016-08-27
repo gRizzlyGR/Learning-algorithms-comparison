@@ -1,6 +1,6 @@
 \chapter{Naive Bayes}
 
-Il ragionamento bayesiano è un approccio probabilistico sull'inferenza. Si basa sull'assunzione che i dati sono governati da distribuzioni di probabilità e che possono essere prese decisioni ottimali relative a queste probabilità insieme agli esempi a disposizione. Un modello bayesiano non è complicato da costruire, soprattutto su grandi dataset. Nonostante la sua semplicità, il classificatore NB spesso si comporta meglio di altri classificatori più sofisticati\cite{Domingos:1997:OSB:274158.274160}.
+Il ragionamento bayesiano è un approccio probabilistico all'inferenza. Si basa sull'assunzione che i dati sono governati da distribuzioni di probabilità e che possono essere prese decisioni ottimali relative a queste probabilità insieme agli esempi a disposizione. Un modello bayesiano non è complicato da costruire, soprattutto su grandi dataset. Nonostante la sua semplicità, tale classificatore spesso si comporta meglio di altri classificatori più sofisticati\cite{Domingos:1997:OSB:274158.274160}.
 
 \section{Teorema di Bayes}
 Nel contesto di classificazione, quello che interessa è determinare la migliore ipotesi $h$ appartenente ad uno spazio delle ipotesi $H$ e i dati osservati $D$. Un modo per determinare la \emph{migliore} ipotesi è ricercare la \emph{più probabile}, grazie ai dati a disposizione più una conoscenza iniziale sulle probabilità a priori delle varie ipotesi in $H$\cite{Mitchell:1997:ML:541177}. Il teorema di Bayes fornisce un modo diretto per calcolare queste probabilità, in particolare:
@@ -27,6 +27,23 @@ $$\hphantom{1111111111} = \argmax_{h \in H} P(D|h) P(h) $$
 \noindent
 Il termine $P(D)$ può essere tolto perché è una costante indipendente da $h$.
 
+\begin{figure}[htbp!]
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{./images/discr}
+		\caption{Discreto}
+		\label{fig:discr}
+	\end{subfigure}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{./images/cont}
+		\caption{Continuo}
+		\label{fig:cont}
+	\end{subfigure}
+	\caption{Rappresentazione di MAP}
+	\label{fig:hmap}
+\end{figure}
+
 \section{Naive Bayes Classifier}
 Un metodo di apprendimento molto efficace è il classificatore \emph{naive Bayes}. Esso si applica a task di apprendimento in cui ogni istanza è descritta come una congiunzione di valori di attributo $\langle a_1, ..., a_n \rangle$ e dove l'attributo target può assumere qualsiasi valore da un insieme finito $V$.
 
@@ -39,7 +56,7 @@ Riapplicando le trasformazioni relative alla MAP definite sopra, possiamo riscri
 $$v_{MAP} = \argmax_{h \in H} \frac{P(a_1, ..., a_n | v_j) P(v_j)}{P(a_1, ..., a_n)} $$
 $$\hphantom{11111} = \argmax_{h \in H} P(a_1, ..., a_n | v_j) P(v_j) $$
 
-Ora bisogna stimare le due probabilità sui dati di training. I vari $P(v_j)$ possono essere facilmente calcolati contando la frequenza con cui ogni valore target $v_j$ occorre nei dati. Non è altrettanto semplice calcolare $P(a_1, ..., a_n | v_j)$ allo stesso modo. Il problema è che ci sono molte probabilità da calcolare e pochi dati a disposizione per ottenere delle stime affidabili: servirebbero dataset molto larghi.
+Ora bisogna stimare le due probabilità sui dati di training. I vari $P(v_j)$ possono essere facilmente calcolati contando la frequenza con cui ogni valore target $v_j$ occorre nei dati. Non è altrettanto semplice calcolare $P(a_1, ..., a_n | v_j)$ allo stesso modo. Il problema è che ci sono molte probabilità da calcolare e pochi dati a disposizione per ottenere delle stime affidabili: servirebbero dataset molto grandi.
 
 Qui entra in gioco il punto cardine del NBC, ossia presupporre che esista l'\emph{indipendenza condizionale} tra gli attributi. In altre parole, l'assunzione è che, dato il valore target, la probabilità di osservare la congiunzione $a_1, ..., a_n$ è semplicemente il prodotto delle probabilità dei singoli attributi:
 
@@ -48,9 +65,9 @@ $$ P(a_1, ..., a_n | v_j) = \prod_i P(a_i|v_j) $$
 \noindent
 Facendo le opportune sostituzioni otteniamo:
 
-$$ v_{NB} = \argmax_{v_j \in V} P(v_j) \prod_i P(a_i|v_j) $$
+$$ v_{NB} = v_{MAP} = \argmax_{v_j \in V} P(v_j) \prod_i P(a_i|v_j) $$
 
-dove $v_{NB}$ è il valore target restituito da NBC. Si noti che $P(a_i|v_j)$ è semplicemente il numero dei valori di attributo distinti moltiplicato il numero dei valori target distinti, chiaramente un numero molto più piccolo e gestibile rispetto a $P(a_1, ..., a_n | v_j)$ senza l'ipotesi di indipendenza. 
+dove $v_{NB}$ è il valore target restituito da NBC, che è uguale a $v_{MAP}$ quando si assume l'indipendenza condizionale. Si noti che $P(a_i|v_j)$ è semplicemente il numero dei valori di attributo distinti moltiplicato il numero dei valori target distinti, chiaramente un numero molto più piccolo e gestibile rispetto a $P(a_1, ..., a_n | v_j)$ senza l'ipotesi di indipendenza. 
 
 L'algoritmo di un NBC è pertanto:
 \begin{itemize}
@@ -60,3 +77,13 @@ L'algoritmo di un NBC è pertanto:
 \end{itemize}
 
 Un aspetto interessante è che NBC non effettua alcuna ricerca esplicita nello spazio delle ipotesi. Viene costruita l'ipotesi semplicemente contando le frequenze delle varie combinazioni dei dati all'interno del training set.
+
+\subsection*{Attributi continui}
+Contare le frequenze delle diverse combinazioni di valori è possibile per gli attributi discreti, quindi bisogna trovare un modo per calcolare le probabilità degli eventuali attributi continui. Ci sono due strade: la prima è appunto discretizzare i valori numerici in vari \emph{bin}, l'altra è assumere l'esistenza di una distribuzione normale (Gaussiana) per i valori $\langle a_1, ..., a_n \rangle$ dell'attributo $A_k$. Questa funzione ha bisogno di due parametri, media e deviazione standard degli attributi:
+
+$$ \mu_{kj} = E[A_k | v_j] = \frac{1}{n} \sum_{i = 1}^{n} a_i$$
+$$ \sigma_{kj} = \sqrt{ E[(A_k - \mu_{kj})^2 | v_j] } = \sqrt{ \frac{1}{n-1} \sum_{i = 1}^{n} (a_i - \mu_{kj})^2 } $$
+
+Infine, serve la funzione di densità di probabilità della Gaussiana, che applicata al nostro contesto diventa:
+
+$$ P(a_i | v_j) = \frac{1}{\sqrt{2\pi} \sigma} e^{-\frac{(a_i-\mu)^2}{2\sigma^2}} $$

@@ -3,24 +3,24 @@
 \contentsline {chapter}{\numberline {1}Introduzione}{2}{chapter.1}
 \contentsline {chapter}{\numberline {2}Descrizione dei dati}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}German Credit dataset}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Image Segmentation dataset}{4}{section.2.2}
+\contentsline {section}{\numberline {2.2}Hepatitis dataset}{4}{section.2.2}
 \contentsline {section}{\numberline {2.3}Vehicle Silhouettes dataset}{5}{section.2.3}
 \contentsline {section}{\numberline {2.4}Wisconsin Breast Cancer dataset}{6}{section.2.4}
 \contentsline {chapter}{\numberline {3}Naive Bayes}{8}{chapter.3}
 \contentsline {section}{\numberline {3.1}Teorema di Bayes}{8}{section.3.1}
 \contentsline {section}{\numberline {3.2}Naive Bayes Classifier}{9}{section.3.2}
-\contentsline {chapter}{\numberline {4}REPTree}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Information Gain}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}Reduced Error Pruning}{12}{section.4.2}
-\contentsline {chapter}{\numberline {5}RIPPER}{14}{chapter.5}
-\contentsline {section}{\numberline {5.1}Incremental Reduced Error Pruning}{15}{section.5.1}
-\contentsline {section}{\numberline {5.2}Miglioramenti ad IREP}{17}{section.5.2}
-\contentsline {chapter}{\numberline {6}Esecuzione}{20}{chapter.6}
-\contentsline {section}{\numberline {6.1}Risultati su \texttt {German Credit}}{20}{section.6.1}
-\contentsline {section}{\numberline {6.2}Risultati su \texttt {Image Segmentation}}{25}{section.6.2}
-\contentsline {section}{\numberline {6.3}Risultati su \texttt {Vehicle Silhouettes}}{29}{section.6.3}
-\contentsline {section}{\numberline {6.4}Risultati su \texttt {Wisconsin Breast Cancer}}{33}{section.6.4}
-\contentsline {chapter}{\numberline {7}Analisi}{36}{chapter.7}
-\contentsline {section}{\numberline {7.1}Test}{36}{section.7.1}
-\contentsline {section}{\numberline {7.2}Interpretazione dei risultati}{38}{section.7.2}
-\contentsline {chapter}{\numberline {8}Conclusioni}{39}{chapter.8}
+\contentsline {chapter}{\numberline {4}REPTree}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Information Gain}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}Reduced Error Pruning}{13}{section.4.2}
+\contentsline {chapter}{\numberline {5}RIPPER}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Incremental Reduced Error Pruning}{16}{section.5.1}
+\contentsline {section}{\numberline {5.2}Miglioramenti ad IREP}{18}{section.5.2}
+\contentsline {chapter}{\numberline {6}Esecuzione}{21}{chapter.6}
+\contentsline {section}{\numberline {6.1}Risultati su \texttt {German Credit}}{21}{section.6.1}
+\contentsline {section}{\numberline {6.2}Risultati su \texttt {Hepatitis}}{27}{section.6.2}
+\contentsline {section}{\numberline {6.3}Risultati su \texttt {Vehicle Silhouettes}}{32}{section.6.3}
+\contentsline {section}{\numberline {6.4}Risultati su \texttt {Wisconsin Breast Cancer}}{37}{section.6.4}
+\contentsline {chapter}{\numberline {7}Analisi}{41}{chapter.7}
+\contentsline {section}{\numberline {7.1}Test}{41}{section.7.1}
+\contentsline {section}{\numberline {7.2}Interpretazione dei risultati}{43}{section.7.2}
+\contentsline {chapter}{\numberline {8}Conclusioni}{44}{chapter.8}

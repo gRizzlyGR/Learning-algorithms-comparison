@@ -1,7 +1,7 @@
 \BOOKMARK [0][-]{chapter.1}{Introduzione}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Descrizione dei dati}{}% 2
 \BOOKMARK [1][-]{section.2.1}{German Credit dataset}{chapter.2}% 3
-\BOOKMARK [1][-]{section.2.2}{Image Segmentation dataset}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{Hepatitis dataset}{chapter.2}% 4
 \BOOKMARK [1][-]{section.2.3}{Vehicle Silhouettes dataset}{chapter.2}% 5
 \BOOKMARK [1][-]{section.2.4}{Wisconsin Breast Cancer dataset}{chapter.2}% 6
 \BOOKMARK [0][-]{chapter.3}{Naive Bayes}{}% 7
@@ -15,7 +15,7 @@
 \BOOKMARK [1][-]{section.5.2}{Miglioramenti ad IREP}{chapter.5}% 15
 \BOOKMARK [0][-]{chapter.6}{Esecuzione}{}% 16
 \BOOKMARK [1][-]{section.6.1}{Risultati su German Credit}{chapter.6}% 17
-\BOOKMARK [1][-]{section.6.2}{Risultati su Image Segmentation}{chapter.6}% 18
+\BOOKMARK [1][-]{section.6.2}{Risultati su Hepatitis}{chapter.6}% 18
 \BOOKMARK [1][-]{section.6.3}{Risultati su Vehicle Silhouettes}{chapter.6}% 19
 \BOOKMARK [1][-]{section.6.4}{Risultati su Wisconsin Breast Cancer}{chapter.6}% 20
 \BOOKMARK [0][-]{chapter.7}{Analisi}{}% 21

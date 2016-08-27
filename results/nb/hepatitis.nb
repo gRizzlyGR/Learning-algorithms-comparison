@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.NaiveBayesSimple 
+Relation:     hepatitis
+Instances:    155
+Attributes:   20
+              AGE
+              SEX
+              STEROID
+              ANTIVIRALS
+              FATIGUE
+              MALAISE
+              ANOREXIA
+              LIVER_BIG
+              LIVER_FIRM
+              SPLEEN_PALPABLE
+              SPIDERS
+              ASCITES
+              VARICES
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              HISTOLOGY
+              Class
+Test mode:10-fold cross-validation
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         131               84.5161 %
+Incorrectly Classified Instances        24               15.4839 %
+Kappa statistic                          0.5483
+Mean absolute error                      0.1688
+Root mean squared error                  0.3665
+Relative absolute error                 51.118  %
+Root relative squared error             90.5193 %
+Total Number of Instances              155     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.688     0.114      0.611     0.688     0.647      0.863    DIE
+                 0.886     0.313      0.916     0.886     0.901      0.863    LIVE
+Weighted Avg.    0.845     0.271      0.853     0.845     0.848      0.863
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  22  10 |   a = DIE
+  14 109 |   b = LIVE
+
+

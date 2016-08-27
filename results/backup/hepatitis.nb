@@ -1,0 +1,208 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.NaiveBayesSimple 
+Relation:     hepatitis
+Instances:    155
+Attributes:   20
+              AGE
+              SEX
+              STEROID
+              ANTIVIRALS
+              FATIGUE
+              MALAISE
+              ANOREXIA
+              LIVER_BIG
+              LIVER_FIRM
+              SPLEEN_PALPABLE
+              SPIDERS
+              ASCITES
+              VARICES
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              HISTOLOGY
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes (simple)
+
+Class DIE: P(C) = 0.21019108
+
+Attribute AGE
+Mean: 46.59375	Standard Deviation: 9.94455395
+
+Attribute SEX
+male	female	
+0.02941176	0.97058824	
+
+Attribute STEROID
+no	yes	
+0.61764706	0.38235294	
+
+Attribute ANTIVIRALS
+no	yes	
+0.91176471	0.08823529	
+
+Attribute FATIGUE
+no	yes	
+0.08823529	0.91176471	
+
+Attribute MALAISE
+no	yes	
+0.29411765	0.70588235	
+
+Attribute ANOREXIA
+no	yes	
+0.67647059	0.32352941	
+
+Attribute LIVER_BIG
+no	yes	
+0.13793103	0.86206897	
+
+Attribute LIVER_FIRM
+no	yes	
+0.51724138	0.48275862	
+
+Attribute SPLEEN_PALPABLE
+no	yes	
+0.60606061	0.39393939	
+
+Attribute SPIDERS
+no	yes	
+0.3030303 	0.6969697 	
+
+Attribute ASCITES
+no	yes	
+0.54545455	0.45454545	
+
+Attribute VARICES
+no	yes	
+0.63636364	0.36363636	
+
+Attribute BILIRUBIN
+Mean: 2.54333333	Standard Deviation: 1.94008235
+
+Attribute ALK_PHOSPHATE
+Mean: 122.375	Standard Deviation: 54.34896303
+
+Attribute SGOT
+Mean: 99.83333333	Standard Deviation: 101.76818937
+
+Attribute ALBUMIN
+Mean: 3.15185185	Standard Deviation: 0.60215662
+
+Attribute PROTIME
+Mean: 43.5	Standard Deviation: 16.76217731
+
+Attribute HISTOLOGY
+no	yes	
+0.23529412	0.76470588	
+
+
+
+Class LIVE: P(C) = 0.78980892
+
+Attribute AGE
+Mean: 39.79674797	Standard Deviation: 12.82860492
+
+Attribute SEX
+male	female	
+0.136     	0.864     	
+
+Attribute STEROID
+no	yes	
+0.45967742	0.54032258	
+
+Attribute ANTIVIRALS
+no	yes	
+0.816     	0.184     	
+
+Attribute FATIGUE
+no	yes	
+0.42741935	0.57258065	
+
+Attribute MALAISE
+no	yes	
+0.68548387	0.31451613	
+
+Attribute ANOREXIA
+no	yes	
+0.81451613	0.18548387	
+
+Attribute LIVER_BIG
+no	yes	
+0.19166667	0.80833333	
+
+Attribute LIVER_FIRM
+no	yes	
+0.59663866	0.40336134	
+
+Attribute SPLEEN_PALPABLE
+no	yes	
+0.84297521	0.15702479	
+
+Attribute SPIDERS
+no	yes	
+0.75206612	0.24793388	
+
+Attribute ASCITES
+no	yes	
+0.94214876	0.05785124	
+
+Attribute VARICES
+no	yes	
+0.9338843 	0.0661157 	
+
+Attribute BILIRUBIN
+Mean: 1.14621849	Standard Deviation: 0.72214252
+
+Attribute ALK_PHOSPHATE
+Mean: 101.31372549	Standard Deviation: 50.25479247
+
+Attribute SGOT
+Mean: 82.43801653	Standard Deviation: 86.50490281
+
+Attribute ALBUMIN
+Mean: 3.97767857	Standard Deviation: 0.55600081
+
+Attribute PROTIME
+Mean: 66.57142857	Standard Deviation: 21.91126468
+
+Attribute HISTOLOGY
+no	yes	
+0.632     	0.368     	
+
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         131               84.5161 %
+Incorrectly Classified Instances        24               15.4839 %
+Kappa statistic                          0.5483
+Mean absolute error                      0.1688
+Root mean squared error                  0.3665
+Relative absolute error                 51.118  %
+Root relative squared error             90.5193 %
+Total Number of Instances              155     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.688     0.114      0.611     0.688     0.647      0.863    DIE
+                 0.886     0.313      0.916     0.886     0.901      0.863    LIVE
+Weighted Avg.    0.845     0.271      0.853     0.845     0.848      0.863
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  22  10 |   a = DIE
+  14 109 |   b = LIVE
+
+

@@ -1,0 +1,8 @@
+\begin{enumerate}[align=left]
+
+\item (ALBUMIN $<=$ 3.8) \textbf{AND} (ALBUMIN $<=$ 2.8) $\Rightarrow$ Class=DIE (13.0/2.0)
+\item (PROTIME $<=$ 42) $\Rightarrow$ Class=DIE (15.0/7.0)
+\item (SPIDERS $=$ yes) \textbf{AND} (BILIRUBIN $>=$ 2) $\Rightarrow$ Class=DIE (11.0/4.0)
+\item $[$\emph{Empty Rule}$]$ $\Rightarrow$ Class=LIVE (116.0/6.0)
+
+\end{enumerate}

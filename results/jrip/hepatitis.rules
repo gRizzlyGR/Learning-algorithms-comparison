@@ -1,0 +1,4 @@
+(ALBUMIN <= 3.8) and (ALBUMIN <= 2.8) => Class=DIE (13.0/2.0)
+(PROTIME <= 42) => Class=DIE (15.0/7.0)
+(SPIDERS = yes) and (BILIRUBIN >= 2) => Class=DIE (11.0/4.0)
+ => Class=LIVE (116.0/6.0)

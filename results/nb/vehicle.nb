@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.NaiveBayesSimple 
+Relation:     vehicle
+Instances:    846
+Attributes:   19
+              COMPACTNESS
+              CIRCULARITY
+              DISTANCE CIRCULARITY
+              RADIUS RATIO
+              PR.AXIS ASPECT RATIO
+              MAX.LENGTH ASPECT RATIO
+              SCATTER RATIO
+              ELONGATEDNESS
+              PR.AXIS RECTANGULARITY
+              MAX.LENGTH RECTANGULARITY
+              SCALED VARIANCE_MAJOR
+              SCALED VARIANCE_MINOR
+              SCALED RADIUS OF GYRATION
+              SKEWNESS ABOUT_MAJOR
+              SKEWNESS ABOUT_MINOR
+              KURTOSIS ABOUT_MAJOR
+              KURTOSIS ABOUT_MINOR
+              HOLLOWS RATIO
+              Class
+Test mode:10-fold cross-validation
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         383               45.2719 %
+Incorrectly Classified Instances       463               54.7281 %
+Kappa statistic                          0.2759
+Mean absolute error                      0.2793
+Root mean squared error                  0.4581
+Relative absolute error                 74.4992 %
+Root relative squared error            105.8072 %
+Total Number of Instances              846     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.415     0.167      0.454     0.415     0.433      0.706    opel
+                 0.387     0.122      0.522     0.387     0.444      0.714    saab
+                 0.17      0.024      0.712     0.17      0.274      0.851    bus
+                 0.874     0.41       0.396     0.874     0.545      0.827    van
+Weighted Avg.    0.453     0.176      0.524     0.453     0.422      0.774
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+  88  60   0  64 |   a = opel
+  63  84   3  67 |   b = saab
+  38   9  37 134 |   c = bus
+   5   8  12 174 |   d = van
+
+

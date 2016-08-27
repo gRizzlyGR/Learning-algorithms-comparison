@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1
+Relation:     hepatitis
+Instances:    155
+Attributes:   20
+              AGE
+              SEX
+              STEROID
+              ANTIVIRALS
+              FATIGUE
+              MALAISE
+              ANOREXIA
+              LIVER_BIG
+              LIVER_FIRM
+              SPLEEN_PALPABLE
+              SPIDERS
+              ASCITES
+              VARICES
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              HISTOLOGY
+              Class
+Test mode:10-fold cross-validation
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         122               78.7097 %
+Incorrectly Classified Instances        33               21.2903 %
+Kappa statistic                          0.0554
+Mean absolute error                      0.304 
+Root mean squared error                  0.4067
+Relative absolute error                 92.0602 %
+Root relative squared error            100.448  %
+Total Number of Instances              155     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.063     0.024      0.4       0.063     0.108      0.533    DIE
+                 0.976     0.938      0.8       0.976     0.879      0.533    LIVE
+Weighted Avg.    0.787     0.749      0.717     0.787     0.72       0.533
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   2  30 |   a = DIE
+   3 120 |   b = LIVE
+
+
