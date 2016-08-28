@@ -1,59 +1,75 @@
-Class benign: P(C) = 0.65477889
+\begin{longtable}{|l|l|}
 
-Attribute Clump_Thickness
-Mean: 2.95633188	Standard Deviation: 1.67431794
+\hline
+\multicolumn{2}{|c|}{Modello Naive Bayes} \\ \hline
+\endhead
 
-Attribute Cell_Size_Uniformity
-Mean: 1.32532751	Standard Deviation: 0.90769408
+\hline \multicolumn{2}{|r|}{Continua...} \\ \hline
+\endfoot
 
-Attribute Cell_Shape_Uniformity
-Mean: 1.44323144	Standard Deviation: 0.99783575
+\hline
+\endlastfoot
 
-Attribute Marginal_Adhesion
-Mean: 1.36462882	Standard Deviation: 0.99682975
+\hline
 
-Attribute Single_Epi_Cell_Size
-Mean: 2.12008734	Standard Deviation: 0.91712995
+\multicolumn{2}{|c|}{Class \textbf{benign}: P(C) = 0.65477889} \\ \hline 
 
-Attribute Bare_Nuclei
-Mean: 1.34684685	Standard Deviation: 1.1778482 
+\multicolumn{2}{|l|}{Attribute \textbf{Clump\_Thickness}} \\ \hline
+Mean: 2.95633188	& Standard Deviation: 1.67431794 \\ \hline 
 
-Attribute Bland_Chromatin
-Mean: 2.10043668	Standard Deviation: 1.08033943
+\multicolumn{2}{|l|}{Attribute \textbf{Cell\_Size\_Uniformity}} \\ \hline
+Mean: 1.32532751	& Standard Deviation: 0.90769408 \\ \hline 
 
-Attribute Normal_Nucleoli
-Mean: 1.29039301	Standard Deviation: 1.05885629
+\multicolumn{2}{|l|}{Attribute \textbf{Cell\_Shape\_Uniformity}} \\ \hline
+Mean: 1.44323144	& Standard Deviation: 0.99783575 \\ \hline 
 
-Attribute Mitoses
-Mean: 1.06331878	Standard Deviation: 0.50199548
+\multicolumn{2}{|l|}{Attribute \textbf{Marginal\_Adhesion}} \\ \hline
+Mean: 1.36462882	& Standard Deviation: 0.99682975 \\ \hline 
 
+\multicolumn{2}{|l|}{Attribute \textbf{Single\_Epi\_Cell\_Size}} \\ \hline
+Mean: 2.12008734	& Standard Deviation: 0.91712995 \\ \hline 
 
+\multicolumn{2}{|l|}{Attribute \textbf{Bare\_Nuclei}} \\ \hline
+Mean: 1.34684685	& Standard Deviation: 1.1778482  \\ \hline 
 
-Class malignant: P(C) = 0.34522111
+\multicolumn{2}{|l|}{Attribute \textbf{Bland\_Chromatin}} \\ \hline
+Mean: 2.10043668	& Standard Deviation: 1.08033943 \\ \hline 
 
-Attribute Clump_Thickness
-Mean: 7.19502075	Standard Deviation: 2.4288492 
+\multicolumn{2}{|l|}{Attribute \textbf{Normal\_Nucleoli}} \\ \hline
+Mean: 1.29039301	& Standard Deviation: 1.05885629 \\ \hline 
 
-Attribute Cell_Size_Uniformity
-Mean: 6.57261411	Standard Deviation: 2.71951225
+\multicolumn{2}{|l|}{Attribute \textbf{Mitoses}} \\ \hline
+Mean: 1.06331878	& Standard Deviation: 0.50199548 \\
 
-Attribute Cell_Shape_Uniformity
-Mean: 6.56016598	Standard Deviation: 2.56204475
+\hline \hline
 
-Attribute Marginal_Adhesion
-Mean: 5.54771784	Standard Deviation: 3.21046547
+\multicolumn{2}{|c|}{Class \textbf{malignant}: P(C) = 0.34522111} \\ \hline 
 
-Attribute Single_Epi_Cell_Size
-Mean: 5.29875519	Standard Deviation: 2.4516063 
+\multicolumn{2}{|l|}{Attribute \textbf{Clump\_Thickness}} \\ \hline
+Mean: 7.19502075	& Standard Deviation: 2.4288492  \\ \hline 
 
-Attribute Bare_Nuclei
-Mean: 7.62761506	Standard Deviation: 3.116679  
+\multicolumn{2}{|l|}{Attribute \textbf{Cell\_Size\_Uniformity}} \\ \hline
+Mean: 6.57261411	& Standard Deviation: 2.71951225 \\ \hline 
 
-Attribute Bland_Chromatin
-Mean: 5.97925311	Standard Deviation: 2.2738516 
+\multicolumn{2}{|l|}{Attribute \textbf{Cell\_Shape\_Uniformity}} \\ \hline
+Mean: 6.56016598	& Standard Deviation: 2.56204475 \\ \hline 
 
-Attribute Normal_Nucleoli
-Mean: 5.86307054	Standard Deviation: 3.3506724 
+\multicolumn{2}{|l|}{Attribute \textbf{Marginal\_Adhesion}} \\ \hline
+Mean: 5.54771784	& Standard Deviation: 3.21046547 \\ \hline 
 
-Attribute Mitoses
-Mean: 2.58921162	Standard Deviation: 2.55793858
+\multicolumn{2}{|l|}{Attribute \textbf{Single\_Epi\_Cell\_Size}} \\ \hline
+Mean: 5.29875519	& Standard Deviation: 2.4516063  \\ \hline 
+
+\multicolumn{2}{|l|}{Attribute \textbf{Bare\_Nuclei}} \\ \hline
+Mean: 7.62761506	& Standard Deviation: 3.116679   \\ \hline 
+
+\multicolumn{2}{|l|}{Attribute \textbf{Bland\_Chromatin}} \\ \hline
+Mean: 5.97925311	& Standard Deviation: 2.2738516  \\ \hline 
+
+\multicolumn{2}{|l|}{Attribute \textbf{Normal\_Nucleoli}} \\ \hline
+Mean: 5.86307054	& Standard Deviation: 3.3506724  \\ \hline 
+
+\multicolumn{2}{|l|}{Attribute \textbf{Mitoses}} \\ \hline
+Mean: 2.58921162	& Standard Deviation: 2.55793858
+
+\end{longtable}

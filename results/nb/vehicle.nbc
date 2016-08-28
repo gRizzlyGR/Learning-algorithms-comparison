@@ -1,229 +1,244 @@
-Class opel: P(C) = 0.25058824
+\begin{longtable}{|l|l|}
 
-Attribute COMPACTNESS
-Mean: 95.06132075	Standard Deviation: 8.23073734
+\hline
+\multicolumn{2}{|c|}{Modello Naive Bayes} \\ \hline
+\endhead
 
-Attribute CIRCULARITY
-Mean: 46.58018868	Standard Deviation: 7.23526016
+\hline \multicolumn{2}{|r|}{Continua...} \\ \hline
+\endfoot
 
-Attribute DISTANCE CIRCULARITY
-Mean: 89.08962264	Standard Deviation: 15.58667817
+\hline
+\endlastfoot
 
-Attribute RADIUS RATIO
-Mean: 180.30188679	Standard Deviation: 31.35492276
+\hline
 
-Attribute PR.AXIS ASPECT RATIO
-Mean: 60.87735849	Standard Deviation: 4.9561161 
+\multicolumn{2}{|c|}{Class \textbf{opel}: P(C) = 0.25058824} \\ \hline  
 
-Attribute MAX.LENGTH ASPECT RATIO
-Mean: 8.85849057	Standard Deviation: 1.98065851
+\multicolumn{2}{|l|}{Attribute \textbf{COMPACTNESS}} \\ \hline 
+Mean: 95.06132075	& Standard Deviation: 8.23073734\\ \hline 
 
-Attribute SCATTER RATIO
-Mean: 182.16509434	Standard Deviation: 32.82188191
+\multicolumn{2}{|l|}{Attribute \textbf{CIRCULARITY}} \\ \hline 
+Mean: 46.58018868	& Standard Deviation: 7.23526016\\ \hline 
 
-Attribute ELONGATEDNESS
-Mean: 37.87735849	Standard Deviation: 7.72415775
+\multicolumn{2}{|l|}{Attribute \textbf{DISTANCE CIRCULARITY}} \\ \hline 
+Mean: 89.08962264	& Standard Deviation: 15.58667817\\ \hline 
 
-Attribute PR.AXIS RECTANGULARITY
-Mean: 21.58962264	Standard Deviation: 2.55303664
+\multicolumn{2}{|l|}{Attribute \textbf{RADIUS RATIO}} \\ \hline 
+Mean: 180.30188679	& Standard Deviation: 31.35492276\\ \hline 
 
-Attribute MAX.LENGTH RECTANGULARITY
-Mean: 151.27358491	Standard Deviation: 18.15809092
+\multicolumn{2}{|l|}{Attribute \textbf{PR.AXIS ASPECT RATIO}} \\ \hline 
+Mean: 60.87735849	& Standard Deviation: 4.9561161 \\ \hline 
 
-Attribute SCALED VARIANCE_MAJOR
-Mean: 198.61792453	Standard Deviation: 28.84096381
+\multicolumn{2}{|l|}{Attribute \textbf{MAX.LENGTH ASPECT RATIO}} \\ \hline 
+Mean: 8.85849057	& Standard Deviation: 1.98065851\\ \hline 
 
-Attribute SCALED VARIANCE_MINOR
-Mean: 508.53773585	Standard Deviation: 172.45924992
+\multicolumn{2}{|l|}{Attribute \textbf{SCATTER RATIO}} \\ \hline 
+Mean: 182.16509434	& Standard Deviation: 32.82188191\\ \hline 
 
-Attribute SCALED RADIUS OF GYRATION
-Mean: 179.77358491	Standard Deviation: 34.72144618
+\multicolumn{2}{|l|}{Attribute \textbf{ELONGATEDNESS}} \\ \hline 
+Mean: 37.87735849	& Standard Deviation: 7.72415775\\ \hline 
 
-Attribute SKEWNESS ABOUT_MAJOR
-Mean: 70.14150943	Standard Deviation: 5.08028189
+\multicolumn{2}{|l|}{Attribute \textbf{PR.AXIS RECTANGULARITY}} \\ \hline 
+Mean: 21.58962264	& Standard Deviation: 2.55303664\\ \hline 
 
-Attribute SKEWNESS ABOUT_MINOR
-Mean: 6.60377358	Standard Deviation: 5.19328631
+\multicolumn{2}{|l|}{Attribute \textbf{MAX.LENGTH RECTANGULARITY}} \\ \hline 
+Mean: 151.27358491	& Standard Deviation: 18.15809092\\ \hline 
 
-Attribute KURTOSIS ABOUT_MAJOR
-Mean: 15.01415094	Standard Deviation: 10.16661145
+\multicolumn{2}{|l|}{Attribute \textbf{SCALED VARIANCE\_MAJOR}} \\ \hline 
+Mean: 198.61792453	& Standard Deviation: 28.84096381\\ \hline 
 
-Attribute KURTOSIS ABOUT_MINOR
-Mean: 189.27830189	Standard Deviation: 5.59306451
+\multicolumn{2}{|l|}{Attribute \textbf{SCALED VARIANCE\_MINOR}} \\ \hline 
+Mean: 508.53773585	& Standard Deviation: 172.45924992\\ \hline 
 
-Attribute HOLLOWS RATIO
-Mean: 197.11320755	Standard Deviation: 5.84608388
+\multicolumn{2}{|l|}{Attribute \textbf{SCALED RADIUS OF GYRATION}} \\ \hline 
+Mean: 179.77358491	& Standard Deviation: 34.72144618\\ \hline 
 
+\multicolumn{2}{|l|}{Attribute \textbf{SKEWNESS ABOUT\_MAJOR}} \\ \hline 
+Mean: 70.14150943	& Standard Deviation: 5.08028189\\ \hline 
 
+\multicolumn{2}{|l|}{Attribute \textbf{SKEWNESS ABOUT\_MINOR}} \\ \hline 
+Mean: 6.60377358	& Standard Deviation: 5.19328631\\ \hline 
 
-Class saab: P(C) = 0.25647059
+\multicolumn{2}{|l|}{Attribute \textbf{KURTOSIS ABOUT\_MAJOR}} \\ \hline 
+Mean: 15.01415094	& Standard Deviation: 10.16661145\\ \hline 
 
-Attribute COMPACTNESS
-Mean: 97.28110599	Standard Deviation: 9.08138423
+\multicolumn{2}{|l|}{Attribute \textbf{KURTOSIS ABOUT\_MINOR}} \\ \hline 
+Mean: 189.27830189	& Standard Deviation: 5.59306451\\ \hline 
 
-Attribute CIRCULARITY
-Mean: 45.53456221	Standard Deviation: 6.81908772
+\multicolumn{2}{|l|}{Attribute \textbf{HOLLOWS RATIO}} \\ \hline 
+Mean: 197.11320755	& Standard Deviation: 5.84608388\\ \hline 
 
-Attribute DISTANCE CIRCULARITY
-Mean: 88.67281106	Standard Deviation: 17.00514214
+\hline \hline 
 
-Attribute RADIUS RATIO
-Mean: 180.80184332	Standard Deviation: 30.80482761
+\multicolumn{2}{|c|}{Class \textbf{saab}: P(C) = 0.25647059} \\ \hline
+\multicolumn{2}{|l|}{Attribute \textbf{COMPACTNESS}} \\ \hline 
+Mean: 97.28110599	& Standard Deviation: 9.08138423\\ \hline 
 
-Attribute PR.AXIS ASPECT RATIO
-Mean: 61.14285714	Standard Deviation: 4.32187129
+\multicolumn{2}{|l|}{Attribute \textbf{CIRCULARITY}} \\ \hline 
+Mean: 45.53456221	& Standard Deviation: 6.81908772\\ \hline 
 
-Attribute MAX.LENGTH ASPECT RATIO
-Mean: 8.79262673	Standard Deviation: 2.15130043
+\multicolumn{2}{|l|}{Attribute \textbf{DISTANCE CIRCULARITY}} \\ \hline 
+Mean: 88.67281106	& Standard Deviation: 17.00514214\\ \hline 
 
-Attribute SCATTER RATIO
-Mean: 179.66820276	Standard Deviation: 31.52380865
+\multicolumn{2}{|l|}{Attribute \textbf{RADIUS RATIO}} \\ \hline 
+Mean: 180.80184332	& Standard Deviation: 30.80482761\\ \hline 
 
-Attribute ELONGATEDNESS
-Mean: 38.31797235	Standard Deviation: 7.48673515
+\multicolumn{2}{|l|}{Attribute \textbf{PR.AXIS ASPECT RATIO}} \\ \hline 
+Mean: 61.14285714	& Standard Deviation: 4.32187129\\ \hline 
 
-Attribute PR.AXIS RECTANGULARITY
-Mean: 21.44700461	Standard Deviation: 2.45292772
+\multicolumn{2}{|l|}{Attribute \textbf{MAX.LENGTH ASPECT RATIO}} \\ \hline 
+Mean: 8.79262673	& Standard Deviation: 2.15130043\\ \hline 
 
-Attribute MAX.LENGTH RECTANGULARITY
-Mean: 148.69124424	Standard Deviation: 16.13460644
+\multicolumn{2}{|l|}{Attribute \textbf{SCATTER RATIO}} \\ \hline 
+Mean: 179.66820276	& Standard Deviation: 31.52380865\\ \hline 
 
-Attribute SCALED VARIANCE_MAJOR
-Mean: 197.15207373	Standard Deviation: 27.92002315
+\multicolumn{2}{|l|}{Attribute \textbf{ELONGATEDNESS}} \\ \hline 
+Mean: 38.31797235	& Standard Deviation: 7.48673515\\ \hline 
 
-Attribute SCALED VARIANCE_MINOR
-Mean: 493.79723502	Standard Deviation: 163.15624014
+\multicolumn{2}{|l|}{Attribute \textbf{PR.AXIS RECTANGULARITY}} \\ \hline 
+Mean: 21.44700461	& Standard Deviation: 2.45292772\\ \hline 
 
-Attribute SCALED RADIUS OF GYRATION
-Mean: 179.4562212	Standard Deviation: 33.77607594
+\multicolumn{2}{|l|}{Attribute \textbf{MAX.LENGTH RECTANGULARITY}} \\ \hline 
+Mean: 148.69124424	& Standard Deviation: 16.13460644\\ \hline 
 
-Attribute SKEWNESS ABOUT_MAJOR
-Mean: 69.75576037	Standard Deviation: 5.29152681
+\multicolumn{2}{|l|}{Attribute \textbf{SCALED VARIANCE\_MAJOR}} \\ \hline 
+Mean: 197.15207373	& Standard Deviation: 27.92002315\\ \hline 
 
-Attribute SKEWNESS ABOUT_MINOR
-Mean: 7.65898618	Standard Deviation: 5.81694721
+\multicolumn{2}{|l|}{Attribute \textbf{SCALED VARIANCE\_MINOR}} \\ \hline 
+Mean: 493.79723502	& Standard Deviation: 163.15624014\\ \hline 
 
-Attribute KURTOSIS ABOUT_MAJOR
-Mean: 15.29953917	Standard Deviation: 10.06679773
+\multicolumn{2}{|l|}{Attribute \textbf{SCALED RADIUS OF GYRATION}} \\ \hline 
+Mean: 179.4562212	& Standard Deviation: 33.77607594\\ \hline 
 
-Attribute KURTOSIS ABOUT_MINOR
-Mean: 189.71428571	Standard Deviation: 4.99179221
+\multicolumn{2}{|l|}{Attribute \textbf{SKEWNESS ABOUT\_MAJOR}} \\ \hline 
+Mean: 69.75576037	& Standard Deviation: 5.29152681\\ \hline 
 
-Attribute HOLLOWS RATIO
-Mean: 198.04147465	Standard Deviation: 6.61039681
+\multicolumn{2}{|l|}{Attribute \textbf{SKEWNESS ABOUT\_MINOR}} \\ \hline 
+Mean: 7.65898618	& Standard Deviation: 5.81694721\\ \hline 
 
+\multicolumn{2}{|l|}{Attribute \textbf{KURTOSIS ABOUT\_MAJOR}} \\ \hline 
+Mean: 15.29953917	& Standard Deviation: 10.06679773\\ \hline 
 
+\multicolumn{2}{|l|}{Attribute \textbf{KURTOSIS ABOUT\_MINOR}} \\ \hline 
+Mean: 189.71428571	& Standard Deviation: 4.99179221\\ \hline 
 
-Class bus: P(C) = 0.25764706
+\multicolumn{2}{|l|}{Attribute \textbf{HOLLOWS RATIO}} \\ \hline 
+Mean: 198.04147465	& Standard Deviation: 6.61039681\\ \hline 
 
-Attribute COMPACTNESS
-Mean: 91.59174312	Standard Deviation: 8.6180245 
+\hline \hline 
 
-Attribute CIRCULARITY
-Mean: 45.06880734	Standard Deviation: 5.03076612
+\multicolumn{2}{|c|}{Class \textbf{bus}: P(C) = 0.25764706} \\ \hline 
 
-Attribute DISTANCE CIRCULARITY
-Mean: 76.72018349	Standard Deviation: 12.09256373
+\multicolumn{2}{|l|}{Attribute \textbf{COMPACTNESS}} \\ \hline 
+Mean: 91.59174312	& Standard Deviation: 8.6180245 \\ \hline 
 
-Attribute RADIUS RATIO
-Mean: 166.00458716	Standard Deviation: 30.57415217
+\multicolumn{2}{|l|}{Attribute \textbf{CIRCULARITY}} \\ \hline 
+Mean: 45.06880734	& Standard Deviation: 5.03076612\\ \hline 
 
-Attribute PR.AXIS ASPECT RATIO
-Mean: 63.43119266	Standard Deviation: 8.80287654
+\multicolumn{2}{|l|}{Attribute \textbf{DISTANCE CIRCULARITY}} \\ \hline 
+Mean: 76.72018349	& Standard Deviation: 12.09256373\\ \hline 
 
-Attribute MAX.LENGTH ASPECT RATIO
-Mean: 7.01376147	Standard Deviation: 4.75722042
+\multicolumn{2}{|l|}{Attribute \textbf{RADIUS RATIO}} \\ \hline 
+Mean: 166.00458716	& Standard Deviation: 30.57415217\\ \hline 
 
-Attribute SCATTER RATIO
-Mean: 170.02293578	Standard Deviation: 33.35681176
+\multicolumn{2}{|l|}{Attribute \textbf{PR.AXIS ASPECT RATIO}} \\ \hline 
+Mean: 63.43119266	& Standard Deviation: 8.80287654\\ \hline 
 
-Attribute ELONGATEDNESS
-Mean: 40.1146789	Standard Deviation: 6.50137633
+\multicolumn{2}{|l|}{Attribute \textbf{MAX.LENGTH ASPECT RATIO}} \\ \hline 
+Mean: 7.01376147	& Standard Deviation: 4.75722042\\ \hline 
 
-Attribute PR.AXIS RECTANGULARITY
-Mean: 20.5733945	Standard Deviation: 2.72835063
+\multicolumn{2}{|l|}{Attribute \textbf{SCATTER RATIO}} \\ \hline 
+Mean: 170.02293578	& Standard Deviation: 33.35681176\\ \hline 
 
-Attribute MAX.LENGTH RECTANGULARITY
-Mean: 146.70183486	Standard Deviation: 10.49239779
+\multicolumn{2}{|l|}{Attribute \textbf{ELONGATEDNESS}} \\ \hline 
+Mean: 40.1146789	& Standard Deviation: 6.50137633\\ \hline 
 
-Attribute SCALED VARIANCE_MAJOR
-Mean: 192.88990826	Standard Deviation: 33.99656785
+\multicolumn{2}{|l|}{Attribute \textbf{PR.AXIS RECTANGULARITY}} \\ \hline 
+Mean: 20.5733945	& Standard Deviation: 2.72835063\\ \hline 
 
-Attribute SCALED VARIANCE_MINOR
-Mean: 448.89449541	Standard Deviation: 193.13831358
+\multicolumn{2}{|l|}{Attribute \textbf{MAX.LENGTH RECTANGULARITY}} \\ \hline 
+Mean: 146.70183486	& Standard Deviation: 10.49239779\\ \hline 
 
-Attribute SCALED RADIUS OF GYRATION
-Mean: 180.94954128	Standard Deviation: 31.24737371
+\multicolumn{2}{|l|}{Attribute \textbf{SCALED VARIANCE\_MAJOR}} \\ \hline 
+Mean: 192.88990826	& Standard Deviation: 33.99656785\\ \hline 
 
-Attribute SKEWNESS ABOUT_MAJOR
-Mean: 77.12385321	Standard Deviation: 7.68494128
+\multicolumn{2}{|l|}{Attribute \textbf{SCALED VARIANCE\_MINOR}} \\ \hline 
+Mean: 448.89449541	& Standard Deviation: 193.13831358\\ \hline 
 
-Attribute SKEWNESS ABOUT_MINOR
-Mean: 4.8440367 	Standard Deviation: 3.22053982
+\multicolumn{2}{|l|}{Attribute \textbf{SCALED RADIUS OF GYRATION}} \\ \hline 
+Mean: 180.94954128	& Standard Deviation: 31.24737371\\ \hline 
 
-Attribute KURTOSIS ABOUT_MAJOR
-Mean: 10.21100917	Standard Deviation: 6.87287247
+\multicolumn{2}{|l|}{Attribute \textbf{SKEWNESS ABOUT\_MAJOR}} \\ \hline 
+Mean: 77.12385321	& Standard Deviation: 7.68494128\\ \hline 
 
-Attribute KURTOSIS ABOUT_MINOR
-Mean: 187.81192661	Standard Deviation: 7.32123009
+\multicolumn{2}{|l|}{Attribute \textbf{SKEWNESS ABOUT\_MINOR}} \\ \hline 
+Mean: 4.8440367 	& Standard Deviation: 3.22053982\\ \hline 
 
-Attribute HOLLOWS RATIO
-Mean: 191.32568807	Standard Deviation: 7.91832622
+\multicolumn{2}{|l|}{Attribute \textbf{KURTOSIS ABOUT\_MAJOR}} \\ \hline 
+Mean: 10.21100917	& Standard Deviation: 6.87287247\\ \hline 
 
+\multicolumn{2}{|l|}{Attribute \textbf{KURTOSIS ABOUT\_MINOR}} \\ \hline 
+Mean: 187.81192661	& Standard Deviation: 7.32123009\\ \hline 
 
+\multicolumn{2}{|l|}{Attribute \textbf{HOLLOWS RATIO}} \\ \hline 
+Mean: 191.32568807	& Standard Deviation: 7.91832622\\ \hline 
 
-Class van: P(C) = 0.23529412
+\hline \hline 
 
-Attribute COMPACTNESS
-Mean: 90.56281407	Standard Deviation: 3.87230833
+\multicolumn{2}{|c|}{Class \textbf{van}: P(C) = 0.23529412} \\ \hline  
 
-Attribute CIRCULARITY
-Mean: 42.07035176	Standard Deviation: 4.08311074
+\multicolumn{2}{|l|}{Attribute \textbf{COMPACTNESS}} \\ \hline 
+Mean: 90.56281407	& Standard Deviation: 3.87230833\\ \hline 
 
-Attribute DISTANCE CIRCULARITY
-Mean: 73.33165829	Standard Deviation: 10.86884867
+\multicolumn{2}{|l|}{Attribute \textbf{CIRCULARITY}} \\ \hline 
+Mean: 42.07035176	& Standard Deviation: 4.08311074\\ \hline 
 
-Attribute RADIUS RATIO
-Mean: 147.12060302	Standard Deviation: 29.89452042
+\multicolumn{2}{|l|}{Attribute \textbf{DISTANCE CIRCULARITY}} \\ \hline 
+Mean: 73.33165829	& Standard Deviation: 10.86884867\\ \hline 
 
-Attribute PR.AXIS ASPECT RATIO
-Mean: 61.26130653	Standard Deviation: 11.38056381
+\multicolumn{2}{|l|}{Attribute \textbf{RADIUS RATIO}} \\ \hline 
+Mean: 147.12060302	& Standard Deviation: 29.89452042\\ \hline 
 
-Attribute MAX.LENGTH ASPECT RATIO
-Mean: 9.71356784	Standard Deviation: 7.22463287
+\multicolumn{2}{|l|}{Attribute \textbf{PR.AXIS ASPECT RATIO}} \\ \hline 
+Mean: 61.26130653	& Standard Deviation: 11.38056381\\ \hline 
 
-Attribute SCATTER RATIO
-Mean: 141.53768844	Standard Deviation: 13.99557422
+\multicolumn{2}{|l|}{Attribute \textbf{MAX.LENGTH ASPECT RATIO}} \\ \hline 
+Mean: 9.71356784	& Standard Deviation: 7.22463287\\ \hline 
 
-Attribute ELONGATEDNESS
-Mean: 47.93969849	Standard Deviation: 4.66843926
+\multicolumn{2}{|l|}{Attribute \textbf{SCATTER RATIO}} \\ \hline 
+Mean: 141.53768844	& Standard Deviation: 13.99557422\\ \hline 
 
-Attribute PR.AXIS RECTANGULARITY
-Mean: 18.57788945	Standard Deviation: 1.0311872 
+\multicolumn{2}{|l|}{Attribute \textbf{ELONGATEDNESS}} \\ \hline 
+Mean: 47.93969849	& Standard Deviation: 4.66843926\\ \hline 
 
-Attribute MAX.LENGTH RECTANGULARITY
-Mean: 145.1758794	Standard Deviation: 11.01533463
+\multicolumn{2}{|l|}{Attribute \textbf{PR.AXIS RECTANGULARITY}} \\ \hline 
+Mean: 18.57788945	& Standard Deviation: 1.0311872 \\ \hline 
 
-Attribute SCALED VARIANCE_MAJOR
-Mean: 164.01005025	Standard Deviation: 19.68001343
+\multicolumn{2}{|l|}{Attribute \textbf{MAX.LENGTH RECTANGULARITY}} \\ \hline 
+Mean: 145.1758794	& Standard Deviation: 11.01533463\\ \hline 
 
-Attribute SCALED VARIANCE_MINOR
-Mean: 298.20100503	Standard Deviation: 55.89465017
+\multicolumn{2}{|l|}{Attribute \textbf{SCALED VARIANCE\_MAJOR}} \\ \hline 
+Mean: 164.01005025	& Standard Deviation: 19.68001343\\ \hline 
 
-Attribute SCALED RADIUS OF GYRATION
-Mean: 157.27638191	Standard Deviation: 22.82119773
+\multicolumn{2}{|l|}{Attribute \textbf{SCALED VARIANCE\_MINOR}} \\ \hline 
+Mean: 298.20100503	& Standard Deviation: 55.89465017\\ \hline 
 
-Attribute SKEWNESS ABOUT_MAJOR
-Mean: 72.77889447	Standard Deviation: 8.8672224 
+\multicolumn{2}{|l|}{Attribute \textbf{SCALED RADIUS OF GYRATION}} \\ \hline 
+Mean: 157.27638191	& Standard Deviation: 22.82119773\\ \hline 
 
-Attribute SKEWNESS ABOUT_MINOR
-Mean: 6.41708543	Standard Deviation: 4.66579099
+\multicolumn{2}{|l|}{Attribute \textbf{SKEWNESS ABOUT\_MAJOR}} \\ \hline 
+Mean: 72.77889447	& Standard Deviation: 8.8672224 \\ \hline 
 
-Attribute KURTOSIS ABOUT_MAJOR
-Mean: 9.69849246	Standard Deviation: 6.24334375
+\multicolumn{2}{|l|}{Attribute \textbf{SKEWNESS ABOUT\_MINOR}} \\ \hline 
+Mean: 6.41708543	& Standard Deviation: 4.66579099\\ \hline 
 
-Attribute KURTOSIS ABOUT_MINOR
-Mean: 188.93969849	Standard Deviation: 6.37992289
+\multicolumn{2}{|l|}{Attribute \textbf{KURTOSIS ABOUT\_MAJOR}} \\ \hline 
+Mean: 9.69849246	& Standard Deviation: 6.24334375\\ \hline 
 
-Attribute HOLLOWS RATIO
-Mean: 196.14572864	Standard Deviation: 7.34529805
+\multicolumn{2}{|l|}{Attribute \textbf{KURTOSIS ABOUT\_MINOR}} \\ \hline 
+Mean: 188.93969849	& Standard Deviation: 6.37992289\\ \hline 
+
+\multicolumn{2}{|l|}{Attribute \textbf{HOLLOWS RATIO}} \\ \hline 
+Mean: 196.14572864	& Standard Deviation: 7.34529805
+
+\end{longtable}

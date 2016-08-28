@@ -1,145 +1,161 @@
-Class DIE: P(C) = 0.21019108
+\begin{longtable}{|l|l|}
 
-Attribute AGE
-Mean: 46.59375	Standard Deviation: 9.94455395
+\hline
+\multicolumn{2}{|c|}{Modello Naive Bayes} \\ \hline
+\endhead
 
-Attribute SEX
-male	female	
-0.02941176	0.97058824	
+\hline \multicolumn{2}{|r|}{Continua...} \\ \hline
+\endfoot
 
-Attribute STEROID
-no	yes	
-0.61764706	0.38235294	
+\hline
+\endlastfoot
 
-Attribute ANTIVIRALS
-no	yes	
-0.91176471	0.08823529	
+\hline
 
-Attribute FATIGUE
-no	yes	
-0.08823529	0.91176471	
+\multicolumn{2}{|c|}{Class \textbf{DIE}: P(C) = 0.21019108} \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{AGE}} \\ \hline 
+Mean: 46.59375 & Standard Deviation: 9.94455395 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{SEX}} \\ \hline 
+male & female \\  
+0.02941176 & 0.97058824 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{STEROID}} \\ \hline 
+no & yes \\ 
+0.61764706 & 0.38235294 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{ANTIVIRALS}} \\ \hline 
+no & yes \\ 
+0.91176471 & 0.08823529 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{FATIGUE}} \\ \hline 
+no & yes \\ 
+0.08823529 & 0.91176471 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{MALAISE}} \\ \hline 
+no & yes \\ 
+0.29411765 & 0.70588235 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{ANOREXIA}} \\ \hline 
+no & yes \\ 
+0.67647059 & 0.32352941 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{LIVER\_BIG}} \\ \hline 
+no & yes \\ 
+0.13793103 & 0.86206897 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{LIVER\_FIRM}} \\ \hline 
+no & yes \\ 
+0.51724138 & 0.48275862 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{SPLEEN\_PALPABLE}} \\ \hline 
+no & yes \\ 
+0.60606061 & 0.39393939 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{SPIDERS}} \\ \hline 
+no & yes \\ 
+0.3030303  & 0.6969697  \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{ASCITES}} \\ \hline 
+no & yes \\ 
+0.54545455 & 0.45454545 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{VARICES}} \\ \hline 
+no & yes \\ 
+0.63636364 & 0.36363636 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{BILIRUBIN}} \\ \hline 
+Mean: 2.54333333 & Standard Deviation: 1.94008235 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{ALK\_PHOSPHATE}} \\ \hline 
+Mean: 122.375 & Standard Deviation: 54.34896303 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{SGOT}} \\ \hline 
+Mean: 99.83333333 & Standard Deviation: 101.76818937 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{ALBUMIN}} \\ \hline 
+Mean: 3.15185185 & Standard Deviation: 0.60215662 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{PROTIME}} \\ \hline 
+Mean: 43.5 & Standard Deviation: 16.76217731 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{HISTOLOGY}} \\ \hline 
+no & yes \\ 
+0.23529412 & 0.76470588 \\ \hline \hline 
+ 
+ 
+ 
+\multicolumn{2}{|c|}{Class \textbf{LIVE}: P(C) = 0.78980892} \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{AGE}} \\ \hline 
+Mean: 39.79674797 & Standard Deviation: 12.82860492 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{SEX}} \\ \hline 
+male & female \\ \hline 
+0.136      & 0.864      \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{STEROID}} \\ \hline 
+no & yes \\ 
+0.45967742 & 0.54032258 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{ANTIVIRALS}} \\ \hline 
+no & yes \\ 
+0.816      & 0.184      \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{FATIGUE}} \\ \hline 
+no & yes \\ 
+0.42741935 & 0.57258065 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{MALAISE}} \\ \hline 
+no & yes \\ 
+0.68548387 & 0.31451613 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{ANOREXIA}} \\ \hline 
+no & yes \\ 
+0.81451613 & 0.18548387 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{LIVER\_BIG}} \\ \hline 
+no & yes \\ 
+0.19166667 & 0.80833333 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{LIVER\_FIRM}} \\ \hline 
+no & yes \\ 
+0.59663866 & 0.40336134 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{SPLEEN\_PALPABLE}} \\ \hline 
+no & yes \\ 
+0.84297521 & 0.15702479 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{SPIDERS}} \\ \hline 
+no & yes \\ 
+0.75206612 & 0.24793388 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{ASCITES}} \\ \hline 
+no & yes \\ 
+0.94214876 & 0.05785124 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{VARICES}} \\ \hline 
+no & yes \\ 
+0.9338843  & 0.0661157  \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{BILIRUBIN}} \\ \hline 
+Mean: 1.14621849 & Standard Deviation: 0.72214252 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{ALK\_PHOSPHATE}} \\ \hline 
+Mean: 101.31372549 & Standard Deviation: 50.25479247 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{SGOT}} \\ \hline 
+Mean: 82.43801653 & Standard Deviation: 86.50490281 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{ALBUMIN}} \\ \hline 
+Mean: 3.97767857 & Standard Deviation: 0.55600081 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{PROTIME}} \\ \hline 
+Mean: 66.57142857 & Standard Deviation: 21.91126468 \\ \hline 
+ 
+\multicolumn{2}{|l|}{Attribute \textbf{HISTOLOGY}} \\ \hline 
+no & yes \\ 
+0.632      & 0.368
 
-Attribute MALAISE
-no	yes	
-0.29411765	0.70588235	
-
-Attribute ANOREXIA
-no	yes	
-0.67647059	0.32352941	
-
-Attribute LIVER_BIG
-no	yes	
-0.13793103	0.86206897	
-
-Attribute LIVER_FIRM
-no	yes	
-0.51724138	0.48275862	
-
-Attribute SPLEEN_PALPABLE
-no	yes	
-0.60606061	0.39393939	
-
-Attribute SPIDERS
-no	yes	
-0.3030303 	0.6969697 	
-
-Attribute ASCITES
-no	yes	
-0.54545455	0.45454545	
-
-Attribute VARICES
-no	yes	
-0.63636364	0.36363636	
-
-Attribute BILIRUBIN
-Mean: 2.54333333	Standard Deviation: 1.94008235
-
-Attribute ALK_PHOSPHATE
-Mean: 122.375	Standard Deviation: 54.34896303
-
-Attribute SGOT
-Mean: 99.83333333	Standard Deviation: 101.76818937
-
-Attribute ALBUMIN
-Mean: 3.15185185	Standard Deviation: 0.60215662
-
-Attribute PROTIME
-Mean: 43.5	Standard Deviation: 16.76217731
-
-Attribute HISTOLOGY
-no	yes	
-0.23529412	0.76470588	
-
-
-
-Class LIVE: P(C) = 0.78980892
-
-Attribute AGE
-Mean: 39.79674797	Standard Deviation: 12.82860492
-
-Attribute SEX
-male	female	
-0.136     	0.864     	
-
-Attribute STEROID
-no	yes	
-0.45967742	0.54032258	
-
-Attribute ANTIVIRALS
-no	yes	
-0.816     	0.184     	
-
-Attribute FATIGUE
-no	yes	
-0.42741935	0.57258065	
-
-Attribute MALAISE
-no	yes	
-0.68548387	0.31451613	
-
-Attribute ANOREXIA
-no	yes	
-0.81451613	0.18548387	
-
-Attribute LIVER_BIG
-no	yes	
-0.19166667	0.80833333	
-
-Attribute LIVER_FIRM
-no	yes	
-0.59663866	0.40336134	
-
-Attribute SPLEEN_PALPABLE
-no	yes	
-0.84297521	0.15702479	
-
-Attribute SPIDERS
-no	yes	
-0.75206612	0.24793388	
-
-Attribute ASCITES
-no	yes	
-0.94214876	0.05785124	
-
-Attribute VARICES
-no	yes	
-0.9338843 	0.0661157 	
-
-Attribute BILIRUBIN
-Mean: 1.14621849	Standard Deviation: 0.72214252
-
-Attribute ALK_PHOSPHATE
-Mean: 101.31372549	Standard Deviation: 50.25479247
-
-Attribute SGOT
-Mean: 82.43801653	Standard Deviation: 86.50490281
-
-Attribute ALBUMIN
-Mean: 3.97767857	Standard Deviation: 0.55600081
-
-Attribute PROTIME
-Mean: 66.57142857	Standard Deviation: 21.91126468
-
-Attribute HISTOLOGY
-no	yes	
-0.632     	0.368     	
+\end{longtable}
