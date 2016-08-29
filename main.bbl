@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -22,6 +22,12 @@ W.~W. Cohen.
 \newblock Fast effective rule induction.
 \newblock In \emph{In Proceedings of the Twelfth International Conference on
   Machine Learning}, pages 115--123. Morgan Kaufmann, 1995.
+
+\bibitem[Dem\v{s}ar(2006)]{Demsar:2006:SCC:1248547.1248548}
+J.~Dem\v{s}ar.
+\newblock Statistical comparisons of classifiers over multiple data sets.
+\newblock \emph{J. Mach. Learn. Res.}, 7:\penalty0 1--30, Dec. 2006.
+\newblock ISSN 1532-4435.
 
 \bibitem[Domingos and Pazzani(1997)]{Domingos:1997:OSB:274158.274160}
 P.~Domingos and M.~Pazzani.

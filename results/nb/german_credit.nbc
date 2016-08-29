@@ -158,11 +158,11 @@
 \makecell{X | X}{Mean: 1.15333333 & Standard Deviation: 0.36091053}\\ \hline 
 
 \multicolumn{1}{|l|}{Attribute \textbf{own\_telephone}} \\ \hline
-\makecell{X | X | X}{none & yes \\ 
+\makecell{X | X }{none & yes \\ 
 0.62251656 & 0.37748344}\\ \hline
 
 \multicolumn{1}{|l|}{Attribute \textbf{foreign\_worker}} \\ \hline
-\makecell{X | X | X }{yes & no \\ 
+\makecell{X | X }{yes & no \\ 
 0.98344371 & 0.01655629 }
 	
 \end{longtable}
