@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.6)  30 AUG 2016 11:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.6)  30 AUG 2016 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1242,7 +1242,7 @@ File: results/nb/german_credit.nb  (verbatim)
 [21
 
 
-] [22]
+] (./results/nb/german_credit.nbc [22]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1250,14 +1250,14 @@ File: results/nb/german_credit.nb  (verbatim)
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
-* v-part:(T,H,B)=(28.45274pt, 788.14136pt, 28.45274pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=540.60239pt
-* \textheight=788.14136pt
+* \textheight=591.5302pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-75.69104pt
+* \topmargin=-2.73714pt
 * \headheight=12.0pt
 * \headsep=19.8738pt
 * \topskip=12.0pt
@@ -1275,14 +1275,8 @@ File: results/nb/german_credit.nb  (verbatim)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- (./results/nb/german_credit.nbc) (./results/nb/german_credit.nbc)
-(./results/nb/german_credit.nbc
-Overfull \hbox (7.10948pt too wide) in alignment at lines 2--5
- [] 
- []
 
-
-Overfull \hbox (7.10948pt too wide) in alignment at lines 5--8
+Overfull \hbox (7.10948pt too wide) in alignment at lines 4--8
  [] 
  []
 
@@ -1292,162 +1286,167 @@ Overfull \hbox (7.10948pt too wide) in alignment at lines 8--11
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
+Overfull \hbox (7.10948pt too wide) in alignment at lines 11--14
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
 \OT1/cmr/m/n/8 equi-p-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/8 domestic
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 27--27
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/8 0.20534459| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 27--27
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/8 0.12236287| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 27--27
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/8 0.17440225| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 27--27
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/8 0.30801688| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 27--27
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/8 0.01265823| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 27--27
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/8 0.02109705| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 27--27
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/8 0.04078762| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 27--27
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/8 0.00140647| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 27--27
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/8 0.01265823| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 27--27
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/8 0.09001406| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 27--27
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/8 0.01125176| 
  []
 
 
-Overfull \hbox (7.10948pt too wide) in alignment at lines 11--47
+Overfull \hbox (7.10948pt too wide) in alignment at lines 14--50
  [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 47
+Underfull \vbox (badness 10000) detected at line 50
  []
 
 
-Overfull \hbox (7.10948pt too wide) in alignment at lines 47--83
+Overfull \hbox (7.10948pt too wide) in alignment at lines 50--86
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--104
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 \OT1/cmr/m/n/8 equi-p-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--104
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/8 domestic
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 104--104
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/8 0.28938907| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 104--104
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/8 0.05787781| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 104--104
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/8 0.18971061| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 104--104
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/8 0.20257235| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 104--104
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/8 0.01607717| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 104--104
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/8 0.02893891| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 104--104
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/8 0.07395498| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 104--104
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/8 0.00321543| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 104--104
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/8 0.00643087| 
  []
 
 
-Overfull \hbox (3.82965pt too wide) in paragraph at lines 104--104
+Overfull \hbox (3.82965pt too wide) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/8 0.11254019| 
  []
 
 
-Overfull \hbox (7.10948pt too wide) in alignment at lines 83--122
+Overfull \hbox (7.10948pt too wide) in alignment at lines 86--125
  [] 
  []
 
 
-Overfull \hbox (7.10948pt too wide) in alignment at lines 122--158
+Overfull \hbox (7.10948pt too wide) in alignment at lines 125--161
  [] 
  []
 
 [23
 
 ]
-Overfull \hbox (7.10948pt too wide) in alignment at lines 158--164
+Overfull \hbox (7.10948pt too wide) in alignment at lines 161--167
  [] 
  []
 
-) [24]
+[24])
 File: results/reptree/german_credit.reptree  (verbatim)
 Package mdframed Info: Not enough space on this page on input line 19.
  [25
@@ -1592,13 +1591,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
- 23952 strings out of 493013
- 397218 string characters out of 6133329
+ 23948 strings out of 493013
+ 397102 string characters out of 6133329
  567711 words of memory out of 5000000
  26908 multiletter control sequences out of 15000+600000
  12577 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,19n,77p,10489b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,18n,77p,10489b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
@@ -1624,7 +1623,7 @@ st/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2016/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (56 pages, 954979 bytes).
+Output written on main.pdf (56 pages, 955353 bytes).
 PDF statistics:
  680 PDF objects out of 1000 (max. 8388607)
  573 compressed objects within 6 object streams

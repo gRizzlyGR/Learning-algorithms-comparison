@@ -1,5 +1,8 @@
+\newgeometry{left=1cm, right=1cm}
+
 \scriptsize
 \begin{longtable}{|c|}
+
 \hline
 \multicolumn{1}{|c|}{Modello Naive Bayes} \\ \hline
 \endhead
@@ -162,3 +165,5 @@
 0.98344371 & 0.01655629 }
 	
 \end{longtable}
+
+\restoregeometry
