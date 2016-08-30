@@ -1,7 +1,7 @@
 \chapter{Naive Bayes}
 \label{ch:bayes}
 
-Il ragionamento bayesiano è un approccio probabilistico all'inferenza. Si basa sull'assunzione che i dati sono governati da distribuzioni di probabilità e che possono essere prese decisioni ottimali relative a queste probabilità insieme agli esempi a disposizione. Un modello bayesiano non è complicato da costruire, soprattutto su grandi dataset. Nonostante la sua semplicità, tale classificatore spesso si comporta meglio di altri classificatori più sofisticati\cite{Domingos:1997:OSB:274158.274160}.
+Il primo algoritmo sfrutta il ragionamento bayesiano, un approccio probabilistico all'inferenza. Si basa sull'assunzione che i dati sono governati da distribuzioni di probabilità e che possono essere prese decisioni ottimali relative a queste probabilità insieme agli esempi a disposizione. Un modello bayesiano non è complicato da costruire, soprattutto su grandi dataset. Nonostante la sua semplicità, tale classificatore spesso si comporta meglio di altri classificatori più sofisticati\cite{Domingos:1997:OSB:274158.274160}.
 
 \section{Teorema di Bayes}
 Nel contesto di classificazione, quello che interessa è determinare la migliore ipotesi $h$ appartenente ad uno spazio delle ipotesi $H$ e i dati osservati $D$. Un modo per determinare la \emph{migliore} ipotesi è ricercare la \emph{più probabile}, grazie ai dati a disposizione più una conoscenza iniziale sulle probabilità a priori delle varie ipotesi in $H$\cite{Mitchell:1997:ML:541177}. Il teorema di Bayes fornisce un modo diretto per calcolare queste probabilità, in particolare:
@@ -21,7 +21,7 @@ Come è facile intuire, $P(h|D)$ aumenta con $P(h)$ e con $P(D|h)$. Analogamente
 
 In molti scenari di apprendimento vengono considerate un insieme $H$ di ipotesi candidate e, tra di esse, ci interessa trovare quella più probabile dopo aver osservato i dati $D$ (o almeno quella massimamente più probabile, se ce n'è più di una). Questa ipotesi è chiamata ipotesi \emph{maximum a posteriori} (MAP). Si può determinare l'ipotesi MAP usando il teorema di Bayes per calcolare la probabilità a posteriori di ogni ipotesi candidata, e poi trovare quella che massimizza tale probabilità:
 
-$$h_{MAP} \equiv \argmax_{h \in H} P(h|D) $$
+$$h_{MAP} = \argmax_{h \in H} P(h|D) $$
 $$\hphantom{1111111111} = \argmax_{h \in H} \frac{P(D|h) P(h)}{P(D)} $$
 $$\hphantom{1111111111} = \argmax_{h \in H} P(D|h) P(h) $$
 
@@ -46,7 +46,7 @@ Il termine $P(D)$ può essere tolto perché è una costante indipendente da $h$.
 \end{figure}
 
 \section{Naive Bayes Classifier}
-Un metodo di apprendimento molto efficace è il classificatore \emph{naive Bayes}. Esso si applica a task di apprendimento in cui ogni istanza è descritta come una congiunzione di valori di attributo $\langle a_1, ..., a_n \rangle$ e dove l'attributo target può assumere qualsiasi valore da un insieme finito $V$.
+Un metodo di apprendimento molto efficace è il classificatore \textbf{Naive Bayes}. Esso si applica a task di apprendimento in cui ogni istanza è descritta come una congiunzione di valori di attributo $\langle a_1, ..., a_n \rangle$ e dove l'attributo target può assumere un qualsiasi valore da un insieme finito $V$.
 
 Ad una nuova istanza viene assegnato il più probabile valore target $v_{MAP}$, considerati i valori di attributo $\langle a_1, ..., a_n \rangle$:
 
@@ -70,7 +70,7 @@ $$ v_{NB} = v_{MAP} = \argmax_{v_j \in V} P(v_j) \prod_i P(a_i|v_j) $$
 
 dove $v_{NB}$ è il valore target restituito da NBC, che è uguale a $v_{MAP}$ quando si assume l'indipendenza condizionale. Si noti che $P(a_i|v_j)$ è semplicemente il numero dei valori di attributo distinti moltiplicato il numero dei valori target distinti, chiaramente un numero molto più piccolo e gestibile rispetto a $P(a_1, ..., a_n | v_j)$ senza l'ipotesi di indipendenza. 
 
-L'algoritmo di un NBC è pertanto:
+L'algoritmo di un NBC, pertanto, si può riassumere come:
 \begin{itemize}
 	\item Calcola i vari $P(v_j)$ e $P(a_i|v_j)$, basandoti sulle loro frequenze sui dati di training.
 	\item Usa queste stime per formare l'ipotesi.

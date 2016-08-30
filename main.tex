@@ -26,7 +26,6 @@
 \mdfsetup{frametitlealignment=\center, frametitlerule=true, leftmargin=-1.2cm, rightmargin=-2cm}
 \usepackage{nameref}
 \usepackage{array}
-\newcolumntype{H}{>{\setbox0=\hbox\bgroup}c<{\egroup}@{}}
 \usepackage{tabularx}
 \usepackage{tabu}
 \usepackage{ltxtable}
@@ -37,6 +36,7 @@
 \usepackage{adjustbox}
 \usepackage{diagbox}
 \usepackage{caption}
+\usepackage[pass]{geometry}
 
 \titleformat{\chapter}[hang]
 {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter:}{0.3em}{}
@@ -44,6 +44,9 @@
 \DeclareMathOperator*{\argmax}{argmax}
 \newcommand{\makecell}[2]{\hspace{-2mm}\begin{tabu}{#1}#2\end{tabu}}
 
+
+\newcolumntype{H}{>{\setbox0=\hbox\bgroup}c<{\egroup}@{}}
+\newcolumntype{C}{>{\Centering\arraybackslash}X}
 
 \title{AI Sperimentation}
 
