@@ -41,10 +41,10 @@ L'algoritmo di REP è il seguente:
 \begin{itemize}
 	\item Si parte dall'albero completo e lo si visita in post-ordine.
 	\item Per ogni nodo intermedio $v$
-	\begin{itemize}
-		\item Calcolo l'accuratezza sul pruning set dell'albero completo.
-		\item Calcolo l'accuratezza sul pruning set rispetto a $v$ e al suo sottoalbero $T$.
-	\end{itemize}
+	      \begin{itemize}
+	      	\item Calcolo l'accuratezza sul pruning set dell'albero completo.
+	      	\item Calcolo l'accuratezza sul pruning set rispetto a $v$ e al suo sottoalbero $T$.
+	      \end{itemize}
 	\item Se l'accuratezza aumenta, pota. In caso di uguaglianza pota per semplificare (\emph{rasoio di Occam}).
 \end{itemize}
 

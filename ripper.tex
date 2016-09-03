@@ -53,12 +53,12 @@ L'implementazione di Cohen differisce da quella di Fürnkranz e Widmer sotto mol
 	\label{alg:irep}
 	\begin{algorithmic}[1]
 		\State $Ruleset \gets \emptyset$
-		
+				
 		\While{Pos $\neq \emptyset$}
 		\State dividi $(Pos, Neg)$ in $(GrowPos, GrowNeg)$ e $(PrunePos, PrunNeg)$
 		\State $Rule \gets GrowRule(GrowPos, GrowNeg)$
 		\State $Rule \gets PruneRule(Rule, PrunePos, PruneNeg)$
-		
+				
 		\If{il tasso di errore su $(PrunePos, PrunNeg) > 50\%$}
 		\State \Return $Ruleset$
 		\Else
@@ -67,7 +67,7 @@ L'implementazione di Cohen differisce da quella di Fürnkranz e Widmer sotto mol
 		\State rimuovi gli esempi coperti da $Rule$ da $(Pos, Neg)$
 		\EndIf
 		\EndWhile
-		
+				
 		\State \Return $Ruleset$
 	\end{algorithmic}
 \end{algorithm}
@@ -90,11 +90,11 @@ Il principio \emph{MDL} (Minimum Description Length) può essere meglio espresso
 Il metodo usato per la codifica è lo stesso usato in \emph{C4.5rules}\cite{Quinlan95mdland}. Esso parte da un \emph{bias} in cui il numero di falsi positivi e falsi negativi sia lo stesso e si procede come segue: i messaggi da inviare si presentano con probabilità $p_j$, e servono $-\log(p_j)$ bit (in base 2) per costrurli: più un messaggio è frequente, meno bit saranno necessari per rappresentarlo. Si inviano i dati codificati, poi anziché inviare i messaggi di errore per tutti i dati, il mittente prima trasmette gli errori $e$ nei $C$ casi coperti dalla teoria e poi negli $U$ casi non coperti. Sotto l'assunzione che i falsi positivi $fp$ e i falsi negativi $fn$ siano bilanciati, la probabilità di errore nei casi coperti è $e/2C$ e questa probabilità è usata per codificare i messaggi di errore per i casi coperti. Una volta che i falsi positivi sono stati identificati, il destinatario può calcolare il vero numero dei falsi negativi come $e-fp$, quindi la probabilità di errore oer i casi non coperti è $fn/U$. Il costo totale quindi diventa:
 
 \begin{align*}
-	&\log(|D| + 1) \\
-	&+ fp \times (-\log(\dfrac{e}{2C})) \\
-	&+ (C - fp) \times (-\log(1 - \-\dfrac{e}{2C})) \\
-	&+ fn \times (-\log(\dfrac{fn}{U})) \\
-	&+ (U - fn) \times (-\log(1 - \dfrac{fn}{U})) \\	
+	  & \log(|D| + 1)                                  \\
+	  & + fp \times (-\log(\dfrac{e}{2C}))             \\
+	  & + (C - fp) \times (-\log(1 - \-\dfrac{e}{2C})) \\
+	  & + fn \times (-\log(\dfrac{fn}{U}))             \\
+	  & + (U - fn) \times (-\log(1 - \dfrac{fn}{U}))   \\	
 \end{align*}
 
 

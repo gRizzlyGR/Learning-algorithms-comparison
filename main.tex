@@ -1,3 +1,5 @@
+% arara: indent: {overwrite: yes, trace: yes, files: [analysis.tex, bayes.tex, conclusion.tex, data_description.tex, execution.tex, introduction.tex, main.tex, reptree.tex, ripper.tex] }
+
 \documentclass[a4paper,12pt,oneside,onecolumn]{book}
 \usepackage{frontespizio}
 \usepackage[italian]{babel}
@@ -51,11 +53,11 @@
 \title{AI Sperimentation}
 
 \begin{document}
-	\begin{frontespizio}	
-	
-	\Preambolo{\renewcommand{\fronttitlefont}{%
-	\fontsize{20}{24}\scshape}}
+\begin{frontespizio}	
 		
+	\Preambolo{\renewcommand{\fronttitlefont}{%
+		\fontsize{20}{24}\scshape}}
+			
 	\Universita{Bari}
 	\Logo[1.5cm]{./images/logo}
 	\Dipartimento{Informatica}
@@ -68,43 +70,43 @@
 	\Relatore{Prof.~Floriana Esposito}
 	\Relatore{Prof.~Nicola Di Mauro}
 	\Piede{}
-	\end{frontespizio}
+\end{frontespizio}
 	    
-    %Ridefinizione di "for all" in "for each"
-    \renewcommand{\algorithmicforall}{\textbf{for each}}
+%Ridefinizione di "for all" in "for each"
+\renewcommand{\algorithmicforall}{\textbf{for each}}
     
-    %Cambio l'intestazione "Algorithm" in "Algoritmo"
-	\floatname{algorithm}{Algoritmo}
+%Cambio l'intestazione "Algorithm" in "Algoritmo"
+\floatname{algorithm}{Algoritmo}
 
-	%Numerazione delle pagine corretta
-	\pagestyle{plain}
-	\floatpagestyle{plain}
+%Numerazione delle pagine corretta
+\pagestyle{plain}
+\floatpagestyle{plain}
 	
-	%Le tabelle larghe quanto la pagina
+%Le tabelle larghe quanto la pagina
 %	\setlength\LTleft{0pt}
 %	\setlength\LTright{0pt}
 %Da usare anche \begin{longtable}{@{\extracolsep{\fill}}| c | l |}
 	
-	\tableofcontents
+\tableofcontents
 
-	\newpage
-	\input{introduction}
-	\clearpage
-	\input{data_description}
-	\clearpage
-	\input{bayes}
-	\clearpage
-	\input{reptree}
-	\clearpage
-	\input{ripper}
-	\clearpage
-	\input{execution}
-	\clearpage
-	\input{analysis}
-	\clearpage
-	\input{conclusion}
-	\clearpage
-	\bibliographystyle{abbrvnat}
-		\bibliography{mybib}
+\newpage
+\input{introduction}
+\clearpage
+\input{data_description}
+\clearpage
+\input{bayes}
+\clearpage
+\input{reptree}
+\clearpage
+\input{ripper}
+\clearpage
+\input{execution}
+\clearpage
+\input{analysis}
+\clearpage
+\input{conclusion}
+\clearpage
+\bibliographystyle{abbrvnat}
+\bibliography{mybib}
 
 \end{document}
